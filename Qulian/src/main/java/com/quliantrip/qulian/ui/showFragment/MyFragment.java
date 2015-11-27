@@ -14,7 +14,7 @@ public class MyFragment extends BaseFragment {
 
     @Override
     public View initView() {
-        View view = View.inflate(mContext, R.layout.fragment_language, null);
+        View view = View.inflate(mContext, R.layout.fragment_main_me, null);
         return view;
     }
 

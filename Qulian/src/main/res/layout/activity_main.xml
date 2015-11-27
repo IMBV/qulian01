@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     >
 
     <FrameLayout
@@ -10,8 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/main_radio"
-        android:layout_weight="1"
-      />
+        android:layout_weight="1" />
 
     <FrameLayout
         android:id="@+id/fl_wrap_content"
@@ -26,10 +24,10 @@
     <RadioGroup
         android:id="@+id/main_radio"
         android:layout_width="fill_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        android:background="@mipmap/bottom_tab_bg"
+        android:background="#FFFFFF"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingTop="2dp">
@@ -37,31 +35,31 @@
         <RadioButton
             android:id="@+id/rb_home_page"
             style="@style/main_tab_bottom"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/selector_shouye"
             android:text="@string/tab_function" />
 
         <RadioButton
             android:id="@+id/rb_local_page"
             style="@style/main_tab_bottom"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/selector_shouye"
             android:text="@string/tab_news_center" />
 
         <RadioButton
             android:id="@+id/rb_language_page"
             style="@style/main_tab_bottom"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/selector_shouye"
             android:text="@string/tab_smart_service" />
 
         <RadioButton
             android:id="@+id/rb_wifi_page"
             style="@style/main_tab_bottom"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/selector_shouye"
             android:text="@string/tab_gov_affairs" />
 
         <RadioButton
             android:id="@+id/rb_myinfo_page"
             style="@style/main_tab_bottom"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/selector_shouye"
             android:text="@string/tab_setting" />
     </RadioGroup>
 

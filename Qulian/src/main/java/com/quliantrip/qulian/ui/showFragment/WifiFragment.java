@@ -4,7 +4,6 @@ package com.quliantrip.qulian.ui.showFragment;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
