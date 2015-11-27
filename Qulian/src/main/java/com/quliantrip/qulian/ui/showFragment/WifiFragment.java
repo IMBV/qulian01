@@ -47,7 +47,6 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
         if (resultCode == 0) {
             data.setClass(mContext, OpenWifiActivity.class);
             startActivity(data);
-
         }
     }
 
