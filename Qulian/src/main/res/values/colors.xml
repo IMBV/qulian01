@@ -9,5 +9,9 @@
     <color name="viewfinder_frame">#ff000000</color>
     <color name="viewfinder_laser">#ffff0000</color>
     <color name="possible_result_points">#c0ffff00</color>
+    <!--指示头的显示界面-->
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="slidingtab_indicatorcolor">#0084FF</color>
+
 
 </resources>

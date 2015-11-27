@@ -98,6 +98,8 @@ public class MainActivity extends SwipeBackActivity {
 
     //添加的添加子fragment,从新能上以后要使用add后的show或hide来进行
     private void gotoSubFragment(Fragment fragment){
+        //使用事物来进行添加
+
 
     }
 
