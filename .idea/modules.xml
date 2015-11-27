@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Qulian.iml" filepath="$PROJECT_DIR$/Qulian.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Qulian/Qulian-Qulian.iml" filepath="$PROJECT_DIR$/Qulian/Qulian-Qulian.iml" />
       <module fileurl="file://$PROJECT_DIR$/qulianAndroid0.1.iml" filepath="$PROJECT_DIR$/qulianAndroid0.1.iml" />
     </modules>
   </component>
