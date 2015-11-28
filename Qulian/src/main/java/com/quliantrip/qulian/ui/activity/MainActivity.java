@@ -3,10 +3,12 @@ package com.quliantrip.qulian.ui.activity;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -33,9 +35,9 @@ public class MainActivity extends SwipeBackActivity {
 
     private ArrayList<BaseFragment> listFragment = new ArrayList<BaseFragment>();
     private RadioGroup radioGroup;
-    private FrameLayout wrapContent;
     private FrameLayout fullContent;
     private SystemBarTintManager mTintManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,21 +45,24 @@ public class MainActivity extends SwipeBackActivity {
         applyKitKatTranslucency();
         initData();
         initBack();
-
     }
 
     //添加数据和对RadioGrope的显示进行监听
     private void initData() {
         radioGroup = (RadioGroup) findViewById(R.id.main_radio);
-        wrapContent = (FrameLayout) findViewById(R.id.fl_wrap_content);
         fullContent = (FrameLayout) findViewById(R.id.fl_full_content);
         listFragment.clear();
-        getSupportFragmentManager().beginTransaction();
-        listFragment.add(new HomeFragment());
-        listFragment.add(new LocationFragment());
-        listFragment.add(new LanguageFragment());
-        listFragment.add(new WifiFragment());
-        listFragment.add(new MyFragment());
+        HomeFragment homeFragment = new HomeFragment();
+        LocationFragment locationFragment = new LocationFragment();
+        LanguageFragment languageFragment = new LanguageFragment();
+        WifiFragment wifiFragment = new WifiFragment();
+        MyFragment myFragment = new MyFragment();
+
+        listFragment.add(homeFragment);
+        listFragment.add(locationFragment);
+        listFragment.add(languageFragment);
+        listFragment.add(wifiFragment);
+        listFragment.add(myFragment);
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
@@ -84,28 +89,36 @@ public class MainActivity extends SwipeBackActivity {
 
                 //进行UI显示是否到顶
                 if (index != 0) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fl_wrap_content, listFragment.get(index)).commit();
-                    fullContent.setVisibility(View.GONE);
-                    wrapContent.setVisibility(View.VISIBLE);
-                    mTintManager.setStatusBarTintResource(R.color.background_tab_pressed);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fl_full_content, listFragment.get(index)).commit();
+
+
                 } else {
                     getSupportFragmentManager().beginTransaction().replace(R.id.fl_full_content, listFragment.get(index)).commit();
-                    fullContent.setVisibility(View.VISIBLE);
-                    wrapContent.setVisibility(View.GONE);
-                    mTintManager.setStatusBarTintResource(Color.TRANSPARENT);
+//                    Rect frame = new Rect();
+//                    getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+//                    int statusBarHeight = frame.top;
                 }
             }
         });
         radioGroup.check(R.id.rb_home_page);
     }
 
-    //添加的添加子fragment,从新能上以后要使用add后的show或hide来进行
-    private void gotoSubFragment(Fragment fragment){
-        //使用事物来进行添加
-//        getSupportFragmentManager().beginTransaction().replace(R.id.fl_full_content, listFragment.get(index)).commit();
-
-    }
-
+//    private Fragment preFragment;
+//    //添加的添加子fragment,从新能上以后要使用add后的show或hide来进行
+//    private void gotoSubFragment(Fragment fragment) {
+//        //使用事物来进行添加
+//        FragmentTransaction transaction = getSupportFragmentManager()
+//                .beginTransaction();
+//        if (preFragment != fragment) {
+//            if (!fragment.isAdded()) {
+//                transaction.add(R.id.fl_wrap_content, fragment).commit();
+//            } else {
+//                transaction.hide(preFragment).show(fragment).commit();
+//            }
+//            preFragment = fragment;
+//        }
+////        transaction.show(preFragment).commit();
+//    }
 
     //设置拖拽返回
     private void initBack() {
@@ -134,9 +147,9 @@ public class MainActivity extends SwipeBackActivity {
             setTranslucentStatus(true);
             mTintManager = new SystemBarTintManager(this);
             mTintManager.setStatusBarTintEnabled(true);
-//            mTintManager.setNavigationBarTintEnabled(true);
-            int color = Color.argb(00, 00, 00, 00);
-            mTintManager.setTintColor(color);
+            mTintManager.setNavigationBarTintEnabled(true);
+
+            mTintManager.setTintColor(android.R.color.holo_red_dark);
         }
 
     }

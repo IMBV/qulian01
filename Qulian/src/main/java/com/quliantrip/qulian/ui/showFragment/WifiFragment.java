@@ -1,6 +1,5 @@
 package com.quliantrip.qulian.ui.showFragment;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
@@ -31,8 +30,6 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
         System.out.println("wifi数据加载了。。。");
     }
 
-
-
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -42,8 +39,6 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
                 break;
         }
     }
-
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(resultCode != Activity.RESULT_OK){
@@ -54,6 +49,4 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
             startActivity(data);
         }
     }
-
-
 }

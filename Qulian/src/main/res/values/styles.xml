@@ -14,8 +14,10 @@
     </style>
 
     <!-- SwipeBackActivity -->
-    <style name="SwipeBackActivity" parent="@style/AppBaseTheme">
-
+    <style name="SwipeBackActivity" parent="@style/AppBaseTheme"></style>
+    <!--状态栏通明的样式-->
+    <style name="FullBleedTheme" parent="android:Theme.Light.NoTitleBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
     <!-- <item name="android:background">@drawable/transparent</item>-->

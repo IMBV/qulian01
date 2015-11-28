@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     >
 
     <FrameLayout
@@ -12,17 +11,6 @@
         android:layout_above="@+id/main_radio"
         android:layout_weight="1"
       />
-
-    <FrameLayout
-        android:id="@+id/fl_wrap_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/main_radio"
-        android:layout_weight="1"
-        android:clipToPadding="false"
-        android:fitsSystemWindows="true"
-        android:visibility="gone" />
-
     <RadioGroup
         android:id="@+id/main_radio"
         android:layout_width="fill_parent"
