@@ -12,6 +12,7 @@
     <!--指示头的显示界面-->
     <color name="background_tab_pressed">#6633B5E5</color>
     <color name="slidingtab_indicatorcolor">#0084FF</color>
-
+    <!--首页搜索栏的背景颜色-->
+    <color name="home_searck_backcolor">#666666</color>
 
 </resources>

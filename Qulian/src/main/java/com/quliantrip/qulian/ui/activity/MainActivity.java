@@ -35,14 +35,15 @@ public class MainActivity extends SwipeBackActivity {
     private RadioGroup radioGroup;
     private FrameLayout wrapContent;
     private FrameLayout fullContent;
-
+    private SystemBarTintManager mTintManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        applyKitKatTranslucency();
         initData();
         initBack();
-        applyKitKatTranslucency();
+
     }
 
     //添加数据和对RadioGrope的显示进行监听
@@ -86,10 +87,12 @@ public class MainActivity extends SwipeBackActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.fl_wrap_content, listFragment.get(index)).commit();
                     fullContent.setVisibility(View.GONE);
                     wrapContent.setVisibility(View.VISIBLE);
+                    mTintManager.setStatusBarTintResource(R.color.background_tab_pressed);
                 } else {
                     getSupportFragmentManager().beginTransaction().replace(R.id.fl_full_content, listFragment.get(index)).commit();
                     fullContent.setVisibility(View.VISIBLE);
                     wrapContent.setVisibility(View.GONE);
+                    mTintManager.setStatusBarTintResource(Color.TRANSPARENT);
                 }
             }
         });
@@ -99,7 +102,7 @@ public class MainActivity extends SwipeBackActivity {
     //添加的添加子fragment,从新能上以后要使用add后的show或hide来进行
     private void gotoSubFragment(Fragment fragment){
         //使用事物来进行添加
-
+//        getSupportFragmentManager().beginTransaction().replace(R.id.fl_full_content, listFragment.get(index)).commit();
 
     }
 
@@ -129,10 +132,10 @@ public class MainActivity extends SwipeBackActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             setTranslucentStatus(true);
-            SystemBarTintManager mTintManager = new SystemBarTintManager(this);
+            mTintManager = new SystemBarTintManager(this);
             mTintManager.setStatusBarTintEnabled(true);
-            mTintManager.setNavigationBarTintEnabled(true);
-            int color = Color.argb(80, 155, 155, 155);
+//            mTintManager.setNavigationBarTintEnabled(true);
+            int color = Color.argb(00, 00, 00, 00);
             mTintManager.setTintColor(color);
         }
 

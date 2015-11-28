@@ -1,6 +1,7 @@
 package com.quliantrip.qulian.ui.showFragment;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
@@ -37,14 +38,18 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
         switch (v.getId()){
             case R.id.wifiManage:
                 Intent openCameraIntent = new Intent(mContext,CaptureActivity.class);
-                startActivityForResult(openCameraIntent, 0);
+                startActivityForResult(openCameraIntent,0);
                 break;
         }
     }
+
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == 0) {
+        if(resultCode != Activity.RESULT_OK){
+            return;
+        }
+        if (requestCode == 0) {
             data.setClass(mContext, OpenWifiActivity.class);
             startActivity(data);
         }
