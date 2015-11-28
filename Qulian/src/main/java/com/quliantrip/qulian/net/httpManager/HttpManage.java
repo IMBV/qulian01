@@ -1,4 +1,4 @@
-//package com.quliantrip.qulian.net.httpManager;
+package com.quliantrip.qulian.net.httpManager;//package com.quliantrip.qulian.net.httpManager;
 //
 //import android.content.Context;
 //

@@ -6,239 +6,284 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_tab_pressed"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_tab_pressed">
 
         <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/possible_result_points">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
                     android:text="nihao"
-                    />
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/><TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="34sp"
-                android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="34sp"
-                    android:text="nihao"/>
+                    android:text="nihao"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nihao"
+                    android:textSize="34sp" />
 
             </LinearLayout>
         </ScrollView>
@@ -247,9 +292,9 @@
 
     <!--顶部的输入框-->
     <LinearLayout
-        android:layout_marginTop="27dp"
         android:layout_width="match_parent"
         android:layout_height="29dp"
+        android:layout_marginTop="27dp"
         android:background="@android:color/transparent"
         android:gravity="center_horizontal">
 
@@ -259,19 +304,32 @@
             android:layout_marginLeft="10dp"
             android:src="@mipmap/ic_erweima_nor" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:background="@color/home_searck_backcolor"/>
+            android:background="@drawable/shape_oval_corner"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/ic_sousuo_nor"/>
+            <TextView
+                android:id="@+id/tv_home_shoushou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠尽在您掌握"/>
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:textColor="@color/home_searck_backcolor"
-            android:text="北京" />
+            android:text="北京"
+            android:textColor="@color/home_searck_backcolor" />
 
         <ImageView
             android:layout_width="24dp"

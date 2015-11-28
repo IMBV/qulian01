@@ -94,9 +94,6 @@ public class MainActivity extends SwipeBackActivity {
 
                 } else {
                     getSupportFragmentManager().beginTransaction().replace(R.id.fl_full_content, listFragment.get(index)).commit();
-//                    Rect frame = new Rect();
-//                    getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
-//                    int statusBarHeight = frame.top;
                 }
             }
         });
@@ -148,8 +145,7 @@ public class MainActivity extends SwipeBackActivity {
             mTintManager = new SystemBarTintManager(this);
             mTintManager.setStatusBarTintEnabled(true);
             mTintManager.setNavigationBarTintEnabled(true);
-
-            mTintManager.setTintColor(android.R.color.holo_red_dark);
+//            mTintManager.setTintColor(android.R.color.holo_red_dark);
         }
 
     }
