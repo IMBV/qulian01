@@ -1,4 +1,4 @@
-package com.quliantrip.qulian.net.volley2;
+package com.quliantrip.qulian.net.volleyManage;
 
 import java.util.Map;
 import com.android.volley.AuthFailureError;

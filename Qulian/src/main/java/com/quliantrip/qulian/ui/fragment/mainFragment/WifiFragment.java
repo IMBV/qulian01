@@ -1,4 +1,4 @@
-package com.quliantrip.qulian.ui.showFragment;
+package com.quliantrip.qulian.ui.fragment.mainFragment;
 
 import android.app.Activity;
 import android.content.Intent;

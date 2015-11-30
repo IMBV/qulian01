@@ -2,14 +2,9 @@ package com.quliantrip.qulian.ui.activity;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
@@ -17,11 +12,11 @@ import android.widget.RadioGroup;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
-import com.quliantrip.qulian.ui.showFragment.HomeFragment;
-import com.quliantrip.qulian.ui.showFragment.LanguageFragment;
-import com.quliantrip.qulian.ui.showFragment.LocationFragment;
-import com.quliantrip.qulian.ui.showFragment.MyFragment;
-import com.quliantrip.qulian.ui.showFragment.WifiFragment;
+import com.quliantrip.qulian.ui.fragment.mainFragment.HomeFragment;
+import com.quliantrip.qulian.ui.fragment.mainFragment.LanguageFragment;
+import com.quliantrip.qulian.ui.fragment.mainFragment.LocationFragment;
+import com.quliantrip.qulian.ui.fragment.mainFragment.MyFragment;
+import com.quliantrip.qulian.ui.fragment.mainFragment.WifiFragment;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import java.util.ArrayList;

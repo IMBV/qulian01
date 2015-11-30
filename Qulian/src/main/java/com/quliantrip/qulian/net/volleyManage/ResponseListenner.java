@@ -1,4 +1,4 @@
-package com.quliantrip.qulian.net.volley2;
+package com.quliantrip.qulian.net.volleyManage;
 import com.android.volley.*;
 import com.google.gson.Gson;
 import com.quliantrip.qulian.base.BaseJson;
