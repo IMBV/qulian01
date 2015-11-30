@@ -14,6 +14,8 @@
     <color name="slidingtab_indicatorcolor">#0084FF</color>
     <!--首页搜索栏的背景颜色-->
     <color name="home_searck_backcolor">#666666</color>
+    <!--首页框的背景颜色-->
+    <color name="home_ll_backcolor">#ff0000</color>
     <!--状态栏的背景颜色-->
     <color name="systembar_zhuangtai">#000000</color>
 

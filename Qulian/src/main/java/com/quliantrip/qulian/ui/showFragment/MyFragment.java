@@ -10,7 +10,6 @@ import com.quliantrip.qulian.base.BaseFragment;
  * Created by yuly on 2015/11/9.
  */
 
-
 public class MyFragment extends BaseFragment {
 
     @Override

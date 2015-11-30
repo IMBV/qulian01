@@ -292,10 +292,11 @@
 
     <!--顶部的输入框-->
     <LinearLayout
+        android:id="@+id/ll_home_title"
         android:layout_width="match_parent"
         android:layout_height="29dp"
         android:layout_marginTop="27dp"
-        android:background="@android:color/transparent"
+        android:background="@color/home_ll_backcolor"
         android:gravity="center_horizontal">
 
         <ImageView

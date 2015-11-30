@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quliantrip.qulian.view.RatioImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratio="http://schemas.android.com/apk/res/com.quliantrip.qulian"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image"
+    android:scaleType="fitXY"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ratio:ratioscale= "1.0"
+    android:background="@drawable/home_scroll_default"
+    android:src="@drawable/home_scroll_default"
+    tools:ignore="ResAuto">
+</com.quliantrip.qulian.view.RatioImageView>
