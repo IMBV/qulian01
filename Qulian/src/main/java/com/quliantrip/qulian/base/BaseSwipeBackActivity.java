@@ -17,13 +17,13 @@ public abstract class BaseSwipeBackActivity extends SwipeBackActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(getContentView());
-        initSwipe();
+        setContentView(getContentViewId());
+        initSwipe();//给拖拽添加震动的监听
         initFindView();
     }
 
     //这是让子类来进行添加布局
-    public abstract int getContentView();
+    public abstract int getContentViewId();
 
     //添加布局文件
     public abstract void initFindView();

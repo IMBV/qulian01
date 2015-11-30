@@ -1,7 +1,7 @@
 package com.quliantrip.qulian.global;
 
 import android.app.Application;
-//import android.content.SharedPreferences;
+import android.content.SharedPreferences;
 
 
 import com.android.volley.RequestQueue;

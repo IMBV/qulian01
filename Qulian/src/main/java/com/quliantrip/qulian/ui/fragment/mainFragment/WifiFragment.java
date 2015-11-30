@@ -9,6 +9,7 @@ import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
 import com.quliantrip.qulian.scanner.activity.CaptureActivity;
 import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
+import com.quliantrip.qulian.util.UIHelper;
 
 /**
  * Created by yuly on 2015/11/9.
@@ -21,6 +22,7 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
     public View initView() {
         View view = View.inflate(mContext, R.layout.fragment_main_wifi, null);
         bt = (Button)view.findViewById(R.id.wifiManage);
+        view.findViewById(R.id.wifiManage_test).setOnClickListener(this);
         bt.setOnClickListener(this);
         return view;
     }
@@ -37,6 +39,9 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
                 Intent openCameraIntent = new Intent(mContext,CaptureActivity.class);
                 startActivityForResult(openCameraIntent,0);
                 break;
+            case R.id.wifiManage_test:
+                UIHelper.showMyActive(getActivity());
+            break;
         }
     }
     @Override

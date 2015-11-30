@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
+import android.support.v4.app.FragmentActivity;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
@@ -24,7 +25,7 @@ import java.util.ArrayList;
 import me.imid.swipebacklayout.lib.SwipeBackLayout;
 import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 
-public class MainActivity extends SwipeBackActivity {
+public class MainActivity extends FragmentActivity {
     private static final int VIBRATE_DURATION = 20;
     private SwipeBackLayout mSwipeBackLayout;
 
@@ -39,7 +40,7 @@ public class MainActivity extends SwipeBackActivity {
         setContentView(R.layout.activity_main);
         applyKitKatTranslucency();
         initData();
-        initBack();
+//        initBack();
     }
 
     //添加数据和对RadioGrope的显示进行监听
@@ -112,26 +113,7 @@ public class MainActivity extends SwipeBackActivity {
 ////        transaction.show(preFragment).commit();
 //    }
 
-    //设置拖拽返回
-    private void initBack() {
-        mSwipeBackLayout = getSwipeBackLayout();
-        mSwipeBackLayout.setEdgeTrackingEnabled(SwipeBackLayout.EDGE_ALL);
-        mSwipeBackLayout.addSwipeListener(new SwipeBackLayout.SwipeListener() {
-            @Override
-            public void onScrollStateChange(int state, float scrollPercent) {
-            }
 
-            @Override
-            public void onEdgeTouch(int edgeFlag) {
-                vibrate(VIBRATE_DURATION);
-            }
-
-            @Override
-            public void onScrollOverThreshold() {
-                vibrate(VIBRATE_DURATION);
-            }
-        });
-    }
 
     private void applyKitKatTranslucency() {
 
@@ -140,9 +122,8 @@ public class MainActivity extends SwipeBackActivity {
             mTintManager = new SystemBarTintManager(this);
             mTintManager.setStatusBarTintEnabled(true);
             mTintManager.setNavigationBarTintEnabled(true);
-//            mTintManager.setTintColor(android.R.color.holo_red_dark);
+            mTintManager.setTintColor(android.R.color.transparent);
         }
-
     }
 
     @TargetApi(19)
@@ -158,12 +139,5 @@ public class MainActivity extends SwipeBackActivity {
         win.setAttributes(winParams);
     }
 
-    //添加手机抖动的效果
-    private void vibrate(long duration) {
-        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        long[] pattern = {
-                0, duration
-        };
-        vibrator.vibrate(pattern, -1);
-    }
+
 }

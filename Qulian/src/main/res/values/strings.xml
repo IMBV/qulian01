@@ -8,4 +8,7 @@
     <string name="tab_gov_affairs">Wifi</string>
     <string name="tab_setting">我</string>
 
+
+    <string name="actionbar_title_active">测试</string>
+
 </resources>

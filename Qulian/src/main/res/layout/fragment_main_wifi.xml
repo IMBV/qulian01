@@ -3,11 +3,18 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-    <include layout="@layout/view_systembar"/>
+
+    <include layout="@layout/view_systembar" />
 
     <Button
+        android:id="@+id/wifiManage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="点击连接wifi"
-        android:id="@+id/wifiManage" />
+        android:text="点击连接wifi" />
+
+    <Button
+        android:id="@+id/wifiManage_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试界面" />
 </LinearLayout>
