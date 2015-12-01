@@ -1,19 +1,16 @@
 package com.quliantrip.qulian.ui.fragment.mainFragment;
 
 import android.view.View;
-import android.view.View.OnScrollChangeListener;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 
 import com.nineoldandroids.view.ViewHelper;
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.util.EvaluateUtil;
-import com.quliantrip.qulian.view.ObservableScroll.ObservableScrollView;
-import com.quliantrip.qulian.view.ObservableScroll.ScrollViewListener;
+import com.quliantrip.qulian.view.observableScroll.ObservableScrollView;
+import com.quliantrip.qulian.view.observableScroll.ScrollViewListener;
 
 /**
  * Created by yuly on 2015/11/9.

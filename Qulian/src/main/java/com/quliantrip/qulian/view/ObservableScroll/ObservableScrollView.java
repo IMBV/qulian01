@@ -1,4 +1,4 @@
-package com.quliantrip.qulian.view.ObservableScroll;
+package com.quliantrip.qulian.view.observableScroll;
 
 import android.content.Context;
 import android.util.AttributeSet;

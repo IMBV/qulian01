@@ -4,7 +4,7 @@
     android:orientation="vertical">
     <include layout="@layout/view_systembar"/>
 
-    <com.quliantrip.qulian.view.HorizontalScroll.MyHorizontalScrollView
+    <com.quliantrip.qulian.view.horizontalScroll.MyHorizontalScrollView
         android:id="@+id/id_horizontalScrollView"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
@@ -19,5 +19,5 @@
             android:layout_gravity="center_vertical"
             android:orientation="horizontal" >
         </LinearLayout>
-    </com.quliantrip.qulian.view.HorizontalScroll.MyHorizontalScrollView>
+    </com.quliantrip.qulian.view.horizontalScroll.MyHorizontalScrollView>
 </LinearLayout>

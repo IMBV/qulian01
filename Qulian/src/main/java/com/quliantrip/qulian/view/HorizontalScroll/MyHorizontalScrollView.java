@@ -1,4 +1,4 @@
-package com.quliantrip.qulian.view.HorizontalScroll;
+package com.quliantrip.qulian.view.horizontalScroll;
 
 import android.content.Context;
 import android.graphics.Color;

@@ -6,8 +6,8 @@ import android.view.View;
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
 import com.quliantrip.qulian.util.ToastUtil;
-import com.quliantrip.qulian.view.HorizontalScroll.HorizontalScrollViewAdapter;
-import com.quliantrip.qulian.view.HorizontalScroll.MyHorizontalScrollView;
+import com.quliantrip.qulian.view.horizontalScroll.HorizontalScrollViewAdapter;
+import com.quliantrip.qulian.view.horizontalScroll.MyHorizontalScrollView;
 
 import java.util.ArrayList;
 import java.util.List;
