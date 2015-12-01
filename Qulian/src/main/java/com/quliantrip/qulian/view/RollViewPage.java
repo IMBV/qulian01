@@ -10,17 +10,16 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.quliantrip.qulian.R;
+import com.quliantrip.qulian.global.ImageLoaderOptions;
 
-public class RollViewPage extends ViewPager
-{
+
+public class RollViewPage extends ViewPager {
 	// viewpage要一起改变的数据
 	private List<String> imageList;
-	private List<String> titleList;
 	private List<View> dotList;
-	private TextView top_news_title;
 
 	private MyRunnable myRunnable;
 	private int currentItem = 0;
@@ -36,15 +35,10 @@ public class RollViewPage extends ViewPager
 	private int downX;
 	private int downY;
 
-	public RollViewPage(Context context, TextView newsTitle,
-			List<String> iList, List<String> tList, List<View> dList) {
+	public RollViewPage(Context context, List<String> iList, List<View> dList) {
 
 		super(context);
-		this.top_news_title = newsTitle;
-		// 在赋值是要进行内容为空的判断，
-		top_news_title.setText(tList.get(0));
 		this.imageList = iList;
-		this.titleList = tList;
 		this.dotList = dList;
 
 		setOnPageChangeListener(new OnPageChangeListener() {
@@ -52,12 +46,10 @@ public class RollViewPage extends ViewPager
 			@Override
 			public void onPageSelected(int position) {
 
-				RollViewPage.this.top_news_title.setText(titleList
-						.get(position));
 				for (int i = 0; i < dotList.size(); i++) {
 					View view = dotList.get(i);
 					if (position == i) {
-						view.setBackgroundResource(R.drawable.shape_point_white);
+						view.setBackgroundResource(R.drawable.shape_point_red);
 					} else {
 						view.setBackgroundResource(R.drawable.shape_point_gray);
 					}
@@ -79,33 +71,33 @@ public class RollViewPage extends ViewPager
 
 	@Override
 	public boolean dispatchTouchEvent(MotionEvent ev) {
-		// 在这里要进行添加的判断，来进行动作是否向下传递
-		switch (ev.getAction()) {
-		case MotionEvent.ACTION_DOWN:
-			getParent().requestDisallowInterceptTouchEvent(true);
-			downX = (int) ev.getX();
-			downY = (int) ev.getY();
-			break;
-
-		case MotionEvent.ACTION_MOVE:
-			int moveX = (int) ev.getX();
-			int moveY = (int) ev.getY();
-
-			if (Math.abs(moveX - downX) > Math.abs(moveY - downY)) {
-
-				if ((moveX - downX) < 0
-						&& getCurrentItem() == getAdapter().getCount() - 1) {
-					getParent().requestDisallowInterceptTouchEvent(false);
-				} else if ((moveX - downX) > 0 && getCurrentItem() == 0) {
-					getParent().requestDisallowInterceptTouchEvent(false);
-				} else {
-					getParent().requestDisallowInterceptTouchEvent(true);
-				}
-			} else {
-				getParent().requestDisallowInterceptTouchEvent(false);
-			}
-			break;
-		}
+//		// 在这里要进行添加的判断，来进行动作是否向下传递
+//		switch (ev.getAction()) {
+//		case MotionEvent.ACTION_DOWN:
+//			getParent().requestDisallowInterceptTouchEvent(true);
+//			downX = (int) ev.getX();
+//			downY = (int) ev.getY();
+//			break;
+//
+//		case MotionEvent.ACTION_MOVE:
+//			int moveX = (int) ev.getX();
+//			int moveY = (int) ev.getY();
+//
+//			if (Math.abs(moveX - downX) > Math.abs(moveY - downY)) {
+//
+//				if ((moveX - downX) < 0
+//						&& getCurrentItem() == getAdapter().getCount() - 1) {
+//					getParent().requestDisallowInterceptTouchEvent(false);
+//				} else if ((moveX - downX) > 0 && getCurrentItem() == 0) {
+//					getParent().requestDisallowInterceptTouchEvent(false);
+//				} else {
+//					getParent().requestDisallowInterceptTouchEvent(true);
+//				}
+//			} else {
+//				getParent().requestDisallowInterceptTouchEvent(false);
+//			}
+//			break;
+//		}
 		return super.dispatchTouchEvent(ev);
 	}
 
@@ -145,8 +137,7 @@ public class RollViewPage extends ViewPager
 			View view = View.inflate(getContext(), R.layout.viewpager_item,
 					null);
 			ImageView image = (ImageView) view.findViewById(R.id.image);
-//			BitmapHelp.getBitmapUtils(getContext()).display(image,
-//					imageList.get(position));
+			ImageLoader.getInstance().displayImage(imageList.get(position), image, ImageLoaderOptions.options);
 			// 点击图片的和进行回调函数的使用
 			image.setOnTouchListener(new OnTouchListener() {
 
@@ -180,7 +171,6 @@ public class RollViewPage extends ViewPager
 					// 事件变为cancel事件，
 					// 的原因是因为在dispach是父控件会进行操作所截取，该该活动的event会变成cancel的事件。
 					case MotionEvent.ACTION_CANCEL:
-						System.out.println("wo bi kai shi l");
 						roll();
 						break;
 					}

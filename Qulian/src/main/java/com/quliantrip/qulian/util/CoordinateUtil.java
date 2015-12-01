@@ -1,8 +1,6 @@
 package com.quliantrip.qulian.util;
 
-import android.Manifest;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
@@ -13,6 +11,7 @@ import java.util.ArrayList;
 
 /**
  * Created by yuly on 2015/11/10.
+ *
  */
 public class CoordinateUtil {
 
@@ -51,11 +50,13 @@ public class CoordinateUtil {
         public void onStatusChanged(String provider, int status, Bundle extras) {
 
         }
+
         //当定位可用的时候调用的方法
         @Override
         public void onProviderEnabled(String provider) {
 
         }
+
         //当定位不可用的时候调用的方法
         @Override
         public void onProviderDisabled(String provider) {

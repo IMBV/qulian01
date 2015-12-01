@@ -18,11 +18,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="时长" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/SeekBarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="价格" />
     <Button
+        android:id="@+id/bt_comment_popupwindow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="提交"/>

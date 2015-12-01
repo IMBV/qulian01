@@ -2,5 +2,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="25dp"
-    android:background="@color/systembar_zhuangtai">
+    android:background="@color/common_signin_btn_dark_text_default">
 </LinearLayout>

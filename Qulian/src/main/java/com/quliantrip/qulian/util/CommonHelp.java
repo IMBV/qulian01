@@ -1,10 +1,83 @@
 package com.quliantrip.qulian.util;
 
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewParent;
+
+import com.quliantrip.qulian.global.QulianApplication;
+
 /**
  * Created by yuly on 2015/11/9.
  */
 public class CommonHelp {
-    //
+    ///	public static void runOnUIThread(Runnable r) {
+//		QulianApplication.getMainHandler().post(r);
+//	}
+//
+//	public static void runOnUIThread(Runnable r, long delayMillis) {
+//		QulianApplication.getMainHandler().postDelayed(r, delayMillis);
+//	}
+
+    //该方法表示把自己从ViewParent中移除
+    public static void removeSelfFromParent(View child) {
+        if(child!=null){
+            ViewParent parent = child.getParent();
+            if(parent!=null && parent instanceof ViewGroup){
+                ViewGroup group = (ViewGroup) parent;
+                group.removeView(child);//将子VIew从父View中移除
+            }
+        }
+    }
+
+    public static Resources getResources() {
+        return QulianApplication.getContext().getResources();
+    }
+
+    public static String getString(int id) {
+        return getResources().getString(id);
+    }
+
+    /**
+     * 获取字符串数组资源
+     *
+     * @param id
+     * @return
+     */
+    public static String[] getStringArray(int id) {
+        return getResources().getStringArray(id);
+    }
+
+    public static int getColor(int id) {
+        return getResources().getColor(id);
+    }
+
+    public static Drawable getDrawable(int id) {
+        return getResources().getDrawable(id);
+    }
+
+    public static float getDimens(int id) {
+        return getResources().getDimension(id);
+    }
+
+    /**
+     * dip转化为px
+     */
+    public static int dip2px(Context context, float dpValue) {
+        final float scale = context.getResources().getDisplayMetrics().density; // ��ȡ��Ļ���ܶ�
+        return (int) (dpValue * scale + 0.5f); //
+        // 3.7+0.5 = 4.2 4
+    }
+
+    /**
+     * px转化为dip
+     */
+    public static int px2dip(Context context, float pxValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (pxValue / scale + 0.5f);
+    }
 
 
 }

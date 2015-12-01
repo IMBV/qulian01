@@ -5,6 +5,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 
     <!--在拖拽时的背景样式的透明的有样式-->
@@ -36,6 +38,7 @@
         <item name="android:layout_weight">1.0</item>
     </style>
 
+    <style name="Silence_Theme" parent="@android:style/Theme.Holo.Light.DarkActionBar" />
 
 
 </resources>

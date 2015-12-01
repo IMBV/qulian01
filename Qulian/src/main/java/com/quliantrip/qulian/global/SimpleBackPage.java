@@ -3,9 +3,11 @@ package com.quliantrip.qulian.global;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.ui.fragment.detailFragment.DefaultFragment;
+import com.quliantrip.qulian.ui.fragment.detailFragment.SeekFragment;
 
 public enum SimpleBackPage {
-    MY_ACTIVE(8, R.string.actionbar_title_active, DefaultFragment.class);
+    MY_ACTIVE(1, R.string.actionbar_title_active, DefaultFragment.class),
+    SEEK_ACTIVE(2,R.string.actionbar_title_active_2,SeekFragment.class);
 
     private int title;
     private Class<?> clz;

@@ -4,10 +4,20 @@
     android:orientation="vertical">
     <include layout="@layout/view_systembar"/>
 
-    <TextView
+    <com.quliantrip.qulian.view.HorizontalScroll.MyHorizontalScrollView
+        android:id="@+id/id_horizontalScrollView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="语音"
-        android:id="@+id/wifiManage" />
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:scrollbars="none" >
 
+        <LinearLayout
+            android:id="@+id/id_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.quliantrip.qulian.view.HorizontalScroll.MyHorizontalScrollView>
 </LinearLayout>
