@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,7 @@ import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
 import com.quliantrip.qulian.scanner.activity.CaptureActivity;
 import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
+import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.util.UIHelper;
 import com.quliantrip.qulian.view.RangeSeekBar;
 
@@ -77,8 +79,15 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
             return;
         }
         if (requestCode == 0) {
-            data.setClass(mContext, OpenWifiActivity.class);
-            startActivity(data);
+            Bundle bundle = data.getExtras();
+            String scanResult = bundle.getString("result");
+            if(scanResult.startsWith("SSID")){
+                data.setClass(mContext, OpenWifiActivity.class);
+                startActivity(data);
+            }else{
+                ToastUtil.showToast(mContext,"请扫描正确的二维码");
+            }
+
         }
     }
 

@@ -1,4 +1,4 @@
-package com.quliantrip.qulian.view.horizontalScroll;
+package com.quliantrip.qulian.view.HorizontalScroll;
 
 import android.content.Context;
 import android.view.LayoutInflater;

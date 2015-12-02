@@ -70,7 +70,7 @@ public class CaptureActivity extends Activity implements Callback {
         hasSurface = false;
         inactivityTimer = new InactivityTimer(this);
     }
-
+   
     @Override
     protected void onResume() {
         super.onResume();

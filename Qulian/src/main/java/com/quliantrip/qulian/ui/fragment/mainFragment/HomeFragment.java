@@ -7,10 +7,12 @@ import android.widget.RelativeLayout;
 import com.nineoldandroids.view.ViewHelper;
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
+import com.quliantrip.qulian.net.constant.HttpConstants;
+import com.quliantrip.qulian.net.volleyManage.PacketStringReQuest;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.util.EvaluateUtil;
-import com.quliantrip.qulian.view.observableScroll.ObservableScrollView;
-import com.quliantrip.qulian.view.observableScroll.ScrollViewListener;
+import com.quliantrip.qulian.view.ObservableScroll.ObservableScrollView;
+import com.quliantrip.qulian.view.ObservableScroll.ScrollViewListener;
 
 /**
  * Created by yuly on 2015/11/9.
@@ -35,7 +37,10 @@ public class HomeFragment extends BaseFragment implements ScrollViewListener {
     public void initDate() {
 
     }
-
+    public void loadHeadBuy() {
+        PacketStringReQuest quest = new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT,
+                new FlashBuyMessage().setTag(getClass().getName()));
+    }
 
     @Override
     public void onScrollChanged(ObservableScrollView scrollView, int x, int y, int oldx, int oldy) {

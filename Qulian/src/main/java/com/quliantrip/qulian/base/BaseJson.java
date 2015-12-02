@@ -6,6 +6,7 @@ public class BaseJson {
 	public String getTag() {
 		return tag;
 	}
+
 	public BaseJson setTag(String tag) {
 		this.tag = tag;
 		return this;

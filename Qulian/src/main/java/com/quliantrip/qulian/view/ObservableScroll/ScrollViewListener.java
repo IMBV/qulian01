@@ -1,4 +1,4 @@
-package com.quliantrip.qulian.view.observableScroll;
+package com.quliantrip.qulian.view.ObservableScroll;
 
 /**
  * Created by Qulian5 on 2015/12/1.

@@ -19,5 +19,13 @@ public class ResponseListenner implements Response.Listener<String>{
 		object=new Gson().fromJson(json, object.getClass());
 		object.setTag(tag);
 		EventBus.getDefault().post(object);
+
+		//这里的使用
+		/**
+		 *
+		 *
+		 *
+		 *
+		 * */
 	}
 }

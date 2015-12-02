@@ -51,8 +51,7 @@ public class OpenWifiActivity extends Activity {
 					Thread.sleep(3000);// 休眠3s，不休眠则会在程序首次开启WIFI时候，处理getScanResults结果，wifiResultList.size()发生异常
 				} catch (InterruptedException e) {
 					e.printStackTrace();
-				}
-				wifiAdmin
+				}wifiAdmin
 						.setAddNetWorkFinishListener(new WifiAdmin.AddNetWorkFinishListener() {
 
 							@Override
@@ -63,7 +62,7 @@ public class OpenWifiActivity extends Activity {
 									@Override
 									public void run() {
 										Toast.makeText(OpenWifiActivity.this,
-												"wifi连接成功", 0).show();
+												"wifi连接成功", Toast.LENGTH_SHORT).show();
 									}
 								});
 
