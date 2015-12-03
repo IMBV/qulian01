@@ -10,19 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="833e0810-79aa-4012-9f9d-42856ac1935d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomePageBean.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomePageBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/ImageLoaderOptions.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/ImageLoaderOptions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/HomeSlideImageMode.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/HomeSlideImageMode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/PacketStringReQuest.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/PacketStringReQuest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseErrorListener.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseErrorListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RollViewPage.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RollViewPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" />
     </list>
     <ignored path="qulianAndroid0.1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2793,6 +2781,13 @@
       <option name="number" value="Default" />
       <updated>1449122420920</updated>
     </task>
+    <task id="LOCAL-00001" summary="数据的缓存和数据的读取的先后顺序&#10;">
+      <created>1449135824943</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1449135824943</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2832,6 +2827,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="数据的缓存和数据的读取的先后顺序&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据的缓存和数据的读取的先后顺序&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
