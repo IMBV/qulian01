@@ -6,6 +6,7 @@ import android.util.Log;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.VolleyError;
 import com.google.gson.Gson;
+import com.quliantrip.qulian.base.ContentPage;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.util.CommonHelp;
@@ -29,17 +30,14 @@ public class ResponseErrorListener implements ErrorListener {
         if (object != null) {
             tag = object.getTag();
         }
-        String homeFragmentJson = CommonHelp.getStringSp(QulianApplication.getContext(), tag, "");//保存时进行首页数据的判断
-        if (!TextUtils.isEmpty(homeFragmentJson)) {
-            object = new Gson().fromJson(homeFragmentJson, object.getClass());
-            object.setTag(tag);
+        String baseJson = CommonHelp.getStringSp(QulianApplication.getContext(), tag, "");//保存时进行首页数据的判断
+        if (!TextUtils.isEmpty(baseJson)) {
             if (onLoadFinishListener != null) {
-                onLoadFinishListener.onLoadFinish(object);
+                onLoadFinishListener.onLoadFinish(ContentPage.STATE_SUCCESS);
             }
-            EventBus.getDefault().post(object);
         } else {
             if (onLoadFinishListener != null) {
-                onLoadFinishListener.onLoadFinish(null);
+                onLoadFinishListener.onLoadFinish(ContentPage.STATE_ERROR);
             }
         }
     }

@@ -1,74 +1,73 @@
 package com.quliantrip.qulian.ui.fragment.mainFragment;
 
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 
 import com.nineoldandroids.view.ViewHelper;
 import com.quliantrip.qulian.R;
-import com.quliantrip.qulian.base.BaseFragment;
+import com.quliantrip.qulian.base.BasePageCheckFragment;
 import com.quliantrip.qulian.domain.HomePageBean;
-import com.quliantrip.qulian.net.constant.HttpConstants;
-import com.quliantrip.qulian.net.volleyManage.PacketStringReQuest;
+import com.quliantrip.qulian.mode.HomeSlideImageMode;
+import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.util.EvaluateUtil;
 import com.quliantrip.qulian.view.ObservableScroll.ObservableScrollView;
 import com.quliantrip.qulian.view.ObservableScroll.ScrollViewListener;
 
-import de.greenrobot.event.EventBus;
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * Created by yuly on 2015/11/9.
  */
 
-public class HomeFragment extends BaseFragment implements ScrollViewListener {
-    private RelativeLayout homeTitle;
-    private ImageView titleBackgroud;
+public class HomeFragment extends BasePageCheckFragment implements ScrollViewListener {
+    @Bind(R.id.iv_home_title_back)
+    ImageView titleBackgroud;//标题的背景
+    @Bind(R.id.sv_scroll)
+    ObservableScrollView scroll;
+    @Bind(R.id.ll_model_container)
+    LinearLayout modelContainer;
+
+    //定义的model
+    private HomeSlideImageMode homeSlideImageMode;
+
+
+    private HomePageBean aahomePageBean;
+
     @Override
-    public View initView() {
-        View view = View.inflate(mContext,R.layout.fragment_main_home, null);
-//        EventBus.getDefault().register(this);
-        homeTitle = (RelativeLayout) view.findViewById(R.id.ll_home_title);
-        titleBackgroud = (ImageView)view.findViewById(R.id.iv_home_title_back);
-        ViewHelper.setAlpha(titleBackgroud,0.0f);
-        ((ObservableScrollView)view.findViewById(R.id.sv_scroll)).setScrollViewListener(this);
+    protected View getSuccessView() {
+        View view = View.inflate(mContext, R.layout.fragment_main_home, null);
+        ButterKnife.bind(this, view);
+        ViewHelper.setAlpha(titleBackgroud, 0.0f);
+        scroll.setScrollViewListener(this);
+        initModel();
         return view;
     }
 
-    @Override
-    public void initDate() {
-        String homeFragmentJson = CommonHelp.getStringSp(mContext,"homeFragmentJson","");//保存时进行首页数据的判断
-        if(!TextUtils.isEmpty(homeFragmentJson)){
+    //添加model到linearlayout中
+    private void initModel() {
+        homeSlideImageMode = new HomeSlideImageMode();
+        modelContainer.addView(homeSlideImageMode.getModelView());
 
+    }
+
+    //在这里可以进行空间内容的初始化
+    public void onEventMainThread(HomePageBean homePageBean) {
+        if (homePageBean != null && this.getClass().getName().equals(homePageBean.getTag())) {
+            homeSlideImageMode.setData(homePageBean);
         }
-//        loadHeadBuy();
     }
 
-
-//    public void loadHeadBuy() {
-//        PacketStringReQuest quest = new PacketStringReQuest("",
-//                new HomePageBean().setTag(getClass().getName()));
-//    }
-
-
-//    public void onEventMainThread(HomePageBean homePageBean) {
-//        if (homePageBean != null
-//                && this.getClass().getName().equals(homePageBean.getTag())) {
-//            //这里进行空间数据的添加
-//        }
-//
-//    }
-    //把数据对象添加到布局中
-    private void initView(HomePageBean homePageBean){
-
+    @Override
+    protected QuestBean requestData() {
+        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.193:8080/01.jsp");
     }
-
-
 
     @Override
     public void onScrollChanged(ObservableScrollView scrollView, int x, int y, int oldx, int oldy) {
-        float percent = (float)y/(float)CommonHelp.dip2px(mContext,550);
+        float percent = (float) y / (float) CommonHelp.dip2px(mContext, 550);
         ViewHelper.setAlpha(titleBackgroud,
                 EvaluateUtil.evaluateFloat(percent, 0.0f, 1.0f));
     }

@@ -3,6 +3,7 @@ import android.text.TextUtils;
 
 import com.android.volley.*;
 import com.google.gson.Gson;
+import com.quliantrip.qulian.base.ContentPage;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.util.CommonHelp;
@@ -29,13 +30,13 @@ public class ResponseListenner implements Response.Listener<String>{
 			CommonHelp.saveStringSp(QulianApplication.getContext(),tag,json);
 		}
 		if(onLoadFinishListener != null){
-			onLoadFinishListener.onLoadFinish(object);
+			onLoadFinishListener.onLoadFinish(ContentPage.STATE_SUCCESS);
 		}
 		EventBus.getDefault().post(object);
 	}
 
 	public interface OnLoadFinishListener {
-		void onLoadFinish(BaseJson object);
+		void onLoadFinish(int object);
 	}
 
 
