@@ -10,14 +10,13 @@ import android.widget.TextView;
 
 import com.quliantrip.qulian.R;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.InjectView;
-
 
 public class DefaultFragment extends Fragment {
 	private String mParam1;
 	
-	@InjectView(R.id.tv_content)
+	@Bind(R.id.tv_content)
 	TextView tv_content;
 
 	public DefaultFragment() {
@@ -41,7 +40,7 @@ public class DefaultFragment extends Fragment {
 	@Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
-		ButterKnife.inject(this, view);
+		ButterKnife.bind(this, view);
 		System.out.println(mParam1 + " - 创建完毕");
 		initView(view);
 	}

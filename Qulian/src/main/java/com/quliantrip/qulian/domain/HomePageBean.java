@@ -1,7 +1,5 @@
 package com.quliantrip.qulian.domain;
 
-import com.quliantrip.qulian.base.BaseJson;
-
 import java.io.Serializable;
 
 /**
@@ -11,5 +9,11 @@ import java.io.Serializable;
 public class HomePageBean extends BaseJson implements Serializable {
     private String name;
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 }

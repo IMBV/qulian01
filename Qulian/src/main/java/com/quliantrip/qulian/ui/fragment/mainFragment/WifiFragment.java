@@ -19,11 +19,14 @@ import android.widget.PopupWindow;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
+import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.scanner.activity.CaptureActivity;
 import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
 import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.util.UIHelper;
 import com.quliantrip.qulian.view.RangeSeekBar;
+
+import de.greenrobot.event.EventBus;
 
 /**
  * Created by yuly on 2015/11/9.
@@ -40,6 +43,7 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
     @Override
     public View initView() {
         View view = View.inflate(mContext, R.layout.fragment_main_wifi, null);
+        EventBus.getDefault().register(this);//有注册也要有OnEventMainThread()来接受有要是相当于发过来的handle处理消息队列
         bt = (Button)view.findViewById(R.id.wifiManage);
         view.findViewById(R.id.wifiManage_test).setOnClickListener(this);
         view.findViewById(R.id.check_asdf).setOnClickListener(this);
@@ -50,6 +54,9 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
         return view;
     }
 
+    public void onEventMainThread(HomePageBean homePageBean) {
+
+    }
     @Override
     public void initDate() {
         System.out.println("wifi数据加载了。。。");
@@ -64,6 +71,7 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
                 break;
             case R.id.wifiManage_test:
                 UIHelper.showMyActive(getActivity());
+                break;
             case R.id.wifiManage_popUp:
                 showPopuWindow();
                 break;

@@ -26,8 +26,8 @@ public class LanguageFragment extends BaseFragment {
     @Override
     public View initView() {
         View view = View.inflate(mContext,R.layout.fragment_main_language, null);
-
         mHorizontalScrollView = (MyHorizontalScrollView) view.findViewById(R.id.id_horizontalScrollView);
+        mDatas.clear();
         mDatas.add("http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_01.png");
         mDatas.add("http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_02.png");
         mDatas.add("http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_03.png");

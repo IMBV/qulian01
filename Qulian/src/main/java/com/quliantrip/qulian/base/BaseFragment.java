@@ -7,6 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.quliantrip.qulian.domain.BaseJson;
+
+import de.greenrobot.event.EventBus;
+
 /**
  * Created by yuly on 2015/11/26.
  */
@@ -14,6 +18,7 @@ public abstract class BaseFragment extends Fragment {
 
     protected Context mContext;
     public View view;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,6 +30,7 @@ public abstract class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = initView();
+
         return view;
     }
 
@@ -46,5 +52,11 @@ public abstract class BaseFragment extends Fragment {
             getView().setVisibility(menuVisible ? View.VISIBLE : View.GONE);
         }
         super.setMenuVisibility(menuVisible);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
     }
 }

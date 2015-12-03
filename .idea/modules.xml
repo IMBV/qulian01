@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Qulian.iml" filepath="$PROJECT_DIR$/Qulian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Qulian/Qulian.iml" filepath="$PROJECT_DIR$/Qulian/Qulian.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/qulianAndroid0.1.iml" filepath="$PROJECT_DIR$/qulianAndroid0.1.iml" />
     </modules>
