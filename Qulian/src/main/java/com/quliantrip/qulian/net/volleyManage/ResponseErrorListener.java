@@ -25,32 +25,24 @@ public class ResponseErrorListener implements ErrorListener {
     @Override
     public void onErrorResponse(VolleyError arg0) {
         ToastUtil.showToast(QulianApplication.getContext(), "网络请求错误，请检查网络。");
-        String tag=null;
-        if (object!=null) {
-            tag=object.getTag();
+        String tag = null;
+        if (object != null) {
+            tag = object.getTag();
         }
-        System.out.println(tag+"   nihao kjahsdfh");
-        if("com.quliantrip.qulian.ui.fragment.listRefreshFragment.TestFragment" .equals(tag.trim())){
-            String homeFragmentJson = CommonHelp.getStringSp(QulianApplication.getContext(),tag,"");//保存时进行首页数据的判断
-            System.out.println(homeFragmentJson+"   nihao kjahsdfh");
-            if(!TextUtils.isEmpty(homeFragmentJson)){
-                object=new Gson().fromJson(homeFragmentJson, object.getClass());
-                object.setTag(tag);
-                if(onLoadFinishListener != null){
-                    onLoadFinishListener.onLoadFinish(object);
-                }
-                EventBus.getDefault().post(object);
-            }else {
-                if(onLoadFinishListener != null){
-                    onLoadFinishListener.onLoadFinish(null);
-                }
+        String homeFragmentJson = CommonHelp.getStringSp(QulianApplication.getContext(), tag, "");//保存时进行首页数据的判断
+        if (!TextUtils.isEmpty(homeFragmentJson)) {
+            object = new Gson().fromJson(homeFragmentJson, object.getClass());
+            object.setTag(tag);
+            if (onLoadFinishListener != null) {
+                onLoadFinishListener.onLoadFinish(object);
             }
-        }else {
-            if(onLoadFinishListener != null){
+            EventBus.getDefault().post(object);
+        } else {
+            if (onLoadFinishListener != null) {
                 onLoadFinishListener.onLoadFinish(null);
             }
         }
-
     }
-
 }
+
+
