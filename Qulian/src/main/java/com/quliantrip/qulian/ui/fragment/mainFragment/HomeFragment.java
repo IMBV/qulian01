@@ -1,5 +1,8 @@
 package com.quliantrip.qulian.ui.fragment.mainFragment;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -7,16 +10,22 @@ import android.widget.LinearLayout;
 import com.nineoldandroids.view.ViewHelper;
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BasePageCheckFragment;
+import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.HomePageBean;
+import com.quliantrip.qulian.mode.HomeFunctionMode;
 import com.quliantrip.qulian.mode.HomeSlideImageMode;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
+import com.quliantrip.qulian.scanner.activity.CaptureActivity;
+import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.util.EvaluateUtil;
+import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.view.ObservableScroll.ObservableScrollView;
 import com.quliantrip.qulian.view.ObservableScroll.ScrollViewListener;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by yuly on 2015/11/9.
@@ -32,6 +41,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
 
     //定义的model
     private HomeSlideImageMode homeSlideImageMode;
+    HomeFunctionMode homeFunctionMode;
 
 
     private HomePageBean aahomePageBean;
@@ -50,19 +60,25 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
     private void initModel() {
         homeSlideImageMode = new HomeSlideImageMode();
         modelContainer.addView(homeSlideImageMode.getModelView());
-
+        homeFunctionMode = new HomeFunctionMode();
+        modelContainer.addView(homeFunctionMode.getModelView());
     }
 
-    //在这里可以进行空间内容的初始化
-    public void onEventMainThread(HomePageBean homePageBean) {
-        if (homePageBean != null && this.getClass().getName().equals(homePageBean.getTag())) {
-            homeSlideImageMode.setData(homePageBean);
-        }
-    }
+//    //在这里可以进行空间内容的初始化
+//    public void onEventMainThread(HomePageBean homePageBean) {
+//
+//    }
 
     @Override
     protected QuestBean requestData() {
         return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.193:8080/01.jsp");
+    }
+
+    @Override
+    public void onEventMainThread(BaseJson bean) {
+        if (bean != null && this.getClass().getName().equals(bean.getTag())) {
+            homeSlideImageMode.setData((HomePageBean)bean);
+        }
     }
 
     @Override
@@ -71,5 +87,29 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         ViewHelper.setAlpha(titleBackgroud,
                 EvaluateUtil.evaluateFloat(percent, 0.0f, 1.0f));
     }
+
+    //连接wifi
+    @OnClick(R.id.iv_home_title_wifi) void connectWifi(){
+        Intent openCameraIntent = new Intent(mContext,CaptureActivity.class);
+        startActivityForResult(openCameraIntent,0);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(resultCode != Activity.RESULT_OK){
+            return;
+        }
+        if (requestCode == 0) {
+            Bundle bundle = data.getExtras();
+            String scanResult = bundle.getString("result");
+            if(scanResult.startsWith("SSID")){
+                data.setClass(mContext, OpenWifiActivity.class);
+                startActivity(data);
+            }else{
+                ToastUtil.showToast(mContext,"请扫描正确的二维码");
+            }
+        }
+    }
+
 
 }

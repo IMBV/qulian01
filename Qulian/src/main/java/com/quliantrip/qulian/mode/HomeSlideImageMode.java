@@ -39,7 +39,7 @@ public class HomeSlideImageMode extends BaseMode<HomePageBean> {
     private List<View> dotList = new ArrayList<View>();
 
     public HomeSlideImageMode() {
-        view = View.inflate(QulianApplication.getContext(), R.layout.view_rool_image,null);
+        view = View.inflate(QulianApplication.getContext(), R.layout.mode_home_slideimage,null);
 
     }
 

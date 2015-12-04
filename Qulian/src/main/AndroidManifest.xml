@@ -21,7 +21,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.mainAcivity.MainActivity">
+        <activity
+            android:name=".ui.activity.mainAcivity.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,8 +31,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.activity.mainAcivity.GuideActivity"></activity>
-        <activity android:name=".ui.activity.mainAcivity.SplashActivity"></activity>
+        <activity
+            android:name=".ui.activity.mainAcivity.GuideActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.mainAcivity.SplashActivity"
+            android:screenOrientation="portrait"></activity>
         <!--扫码和实现网络连接-->
         <activity
             android:name="com.quliantrip.qulian.scanner.activity.CaptureActivity"
@@ -38,11 +44,19 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
-        <activity android:name="com.quliantrip.qulian.scanner.activity.OpenWifiActivity" />
+        <activity
+            android:name="com.quliantrip.qulian.scanner.activity.OpenWifiActivity"
+            android:screenOrientation="portrait" />
+
         <!--这里只有简单返回activity-->
         <activity
             android:name=".ui.activity.SimpleBackActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/SwipeBackActivity" />
+
+
+
+
 
     </application>
 

@@ -19,7 +19,6 @@ public abstract class BaseFragment extends Fragment {
     protected Context mContext;
     public View view;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

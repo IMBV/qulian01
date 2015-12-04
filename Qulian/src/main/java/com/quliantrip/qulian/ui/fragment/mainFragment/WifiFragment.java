@@ -44,10 +44,8 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
     public View initView() {
         View view = View.inflate(mContext, R.layout.fragment_main_wifi, null);
         EventBus.getDefault().register(this);//有注册也要有OnEventMainThread()来接受有要是相当于发过来的handle处理消息队列
-        bt = (Button)view.findViewById(R.id.wifiManage);
         view.findViewById(R.id.wifiManage_test).setOnClickListener(this);
         view.findViewById(R.id.check_asdf).setOnClickListener(this);
-        bt.setOnClickListener(this);
         frameLayout = (FrameLayout) view.findViewById(R.id.fl_container);
         pop = (Button) view.findViewById(R.id.wifiManage_popUp);
         pop.setOnClickListener(this);
@@ -65,10 +63,6 @@ public class WifiFragment extends BaseFragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.wifiManage:
-                Intent openCameraIntent = new Intent(mContext,CaptureActivity.class);
-                startActivityForResult(openCameraIntent,0);
-                break;
             case R.id.wifiManage_test:
                 UIHelper.showMyActive(getActivity());
                 break;
