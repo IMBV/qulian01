@@ -5,18 +5,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
         android:background="@color/colorPrimaryDark">
             <TextView
                 android:id="@+id/tv_Title_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="阿斯顿飞机"
+                android:layout_centerInParent="true"
+                android:text="简单返回activity"
                 android:textColor="@color/systembar_zhuangtai"/>
-    </LinearLayout>
+    </RelativeLayout>
+
+
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"

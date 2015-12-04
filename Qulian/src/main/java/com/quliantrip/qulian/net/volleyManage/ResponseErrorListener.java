@@ -1,18 +1,14 @@
 package com.quliantrip.qulian.net.volleyManage;
 
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.VolleyError;
-import com.google.gson.Gson;
 import com.quliantrip.qulian.base.ContentPage;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.util.ToastUtil;
-
-import de.greenrobot.event.EventBus;
 
 public class ResponseErrorListener implements ErrorListener {
     private BaseJson object;

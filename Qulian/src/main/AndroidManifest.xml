@@ -38,7 +38,7 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
-        <activity android:name="com.quliantrip.qulian.scanner.activity.OpenWifiActivity"/>
+        <activity android:name="com.quliantrip.qulian.scanner.activity.OpenWifiActivity" />
         <!--这里只有简单返回activity-->
         <activity
             android:name=".ui.activity.SimpleBackActivity"

@@ -36,7 +36,7 @@ public class QuestBean {
     public void setUrl(String url) {
         this.url = url;
 
-    }
+}
 
     public Map<String, String> getMap() {
         return map;

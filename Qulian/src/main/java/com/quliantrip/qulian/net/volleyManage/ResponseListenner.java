@@ -1,7 +1,6 @@
 package com.quliantrip.qulian.net.volleyManage;
-import android.text.TextUtils;
 
-import com.android.volley.*;
+import com.android.volley.Response;
 import com.google.gson.Gson;
 import com.quliantrip.qulian.base.ContentPage;
 import com.quliantrip.qulian.domain.BaseJson;
@@ -13,6 +12,7 @@ import de.greenrobot.event.EventBus;
 public class ResponseListenner implements Response.Listener<String>{
 	private BaseJson object;
 	private OnLoadFinishListener onLoadFinishListener;
+
 	public ResponseListenner(BaseJson object,OnLoadFinishListener onLoadFinishListener) {
 		this.object=object;
 		this.onLoadFinishListener = onLoadFinishListener;
@@ -23,7 +23,7 @@ public class ResponseListenner implements Response.Listener<String>{
 		if (object!=null) {
 			tag=object.getTag();
 		}
-		object=new Gson().fromJson(json, object.getClass());
+		object = new Gson().fromJson(json, object.getClass());
 		object.setTag(tag);
 		//这里使用||进行判断是否进行数据的缓存
 		if("com.quliantrip.qulian.ui.fragment.listRefreshFragment.TestFragment" .equals(tag)){
