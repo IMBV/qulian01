@@ -1,10 +1,11 @@
-package com.quliantrip.qulian.mode;
+package com.quliantrip.qulian.mode.homeMode;
 
 import android.view.View;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.global.QulianApplication;
+import com.quliantrip.qulian.mode.BaseMode;
 import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.view.HorizontalScroll.HorizontalScrollViewAdapter;
 import com.quliantrip.qulian.view.HorizontalScroll.MyHorizontalScrollView;

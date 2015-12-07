@@ -1,4 +1,4 @@
-package com.quliantrip.qulian.mode;
+package com.quliantrip.qulian.mode.homeMode;
 
 import android.app.Activity;
 import android.view.View;
@@ -9,6 +9,7 @@ import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.global.QulianApplication;
+import com.quliantrip.qulian.mode.BaseMode;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.view.RollViewPage;
 
@@ -25,27 +26,28 @@ import butterknife.ButterKnife;
 
 /**
  * 使用 ：在oncreate中进行返回view,通过addView(mode.getModeView(），
- *请求数据后进行加载mode.setData(),来加载数据
- * */
+ * 请求数据后进行加载mode.setData(),来加载数据
+ */
 public class HomeSlideImageMode extends BaseMode<HomePageBean> {
 
     private View view;
-
-    @Bind(R.id.top_news_viewpager) LinearLayout top_news_viewpager;//轮播的viewpage
-    @Bind(R.id.dots_ll) LinearLayout dots_ll;//下面的小点
+    private RollViewPage rollViewPage;
+    @Bind(R.id.top_news_viewpager)
+    LinearLayout top_news_viewpager;//轮播的viewpage
+    @Bind(R.id.dots_ll)
+    LinearLayout dots_ll;//下面的小点
 
     //添加图片和小点的集合
     private List<String> imageList = new ArrayList<String>();
     private List<View> dotList = new ArrayList<View>();
 
     public HomeSlideImageMode() {
-        view = View.inflate(QulianApplication.getContext(), R.layout.mode_home_slideimage,null);
-
+        view = View.inflate(QulianApplication.getContext(), R.layout.mode_home_slideimage, null);
     }
 
     @Override
     public View getModelView() {
-        ButterKnife.bind(this,view);
+        ButterKnife.bind(this, view);
         return view;
     }
 
@@ -54,22 +56,19 @@ public class HomeSlideImageMode extends BaseMode<HomePageBean> {
     public void setData(HomePageBean homePageBean) {
         initRollView(homePageBean);
     }
+
     private void initRollView(HomePageBean homePageBean) {
 
         imageList.clear();
         dotList.clear();
-//        List<String> list = homePageBean.getName();
-//        for (String s:list) {
-//            System.out.println(s);
-//        }
-
         imageList.addAll(homePageBean.getName());
-        if(imageList.size()>0){
+        if (imageList.size() > 0) {
             //初始化小点
             initDoc();
             //添加之定义的viewPage带有滚动效果的
-            RollViewPage rollViewPage = new RollViewPage(QulianApplication.getContext(),imageList,dotList);
+            rollViewPage = new RollViewPage(QulianApplication.getContext(), imageList, dotList);
             rollViewPage.roll();
+            rollViewPage.setCurrentItem(imageList.size()*50);
             rollViewPage.setOnTouchImage(new RollViewPage.OnTouchImage() {
 
                 @Override
@@ -80,14 +79,6 @@ public class HomeSlideImageMode extends BaseMode<HomePageBean> {
             top_news_viewpager.removeAllViews();
             top_news_viewpager.addView(rollViewPage);
         }
-
-        //本布局中有listView的时候要进行简单的判断if (myAdapter == null) {
-//        myAdapter = new MyAdapter(newList);
-//        lv_item_news.setAdapter(myAdapter);
-//    } else {
-//        myAdapter.notifyDataSetChanged();
-//    }
-
     }
 
     //初始化小点的个数
@@ -101,11 +92,14 @@ public class HomeSlideImageMode extends BaseMode<HomePageBean> {
             } else {
                 view.setBackgroundResource(R.drawable.shape_point_gray);
             }
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(CommonHelp.dip2px(QulianApplication.getContext(),5), CommonHelp.dip2px(QulianApplication.getContext(),5));
-            params.setMargins(CommonHelp.dip2px(QulianApplication.getContext(),5), 0, 0, 0);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(CommonHelp.dip2px(QulianApplication.getContext(), 5), CommonHelp.dip2px(QulianApplication.getContext(), 5));
+            params.setMargins(CommonHelp.dip2px(QulianApplication.getContext(), 5), 0, 0, 0);
             dots_ll.addView(view, params);
             dotList.add(view);
         }
     }
 
+    public void restarteRoll(){
+        rollViewPage.roll();
+    }
 }

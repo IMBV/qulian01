@@ -36,9 +36,9 @@ import com.quliantrip.qulian.R;
 public class RangeSeekBar<T extends Number> extends ImageView {
     private final Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private final Bitmap thumbImage = BitmapFactory.decodeResource(
-            getResources(), R.mipmap.slipingbar);
+            getResources(), R.mipmap.ic_launcher);
     private final Bitmap thumbPressedImage = BitmapFactory.decodeResource(
-            getResources(), R.mipmap.slipingbar);
+            getResources(), R.mipmap.ic_launcher);
     private final float thumbWidth = thumbImage.getWidth();
     private final float thumbHalfWidth = 0.5f * thumbWidth;
     private final float thumbHalfHeight = 0.5f * thumbImage.getHeight();

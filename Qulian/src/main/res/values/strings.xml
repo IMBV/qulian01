@@ -2,11 +2,10 @@
     <!--应用名称-->
     <string name="app_name">趣连旅行</string>
     <!--tab 选项卡得名称-->
-    <string name="tab_function">首页</string>
-    <string name="tab_news_center">当地游</string>
-    <string name="tab_smart_service">语音导游</string>
-    <string name="tab_gov_affairs">Wifi</string>
-    <string name="tab_setting">我</string>
+    <string name="tab_home_function">首页</string>
+    <string name="tab_home_happiness">小确幸</string>
+    <string name="tab_home_find">发现</string>
+    <string name="tab_home_me">我</string>
 
 
     <string name="actionbar_title_active">测试</string>

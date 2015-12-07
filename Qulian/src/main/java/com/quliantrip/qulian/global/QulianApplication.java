@@ -2,6 +2,7 @@ package com.quliantrip.qulian.global;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Handler;
 
 import com.android.volley.RequestQueue;
@@ -14,11 +15,11 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 public class QulianApplication extends Application {
 
     private static Handler mainHandler;
-    //	private String phone;
+//    private String phone;
 //	private String password;
     private static RequestQueue queue;
 //    private int tag = 0;
-//    private SharedPreferences sp;
+    private SharedPreferences sp;
     private static Context context;
 
     @Override
@@ -51,7 +52,6 @@ public class QulianApplication extends Application {
         // ImageLoaderConfiguration.createDefault(this));
     }
 
-//
 //    public int getTag() {
 //        return tag;
 //    }

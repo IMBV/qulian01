@@ -3,25 +3,25 @@
     android:id="@+id/activity_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorPrimaryDark">
-            <TextView
-                android:id="@+id/tv_Title_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="简单返回activity"
-                android:textColor="@color/systembar_zhuangtai"/>
-    </RelativeLayout>
 
+        <TextView
+            android:id="@+id/tv_Title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="简单返回activity"
+            android:textColor="@color/systembar_zhuangtai" />
+    </RelativeLayout>
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

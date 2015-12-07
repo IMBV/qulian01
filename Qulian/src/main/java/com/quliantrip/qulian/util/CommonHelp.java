@@ -67,9 +67,8 @@ public class CommonHelp {
      * dip转化为px
      */
     public static int dip2px(Context context, float dpValue) {
-        final float scale = context.getResources().getDisplayMetrics().density; // ��ȡ��Ļ���ܶ�
-        return (int) (dpValue * scale + 0.5f); //
-        // 3.7+0.5 = 4.2 4
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
     }
 
     /**

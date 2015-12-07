@@ -12,8 +12,8 @@ import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BasePageCheckFragment;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.HomePageBean;
-import com.quliantrip.qulian.mode.HomeFunctionMode;
-import com.quliantrip.qulian.mode.HomeSlideImageMode;
+import com.quliantrip.qulian.mode.homeMode.HomeFunctionMode;
+import com.quliantrip.qulian.mode.homeMode.HomeSlideImageMode;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.scanner.activity.CaptureActivity;
 import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
@@ -64,20 +64,15 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         modelContainer.addView(homeFunctionMode.getModelView());
     }
 
-//    //在这里可以进行空间内容的初始化
-//    public void onEventMainThread(HomePageBean homePageBean) {
-//
-//    }
-
     @Override
     protected QuestBean requestData() {
-        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.193:8080/01.jsp");
+        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.191:8080/01.jsp");
     }
 
     @Override
     public void onEventMainThread(BaseJson bean) {
         if (bean != null && this.getClass().getName().equals(bean.getTag())) {
-            homeSlideImageMode.setData((HomePageBean)bean);
+            homeSlideImageMode.setData((HomePageBean) bean);
         }
     }
 
@@ -89,27 +84,33 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
     }
 
     //连接wifi
-    @OnClick(R.id.iv_home_title_wifi) void connectWifi(){
-        Intent openCameraIntent = new Intent(mContext,CaptureActivity.class);
-        startActivityForResult(openCameraIntent,0);
+    @OnClick(R.id.iv_home_title_wifi)
+    void connectWifi() {
+        Intent openCameraIntent = new Intent(mContext, CaptureActivity.class);
+        startActivityForResult(openCameraIntent, 0);
     }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(resultCode != Activity.RESULT_OK){
+        if (resultCode != Activity.RESULT_OK) {
             return;
         }
         if (requestCode == 0) {
             Bundle bundle = data.getExtras();
             String scanResult = bundle.getString("result");
-            if(scanResult.startsWith("SSID")){
+            if (scanResult.startsWith("SSID")) {
                 data.setClass(mContext, OpenWifiActivity.class);
                 startActivity(data);
-            }else{
-                ToastUtil.showToast(mContext,"请扫描正确的二维码");
+            } else {
+                ToastUtil.showToast(mContext, "请扫描正确的二维码");
             }
         }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        homeSlideImageMode.restarteRoll();
+    }
 
 }
