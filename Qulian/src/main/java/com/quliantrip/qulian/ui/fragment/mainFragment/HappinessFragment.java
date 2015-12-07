@@ -55,6 +55,13 @@ public class HappinessFragment extends BasePageCheckFragment {
 
     }
 
+
+
+
+
+
+
+
     @OnClick(R.id.iv_happiness_find)
     void findCondition() {
         showPopuWindow();
@@ -84,13 +91,6 @@ public class HappinessFragment extends BasePageCheckFragment {
         layout.addView(seekBar);
 
 //        LinearLayout ll_popsoft_uninstall = (LinearLayout) popView.findViewById(R.id.ll_popsoft_uninstall);
-//        LinearLayout ll_popsoft_start = (LinearLayout) popView.findViewById(R.id.ll_popsoft_start);
-//        LinearLayout ll_popsoft_share = (LinearLayout) popView.findViewById(R.id.ll_popsoft_share);
-//        LinearLayout ll_popsoft_content = (LinearLayout) popView.findViewById(R.id.ll_popsoft_content);
-//        ll_popsoft_uninstall.setOnClickListener(SoftManageActivity.this);
-//        ll_popsoft_start.setOnClickListener(SoftManageActivity.this);
-//        ll_popsoft_share.setOnClickListener(SoftManageActivity.this);
-//        ll_popsoft_content.setOnClickListener(SoftManageActivity.this);
 
         popupWindow = new PopupWindow(popView, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//设置可以使用动画
