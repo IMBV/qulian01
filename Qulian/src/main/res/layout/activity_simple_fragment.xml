@@ -7,8 +7,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:id="@+id/iv_simple_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_shouye_press"/>
 
         <TextView
             android:id="@+id/tv_Title_name"

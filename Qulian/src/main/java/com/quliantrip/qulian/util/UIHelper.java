@@ -242,19 +242,15 @@ public class UIHelper {
 //        context.sendBroadcast(intent);
 //    }
 
-    /**
-     * 显示我的所有动态
-     * 
-     * @param context
-     */
+
     public static void showMyActive(Context context) {
         showSimpleBack(context, SimpleBackPage.MY_ACTIVE);
     }
-    public static void showSeak(Context context) {
-        Intent intent = new Intent(context, SimpleBackActivity.class);
-        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, SimpleBackPage.SEEK_ACTIVE.getValue());
-        context.startActivity(intent);
-    }
+//    public static void showSeak(Context context) {
+//        Intent intent = new Intent(context, SimpleBackActivity.class);
+//        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, SimpleBackPage.SEEK_ACTIVE.getValue());
+//        context.startActivity(intent);
+//    }
 //    /**
 //     * 清除app缓存
 //     * 

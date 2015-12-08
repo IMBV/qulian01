@@ -37,12 +37,13 @@
             </intent-filter>
         </activity>
 
-        <activity
+        <!--<activity
             android:name=".ui.activity.mainAcivity.GuideActivity"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".ui.activity.mainAcivity.SplashActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"></activity>-->
+
         <!--扫码和实现网络连接-->
         <activity
             android:name="com.quliantrip.qulian.scanner.activity.CaptureActivity"
@@ -58,10 +59,8 @@
         <activity
             android:name=".ui.activity.SimpleBackActivity"
             android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"
             android:theme="@style/SwipeBackActivity" />
-
-
-
 
 
     </application>

@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseSwipeBackActivity;
 import com.quliantrip.qulian.global.SimpleBackPage;
@@ -19,6 +22,11 @@ public class SimpleBackActivity extends BaseSwipeBackActivity {
     private static final String TAG = "FLAG_TAG";
     protected WeakReference<Fragment> mFragment;
     protected int mPageValue = -1;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @Override
     protected void onActivityResult(int arg0, int arg1, Intent arg2) {
@@ -32,9 +40,16 @@ public class SimpleBackActivity extends BaseSwipeBackActivity {
 
     @Override
     public void initFindView() {
+        ((ImageView)findViewById(R.id.iv_simple_back)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         if (mPageValue == -1) {
             mPageValue = getIntent().getIntExtra(BUNDLE_KEY_PAGE, 0);
         }
+
         initFromIntent(mPageValue, getIntent());
     }
 
@@ -82,34 +97,6 @@ public class SimpleBackActivity extends BaseSwipeBackActivity {
     }
 
     public void setActionTitle(int actionTitle) {
-        ((TextView)findViewById(R.id.tv_Title_name)).setText(getString(actionTitle));
+        ((TextView) findViewById(R.id.tv_Title_name)).setText(getString(actionTitle));
     }
-
-    //    @Override
-//    protected boolean hasBackButton() {
-//        return true;
-//    }
-
-//    @Override
-//    public void onBackPressed() {
-//        if (mFragment != null && mFragment.get() != null
-//                && mFragment.get() instanceof BaseFragment) {
-//            BaseFragment bf = (BaseFragment) mFragment.get();
-//            if (!bf.onBackPressed()) {
-//                super.onBackPressed();
-//            }
-//        } else {
-//            super.onBackPressed();
-//        }
-//    }
-//
-//    @Override
-//    public boolean onKeyDown(int keyCode, KeyEvent event) {
-//        if (keyCode == KeyEvent.ACTION_DOWN
-//                && mFragment.get() instanceof BaseFragment) {
-//            ((BaseFragment) mFragment.get()).onBackPressed();
-//        }
-//        return super.onKeyDown(keyCode, event);
-//    }
-
 }

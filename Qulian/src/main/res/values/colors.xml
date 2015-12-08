@@ -18,5 +18,6 @@
     <color name="home_ll_backcolor">#ff0000</color>
     <!--状态栏的背景颜色-->
     <color name="systembar_zhuangtai">#000000</color>
+    <color name="common_signin_btn_dark_text_default">#FAFAFA</color>
 
 </resources>

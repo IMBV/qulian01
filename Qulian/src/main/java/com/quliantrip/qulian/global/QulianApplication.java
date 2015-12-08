@@ -2,7 +2,6 @@ package com.quliantrip.qulian.global;
 
 import android.app.Application;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Handler;
 
 import com.android.volley.RequestQueue;
@@ -11,27 +10,62 @@ import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+import com.quliantrip.qulian.util.CommonHelp;
 
 public class QulianApplication extends Application {
 
     private static Handler mainHandler;
-//    private String phone;
-//	private String password;
     private static RequestQueue queue;
-//    private int tag = 0;
-    private SharedPreferences sp;
-    private static Context context;
+    private static Context mContext;
+
+    private boolean isLogin;
 
     @Override
     public void onCreate() {
         super.onCreate();
         queue = Volley.newRequestQueue(getApplicationContext());
-        context = this;
+        mContext = this;
         mainHandler = new Handler();
         initImageLoader(getContext());
-//		sp = getSharedPreferences("login_register", MODE_PRIVATE);
-//        tag = sp.getInt("isdenglu", 0);
 
+        initLogin();
+    }
+
+
+    private void initLogin() {
+        //用户的唯一表示来进行判断
+//        if(null != getUniquenUserId()){
+//
+//        }
+
+
+    }
+
+//    private int getUniquenUserId(){
+//        return null;
+//    }
+
+
+    //从sp中获取获取登录状态，通过获取用户的唯一标示来进行显示的数据
+    private boolean getIsLogin() {
+        return CommonHelp.getsp(mContext, "loginCondition", false);
+    }
+    //保存
+
+
+    //这里是返回voley的消息的队列
+    public static RequestQueue getRequestQueue() {
+        return queue;
+    }
+
+    // 添加获取的方法进行调用
+    public static Context getContext() {
+        return mContext;
+    }
+
+    //获取应用的handle
+    public static Handler getMainHandler() {
+        return mainHandler;
     }
 
     //初始化imageLoader
@@ -51,54 +85,4 @@ public class QulianApplication extends Application {
         // ImageLoader.getInstance().init(
         // ImageLoaderConfiguration.createDefault(this));
     }
-
-//    public int getTag() {
-//        return tag;
-//    }
-//
-//    public void setTag(int tag) {
-//        this.tag = tag;
-//    }
-
-//	private boolean getPassword = false;// 是否记住密码
-//
-//	public String getPhone() {
-//		return phone;
-//	}
-//
-//	public void setPhone(String phone) {
-//		this.phone = phone;
-//	}
-//
-//	public String getPassword() {
-//		return password;
-//	}
-//
-//	public void setPassword(String password) {
-//		this.password = password;
-//	}
-//
-//	public boolean isGetPassword() {
-//		return getPassword;
-//	}
-//
-//	public void setGetPassword(boolean getPassword) {
-//		this.getPassword = getPassword;
-//	}
-
-
-    //这里是返回voley的消息的队列
-    public static RequestQueue getRequestQueue() {
-        return queue;
-    }
-
-    // 添加获取的方法进行调用
-    public static Context getContext() {
-        return context;
-    }
-    //获取应用的handle
-    public static Handler getMainHandler() {
-        return mainHandler;
-    }
-
 }
