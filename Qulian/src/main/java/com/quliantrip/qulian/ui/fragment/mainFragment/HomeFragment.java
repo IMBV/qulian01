@@ -66,7 +66,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
 
     @Override
     protected QuestBean requestData() {
-        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.191:8080/01.jsp");
+        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.193:8080/01.jsp");
     }
 
     @Override

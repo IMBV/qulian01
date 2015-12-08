@@ -11,7 +11,12 @@
     <string name="actionbar_title_active">测试</string>
     <string name="actionbar_title_active_2">测试-2</string>
     <string name="load_error">加载失败,点击重试</string>
-    
-    <string name="me_setting">设置</string>
 
+    <string name="me_setting">设置</string>
+    <!--发现的viewpage的显示头的信息-->
+
+    <string-array name="find_tab_names">
+        <item>语音导航</item>
+        <item>晒图</item>
+    </string-array>
 </resources>

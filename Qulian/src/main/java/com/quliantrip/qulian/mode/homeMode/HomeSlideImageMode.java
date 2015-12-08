@@ -100,6 +100,8 @@ public class HomeSlideImageMode extends BaseMode<HomePageBean> {
     }
 
     public void restarteRoll(){
-        rollViewPage.roll();
+        if(rollViewPage != null){
+            rollViewPage.roll();
+        }
     }
 }

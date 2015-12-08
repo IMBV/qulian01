@@ -2,6 +2,10 @@ package com.quliantrip.qulian.ui.fragment.mainFragment;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +23,8 @@ import com.quliantrip.qulian.base.BasePageCheckFragment;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
+import com.quliantrip.qulian.ui.fragment.happinessFragment.HotGoodsFragment;
+import com.quliantrip.qulian.ui.fragment.happinessFragment.RecommendRouteFragment;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.view.RangeSeekBar;
@@ -33,21 +39,34 @@ import butterknife.OnClick;
 
 
 public class HappinessFragment extends BasePageCheckFragment {
+    private Fragment currentFragment = new RecommendRouteFragment();
+    private FragmentManager mFragmentManager;
+
     private PopupWindow popupWindow;
     private View view;
     @Bind(R.id.rl_find_condition)
     RelativeLayout condition;
+    @Bind(R.id.bt_recommend_route)Button bt_left;
+    @Bind(R.id.bt_hot_goods) Button bt_right;
+
+    private RecommendRouteFragment recommendRouteFragment;
+    private HotGoodsFragment hotGoodsFragment;
 
     @Override
     protected View getSuccessView() {
         view = View.inflate(mContext, R.layout.fragment_main_happiness, null);
         ButterKnife.bind(this, view);
+        mFragmentManager = ((FragmentActivity)mContext).getSupportFragmentManager();
+        recommendRouteFragment = new RecommendRouteFragment();
+        hotGoodsFragment = new HotGoodsFragment();
+        mFragmentManager.beginTransaction().add(R.id.fl_happiness_container,recommendRouteFragment).commit();
+        setButtonColor(true);
         return view;
     }
 
     @Override
     protected QuestBean requestData() {
-        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.191:8080/01.jsp");
+        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.193:8080/01.jsp");
     }
 
     @Override
@@ -55,11 +74,39 @@ public class HappinessFragment extends BasePageCheckFragment {
 
     }
 
+    @OnClick(R.id.bt_recommend_route) void showRecommendRoute(){
+        gotoSubFragmennt(recommendRouteFragment);
+        setButtonColor(true);
 
+    }
+    @OnClick(R.id.bt_hot_goods) void showHotGoods(){
+        gotoSubFragmennt(hotGoodsFragment);
+        setButtonColor(false);
 
+    }
 
-
-
+    private void setButtonColor(Boolean starte){
+        if(starte){
+            bt_left.setTextColor(0x7f040001);
+            bt_right.setTextColor(Color.rgb(127, 216, 249));
+        }else{
+            bt_right.setTextColor(0x7f040001);
+            bt_left.setTextColor(Color.rgb(127, 216, 249));
+        }
+    }
+    private void gotoSubFragmennt(Fragment fragment) {
+        if(currentFragment != fragment){
+            FragmentTransaction transaction = mFragmentManager.beginTransaction();
+            if(fragment.isAdded()){
+                transaction.show(fragment);
+            }else{
+                transaction.add(R.id.fl_happiness_container,fragment);
+            }
+            transaction.hide(currentFragment);
+            transaction.commit();
+            currentFragment = fragment;
+        }
+    }
 
 
     @OnClick(R.id.iv_happiness_find)
@@ -71,9 +118,6 @@ public class HappinessFragment extends BasePageCheckFragment {
     public void showPopuWindow() {
         //记载布局并为其设置点击事件
         final View popView = View.inflate(mContext, R.layout.popupwindow_sift_condition, null);
-//        加载布局进行显示
-//        Integer mintxt = new Integer(0);
-//        Integer maxint = new Integer(100);
 
         RangeSeekBar<Integer> seekBar = new RangeSeekBar<Integer>(0, 100, mContext);
         seekBar.setOnRangeSeekBarChangeListener(new RangeSeekBar.OnRangeSeekBarChangeListener<Integer>() {
@@ -104,11 +148,11 @@ public class HappinessFragment extends BasePageCheckFragment {
         });
         //获取条目的坐标
         int[] location = new int[2];//空的xy的坐标
-        view.getLocationInWindow(location);
+        condition.getLocationInWindow(location);
         int x = location[0];
         int y = location[1];
         //popupwindow定义显示的位置
-        popupWindow.showAtLocation(condition, Gravity.LEFT | Gravity.TOP, x, y + CommonHelp.dip2px(mContext, 105));
+        popupWindow.showAtLocation(condition, Gravity.LEFT | Gravity.TOP, x, y);
 
         //前四个参数表示，xy方向的缩放的比例，后四个表示从哪里开始缩放和缩放的样式从自身左边的中间开始
         ScaleAnimation scaleAnimation = new ScaleAnimation(0, 1f, 0, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0);

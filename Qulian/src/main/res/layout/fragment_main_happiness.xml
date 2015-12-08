@@ -18,6 +18,40 @@
             android:text="北京"
             android:textSize="20sp" />
 
+        <RelativeLayout
+            android:id="@+id/myTab"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/bt_recommend_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:textSize="13sp"
+                android:text="推荐线路"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_hot_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bt_recommend_route"
+                android:paddingLeft="5dp"
+                android:text="热门商品"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_sousuo_nor" />
 
     </RelativeLayout>
 
@@ -34,13 +68,12 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
-            android:src="@mipmap/ic_sousuo_nor"/>
+            android:src="@mipmap/ic_sousuo_nor" />
     </RelativeLayout>
 
     <FrameLayout
-
+        android:id="@+id/fl_happiness_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </FrameLayout>
 </LinearLayout>

@@ -9,21 +9,15 @@ import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 
 /**
- * Created by Yuly on 2015/12/7.
+ * Created by Yuly on 2015/12/8.
  * www.quliantrip.com
  */
-public class RecommendRouteFragment extends BasePageCheckFragment {
-    private static RecommendRouteFragment recommendRouteFragment = new RecommendRouteFragment();
-    private QuestBean questBean;
-
-    public static RecommendRouteFragment getRecommendRouteFragment(QuestBean questBean) {
-        return recommendRouteFragment;
-    }
+public class HotGoodsFragment extends BasePageCheckFragment {
 
     @Override
     protected View getSuccessView() {
         TextView textView = new TextView(mContext);
-        textView.setText("推荐路线");
+        textView.setText("热门商品");
         return textView;
     }
 
