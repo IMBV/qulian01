@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.quliantrip.qulian.domain.BaseJson;
-
 import de.greenrobot.event.EventBus;
 
 /**

@@ -7,7 +7,7 @@ package com.quliantrip.qulian.net.constant;
 public class HttpConstants {
 
     /** 测试地址 基础*/
-    public static final String HOST_ADDR_ROOT = "";
+    public static final String HOST_ADDR_ROOT = "1";
     /**后面的一进行字符串的拼接*/
 
 }

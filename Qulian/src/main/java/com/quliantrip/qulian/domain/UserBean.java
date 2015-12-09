@@ -7,6 +7,14 @@ import java.io.Serializable;
  * www.quliantrip.com
  */
 public class UserBean extends BaseJson implements Serializable {
+    public UserBean() {
+    }
+
+    public UserBean(int uId, String name) {
+        this.uId = uId;
+        this.name = name;
+    }
+
     private int uId;
     private String name;
     private String passWord;
