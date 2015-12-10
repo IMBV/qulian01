@@ -7,7 +7,7 @@ package com.quliantrip.qulian.net.constant;
 public class HttpConstants {
 
     /** 测试地址 基础*/
-    public static final String HOST_ADDR_ROOT = "1";
+    public static final String HOST_ADDR_ROOT = "http://192.168.0.193:8080/";
     /**后面的一进行字符串的拼接*/
-
+    public static final String TEST_URL = HOST_ADDR_ROOT +"01.jsp";
 }

@@ -22,6 +22,7 @@ import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BasePageCheckFragment;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.HomePageBean;
+import com.quliantrip.qulian.net.constant.HttpConstants;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.ui.fragment.happinessFragment.HotGoodsFragment;
 import com.quliantrip.qulian.ui.fragment.happinessFragment.RecommendRouteFragment;
@@ -39,7 +40,7 @@ import butterknife.OnClick;
 
 
 public class HappinessFragment extends BasePageCheckFragment {
-    private Fragment currentFragment = new RecommendRouteFragment();
+    private Fragment currentFragment;
     private FragmentManager mFragmentManager;
 
     private PopupWindow popupWindow;
@@ -60,13 +61,14 @@ public class HappinessFragment extends BasePageCheckFragment {
         recommendRouteFragment = new RecommendRouteFragment();
         hotGoodsFragment = new HotGoodsFragment();
         mFragmentManager.beginTransaction().add(R.id.fl_happiness_container,recommendRouteFragment).commit();
-        setButtonColor(true);
+        setButtonColor(false);
+        gotoSubFragmennt(recommendRouteFragment);
         return view;
     }
 
     @Override
     protected QuestBean requestData() {
-        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.193:8080/01.jsp");
+        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), HttpConstants.TEST_URL);
     }
 
     @Override
@@ -76,12 +78,12 @@ public class HappinessFragment extends BasePageCheckFragment {
 
     @OnClick(R.id.bt_recommend_route) void showRecommendRoute(){
         gotoSubFragmennt(recommendRouteFragment);
-        setButtonColor(true);
+        setButtonColor(false);
 
     }
     @OnClick(R.id.bt_hot_goods) void showHotGoods(){
         gotoSubFragmennt(hotGoodsFragment);
-        setButtonColor(false);
+        setButtonColor(true);
 
     }
 
@@ -102,8 +104,10 @@ public class HappinessFragment extends BasePageCheckFragment {
             }else{
                 transaction.add(R.id.fl_happiness_container,fragment);
             }
-            transaction.hide(currentFragment);
-            transaction.commit();
+            if(currentFragment != null){
+                transaction.hide(currentFragment);
+                transaction.commit();
+            }
             currentFragment = fragment;
         }
     }

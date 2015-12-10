@@ -322,5 +322,20 @@ public final class CameraManager {
 	public Context getContext() {
 		return context;
 	}
+  private Camera.Parameters parameter;
+  public void openLight() {
+    if (camera != null) {
+      parameter = camera.getParameters();
+      parameter.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
+      camera.setParameters(parameter);
+    }
+  }
 
+  public void offLight() {
+    if (camera != null) {
+      parameter = camera.getParameters();
+      parameter.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
+      camera.setParameters(parameter);
+    }
+  }
 }

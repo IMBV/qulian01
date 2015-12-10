@@ -14,6 +14,7 @@ import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.mode.homeMode.HomeFunctionMode;
 import com.quliantrip.qulian.mode.homeMode.HomeSlideImageMode;
+import com.quliantrip.qulian.net.constant.HttpConstants;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.scanner.activity.CaptureActivity;
 import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
@@ -66,7 +67,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
 
     @Override
     protected QuestBean requestData() {
-        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.193:8080/01.jsp");
+        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), HttpConstants.TEST_URL);
     }
 
     @Override

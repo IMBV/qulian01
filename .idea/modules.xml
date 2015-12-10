@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Qulian/Qulian.iml" filepath="$PROJECT_DIR$/Qulian/Qulian.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/qulianAndroid0.1.iml" filepath="$PROJECT_DIR$/qulianAndroid0.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shareSDK/shareSDK.iml" filepath="$PROJECT_DIR$/shareSDK/shareSDK.iml" />
     </modules>
   </component>
 </project>

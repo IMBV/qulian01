@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <include layout="@layout/view_systembar"/>
+
+    <include layout="@layout/view_systembar" />
 
     <com.quliantrip.qulian.view.CustomerScrollView
         android:layout_width="match_parent"
@@ -51,16 +52,22 @@
                     app:border_width="2dp">
 
                 </com.quliantrip.qulian.view.CircleImageView>
+
                 <TextView
                     android:id="@+id/tv_me_username"
-                    android:layout_toRightOf="@id/tv_me_userImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:textSize="22sp"
-                    android:text="用户名"/>
+                    android:layout_toRightOf="@id/tv_me_userImage"
+                    android:text="用户名"
+                    android:textSize="22sp" />
             </RelativeLayout>
 
+           <Button
+               android:id="@+id/bt_map"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="地图"/>
 
 
 

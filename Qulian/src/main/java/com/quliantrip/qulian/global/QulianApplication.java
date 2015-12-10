@@ -29,8 +29,8 @@ public class QulianApplication extends Application {
     private UserBean user;
 
 
-
     private static QulianApplication instance;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -40,12 +40,13 @@ public class QulianApplication extends Application {
         mainHandler = new Handler();
         initImageLoader(getContext());
         initLogin();
-        saveUserInfo(new UserBean(10,"于良阳"));
+        saveUserInfo(new UserBean(10, "于良阳"));
     }
 
     public static QulianApplication getInstance() {
         return instance;
     }
+
     public boolean containsProperty(String key) {
         Properties props = getProperties();
         return props.containsKey(key);
@@ -219,7 +220,6 @@ public class QulianApplication extends Application {
         this.isLogin = false;
         this.userId = 0;
     }
-//
 
     /**
      * 清除保存的缓存
@@ -227,6 +227,14 @@ public class QulianApplication extends Application {
     public void cleanCookie() {
         removeProperty(AppConfig.CONF_COOKIE);
     }
+
+    public UserBean getUser() {
+        return user;
+    }
+//    public void setUserBean(UserBean userBean) {
+//        this.userBean = userBean;
+
+//    }
 
 
     //这里是返回voley的消息的队列
@@ -243,14 +251,6 @@ public class QulianApplication extends Application {
     public static Handler getMainHandler() {
         return mainHandler;
     }
-
-    public UserBean getUser() {
-        return user;
-    }
-
-//    public void setUserBean(UserBean userBean) {
-//        this.userBean = userBean;
-//    }
 
     //初始化imageLoader
     public static void initImageLoader(Context context) {

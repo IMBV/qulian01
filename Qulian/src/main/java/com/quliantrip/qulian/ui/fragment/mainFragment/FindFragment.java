@@ -11,6 +11,7 @@ import com.quliantrip.qulian.base.BasePageCheckFragment;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.lib.PagerSlidingTab;
+import com.quliantrip.qulian.net.constant.HttpConstants;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 
 import butterknife.Bind;
@@ -41,7 +42,7 @@ public class FindFragment extends BasePageCheckFragment {
 
     @Override
     protected QuestBean requestData() {
-        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), "http://192.168.0.193:8080/01.jsp");
+        return new QuestBean(null, new HomePageBean().setTag(getClass().getName()), HttpConstants.TEST_URL);
     }
 
     @Override

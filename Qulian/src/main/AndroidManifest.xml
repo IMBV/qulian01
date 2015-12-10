@@ -8,6 +8,8 @@
     <!-- GPS的网络访问权限 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!--扫码连接wifi的权限-->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
@@ -15,11 +17,12 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     <!--定位要添加的权限-->
-    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
         tools:ignore="MockLocation" />
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name="com.quliantrip.qulian.global.QulianApplication"
@@ -49,8 +52,8 @@
             android:name="com.quliantrip.qulian.scanner.activity.CaptureActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/SwipeBackActivity"/>
         <activity
             android:name="com.quliantrip.qulian.scanner.activity.OpenWifiActivity"
             android:screenOrientation="portrait" />
@@ -58,15 +61,15 @@
         <!--这里只有简单返回activity-->
         <activity
             android:name=".ui.activity.SimpleBackActivity"
-            android:screenOrientation="portrait"
             android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
             android:theme="@style/SwipeBackActivity" />
 
-        <!--qq的等路界面-->
+        <!--qq的登录界面-->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -81,7 +84,11 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-
+        <activity
+            android:name="com.quliantrip.qulian.ui.activity.MapActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwipeBackActivity"  />
     </application>
 
 </manifest>
