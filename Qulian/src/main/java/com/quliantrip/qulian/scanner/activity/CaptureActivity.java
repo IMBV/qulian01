@@ -29,8 +29,6 @@ import com.quliantrip.qulian.scanner.zxing.decoding.CaptureActivityHandler;
 import com.quliantrip.qulian.scanner.zxing.decoding.InactivityTimer;
 import com.quliantrip.qulian.scanner.zxing.view.ViewfinderView;
 
-import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
-
 /**
  * 使用：Intent openCameraIntent = new Intent(BarCodeTestActivity.this,CaptureActivity.class);
  * startActivityForResult(openCameraIntent, 0);开启activity和获取返回的监听
@@ -44,7 +42,7 @@ import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
  * }
  * }
  */
-public class CaptureActivity extends SwipeBackActivity implements Callback {
+public class CaptureActivity extends Activity implements Callback {
 
     private CaptureActivityHandler handler;
     private ViewfinderView viewfinderView;
@@ -69,12 +67,6 @@ public class CaptureActivity extends SwipeBackActivity implements Callback {
         CameraManager.init(getApplication());
         viewfinderView = (ViewfinderView) findViewById(R.id.viewfinder_view);
         cancelScanButton = (Button) this.findViewById(R.id.btn_cancel_scan);
-        ((Button) this.findViewById(R.id.btn_cancel_light)).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CameraManager.get().openLight();
-            }
-        });
         hasSurface = false;
         inactivityTimer = new InactivityTimer(this);
     }

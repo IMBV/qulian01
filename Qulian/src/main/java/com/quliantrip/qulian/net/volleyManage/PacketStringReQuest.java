@@ -12,6 +12,7 @@ public class PacketStringReQuest extends StringRequest {
 
     public PacketStringReQuest(String url, BaseJson object, Map map, ResponseListenner.OnLoadFinishListener onLoadFinishListener) {
         super(Method.POST, url, new ResponseListenner(object, onLoadFinishListener), new ResponseErrorListener(onLoadFinishListener, object));
+        this.map = map;
         QulianApplication.getRequestQueue().add(this);
     }
 

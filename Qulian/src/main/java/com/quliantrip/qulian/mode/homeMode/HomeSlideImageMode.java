@@ -7,6 +7,7 @@ import android.widget.RelativeLayout;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.domain.BaseJson;
+import com.quliantrip.qulian.domain.HomeBean;
 import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.mode.BaseMode;
@@ -25,10 +26,9 @@ import butterknife.ButterKnife;
 
 
 /**
- * 使用 ：在oncreate中进行返回view,通过addView(mode.getModeView(），
- * 请求数据后进行加载mode.setData(),来加载数据
+ * 首页的图片的滑动模块
  */
-public class HomeSlideImageMode extends BaseMode<HomePageBean> {
+public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>> {
 
     private View view;
     private RollViewPage rollViewPage;
@@ -53,15 +53,17 @@ public class HomeSlideImageMode extends BaseMode<HomePageBean> {
 
     //在这里进行数据的添加,o表示传如的类，进行空间的加载布局
     @Override
-    public void setData(HomePageBean homePageBean) {
-        initRollView(homePageBean);
+    public void setData(List<HomeBean.AdvsEntity> advs) {
+        initRollView(advs);
     }
 
-    private void initRollView(HomePageBean homePageBean) {
+    private void initRollView(List<HomeBean.AdvsEntity> advs) {
 
         imageList.clear();
         dotList.clear();
-        imageList.addAll(homePageBean.getName());
+        for (HomeBean.AdvsEntity adv:advs) {
+            imageList.add(adv.getImg());
+        }
         if (imageList.size() > 0) {
             //初始化小点
             initDoc();

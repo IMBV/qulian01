@@ -40,7 +40,7 @@ import butterknife.OnClick;
 
 
 public class HappinessFragment extends BasePageCheckFragment {
-    private Fragment currentFragment;
+    private Fragment currentFragment = new RecommendRouteFragment();
     private FragmentManager mFragmentManager;
 
     private PopupWindow popupWindow;
@@ -61,8 +61,7 @@ public class HappinessFragment extends BasePageCheckFragment {
         recommendRouteFragment = new RecommendRouteFragment();
         hotGoodsFragment = new HotGoodsFragment();
         mFragmentManager.beginTransaction().add(R.id.fl_happiness_container,recommendRouteFragment).commit();
-        setButtonColor(false);
-        gotoSubFragmennt(recommendRouteFragment);
+        setButtonColor(true);
         return view;
     }
 
@@ -78,12 +77,12 @@ public class HappinessFragment extends BasePageCheckFragment {
 
     @OnClick(R.id.bt_recommend_route) void showRecommendRoute(){
         gotoSubFragmennt(recommendRouteFragment);
-        setButtonColor(false);
+        setButtonColor(true);
 
     }
     @OnClick(R.id.bt_hot_goods) void showHotGoods(){
         gotoSubFragmennt(hotGoodsFragment);
-        setButtonColor(true);
+        setButtonColor(false);
 
     }
 
@@ -104,10 +103,8 @@ public class HappinessFragment extends BasePageCheckFragment {
             }else{
                 transaction.add(R.id.fl_happiness_container,fragment);
             }
-            if(currentFragment != null){
-                transaction.hide(currentFragment);
-                transaction.commit();
-            }
+            transaction.hide(currentFragment);
+            transaction.commit();
             currentFragment = fragment;
         }
     }

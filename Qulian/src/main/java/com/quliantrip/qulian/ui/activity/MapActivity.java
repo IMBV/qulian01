@@ -1,8 +1,6 @@
 package com.quliantrip.qulian.ui.activity;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
-import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -53,15 +51,6 @@ public class MapActivity extends BaseSwipeBackActivity {
         WebSettings ws = map.getSettings();
         ws.setAllowFileAccess(true);
         ws.setJavaScriptEnabled(true);
-//        map.setWebViewClient(new WebViewClient() {
-//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//                //  重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边
-//
-//                return true;
-//            }
-//        });
-
-
 //        这里使用的是加载完成后的回调监听
         map.setWebViewClient(new WebViewClient() {
             //    ؽ     ɵ
@@ -79,7 +68,7 @@ public class MapActivity extends BaseSwipeBackActivity {
             }
         });
     }
-    @OnClick(R.id.iv_map_back) void mapBack(){
-        finish();
-    }
+//    @OnClick(R.id.iv_map_back) void mapBack(){
+//        finish();
+//    }
 }

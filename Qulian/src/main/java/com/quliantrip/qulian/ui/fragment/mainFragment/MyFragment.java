@@ -7,6 +7,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -36,13 +37,15 @@ public class MyFragment extends BaseFragment {
     Button setting;
     @Bind(R.id.tv_me_username)
     TextView userName;
+    @Bind(R.id.wv_map)
+    WebView map;
 
     @Override
     public View initView() {
         View view = View.inflate(mContext, R.layout.fragment_main_me, null);
         ButterKnife.bind(this, view);
         userName.setText(QulianApplication.getInstance().getUser().getName());
-
+        initMap();
         return view;
     }
 
@@ -66,5 +69,41 @@ public class MyFragment extends BaseFragment {
         Intent intent = new Intent(mContext,MapActivity.class);
         startActivity(intent);
 
+    }
+
+    private void initMap() {
+
+//        WebSettings settings = map.getSettings();
+//        map.loadUrl("http://www.quliantrip.com/index.php?ctl=deal&act=188");
+//        settings.setJavaScriptEnabled(true);
+        map.loadUrl("http://www.quliantrip.com/wap/index.php?ctl=deal&act=map&id=192");
+        WebSettings ws = map.getSettings();
+        ws.setAllowFileAccess(true);
+        ws.setJavaScriptEnabled(true);
+//        map.setWebViewClient(new WebViewClient() {
+//            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+//                //  重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边
+//
+//                return true;
+//            }
+//        });
+
+
+//        这里使用的是加载完成后的回调监听
+//        map.setWebViewClient(new WebViewClient() {
+//            //    ؽ     ɵ
+//            @Override
+//            public void onPageFinished(WebView view, String url) {
+////                loading.setVisibility(View.GONE);
+//                map.setVisibility(View.VISIBLE);
+//                super.onPageFinished(view, url);
+//            }
+//
+//            @Override
+//            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+//
+//                super.onPageStarted(view, url, favicon);
+//            }
+//        });
     }
 }

@@ -24,19 +24,20 @@ public class ResponseListenner implements Response.Listener<String> {
         if (object != null) {
             tag = object.getTag();
         }
+        System.out.println(json);
         object = new Gson().fromJson(json, object.getClass());
         object.setTag(tag);
-        //这里使用||进行判断是否进行数据的缓存
-        if ("com.quliantrip.qulian.ui.fragment.mainFragment.HomeFragment".equals(tag)) {
-            CommonHelp.saveStringSp(QulianApplication.getContext(), tag, json);
-        }
+//        //这里使用||进行判断是否进行数据的缓存
+//        if ("com.quliantrip.qulian.ui.fragment.mainFragment.HomeFragment".equals(tag)) {
+//             CommonHelp.saveStringSp(QulianApplication.getContext(), tag, json);
+//        }
         if (onLoadFinishListener != null) {
             onLoadFinishListener.onLoadFinish(ContentPage.STATE_SUCCESS);
         }
         EventBus.getDefault().post(object);
     }
 
-    public interface OnLoadFinishListener {
+    public interface OnLoadFinishListener extends ResponseJsonListener.OnLoadFinishListener {
         void onLoadFinish(int object);
     }
 

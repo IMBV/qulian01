@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 首页的功能导航的模块
  * Created by Yuly on 2015/12/4.
  * www.quliantrip.com
  */

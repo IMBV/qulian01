@@ -19,5 +19,7 @@
     <!--状态栏的背景颜色-->
     <color name="systembar_zhuangtai">#000000</color>
     <color name="common_signin_btn_dark_text_default">#FAFAFA</color>
-
+    <!--标题的颜色-->
+    <color name="txt_title">#ff333333</color>
+    <color name="txt_small">#ff7a7a7a</color>
 </resources>

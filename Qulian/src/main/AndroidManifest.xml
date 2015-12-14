@@ -8,8 +8,8 @@
     <!-- GPS的网络访问权限 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!--扫码连接wifi的权限-->
-    <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
@@ -52,8 +52,8 @@
             android:name="com.quliantrip.qulian.scanner.activity.CaptureActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:theme="@style/SwipeBackActivity"/>
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
             android:name="com.quliantrip.qulian.scanner.activity.OpenWifiActivity"
             android:screenOrientation="portrait" />

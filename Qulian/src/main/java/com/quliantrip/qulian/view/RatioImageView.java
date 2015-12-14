@@ -1,16 +1,23 @@
 package com.quliantrip.qulian.view;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.widget.ImageView;
+
+import com.quliantrip.qulian.R;
 
 public class RatioImageView extends ImageView {
 	private float ratio = 2.0f;
 
 	public RatioImageView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
-		//第二种设置宽高比例的方法
-		ratio = attrs.getAttributeFloatValue("http://schemas.android.com/apk/res/com.quliantrip.qulian", "ratioscale", 0f);
+
+		TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RatioImageView);
+
+		ratio = a.getFloat(R.styleable.RatioImageView_ratioscale, 0f);
 	}
 
 	public RatioImageView(Context context, AttributeSet attrs) {
