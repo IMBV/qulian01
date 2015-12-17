@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECECEC"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/shape_oval_corner"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_city_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="当前城市：东京"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="热门城市"
+            android:textSize="18sp" />
+        <com.quliantrip.qulian.view.MyListView
+            android:id="@+id/mlv_city_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.quliantrip.qulian.view.MyListView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="全部景区"
+            android:textSize="18sp" />
+        <com.quliantrip.qulian.view.MyListView
+            android:id="@+id/mlv_city_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.quliantrip.qulian.view.MyListView>
+        <Button
+            android:id="@+id/bt_choose_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选着结束"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,41 +1,52 @@
 package com.quliantrip.qulian.mode.homeMode;
 
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.quliantrip.qulian.R;
+import com.quliantrip.qulian.domain.HomeBean;
 import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.mode.BaseMode;
 import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.view.HorizontalScroll.HorizontalScrollViewAdapter;
 import com.quliantrip.qulian.view.HorizontalScroll.MyHorizontalScrollView;
+import com.quliantrip.qulian.view.RollViewPage;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 /**
  * 首页的功能导航的模块
  * Created by Yuly on 2015/12/4.
  * www.quliantrip.com
  */
-public class HomeFunctionMode extends BaseMode<HomePageBean> {
+public class HomeFunctionMode extends BaseMode<List<HomeBean.IndexsEntity>> {
 
-    private MyHorizontalScrollView mHorizontalScrollView;
+    @Bind(R.id.id_horizontalScrollView) MyHorizontalScrollView mHorizontalScrollView;
     private HorizontalScrollViewAdapter mAdapter;
+    private View view;
 
-    private List<String> mDatas = new ArrayList<String>();
+     //添加图片和小点的集合
+    private List<String> imageList = new ArrayList<String>();
+    private List<View> dotList = new ArrayList<View>();
+
+    public HomeFunctionMode() {
+        view = View.inflate(QulianApplication.getContext(), R.layout.mode_home_function, null);
+    }
 
     @Override
     public View getModelView() {
-        View view = View.inflate(QulianApplication.getContext(), R.layout.mode_home_function, null);
-        mHorizontalScrollView = (MyHorizontalScrollView) view.findViewById(R.id.id_horizontalScrollView);
-        mDatas.clear();
-        mDatas.add("http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_01.png");
-        mDatas.add("http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_02.png");
-        mDatas.add("http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_03.png");
-        mDatas.add("http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_04.png");
-        mDatas.add("http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_05.png");
-        mAdapter = new HorizontalScrollViewAdapter(QulianApplication.getContext(), mDatas);
+        ButterKnife.bind(this, view);
+        return view;
+    }
+
+    @Override
+    public void setData(final List<HomeBean.IndexsEntity> list) {
+        mAdapter = new HorizontalScrollViewAdapter(QulianApplication.getContext(), list);
 //        //添加滚动回调
 //        mHorizontalScrollView
 //                .setCurrentImageChangeListener(new MyHorizontalScrollView.CurrentImageChangeListener()
@@ -54,16 +65,9 @@ public class HomeFunctionMode extends BaseMode<HomePageBean> {
             @Override
             public void onClick(View view, int position)
             {
-                ToastUtil.showToast(QulianApplication.getContext(),"我被点击了。。。");
+                ToastUtil.showToast(QulianApplication.getContext(),list.get(position).getName());
             }
         });
-        //设置适配器
         mHorizontalScrollView.initDatas(mAdapter);
-        return view;
-    }
-
-    @Override
-    public void setData(HomePageBean homePageBean) {
-
     }
 }

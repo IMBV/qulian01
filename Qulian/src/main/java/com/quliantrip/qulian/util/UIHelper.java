@@ -1,9 +1,11 @@
 package com.quliantrip.qulian.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableString;
@@ -15,6 +17,7 @@ import android.webkit.JavascriptInterface;
 
 import com.quliantrip.qulian.global.SimpleBackPage;
 import com.quliantrip.qulian.ui.activity.SimpleBackActivity;
+import com.quliantrip.qulian.ui.activity.mainAcivity.MainActivity;
 
 
 public class UIHelper {
@@ -49,37 +52,36 @@ public class UIHelper {
             String[] imageUrls) {
 //        ImagePreviewActivity.showImagePrivew(context, index, imageUrls);
     }
-//
-//    public static void showSimpleBackForResult(Fragment fragment,
-//            int requestCode, SimpleBackPage page, Bundle args) {
-//        Intent intent = new Intent(fragment.getActivity(),
-//                SimpleBackActivity.class);
-//        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, page.getValue());
-//        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_ARGS, args);
-//        fragment.startActivityForResult(intent, requestCode);
-//    }
-//
-//    public static void showSimpleBackForResult(Activity context,
-//            int requestCode, SimpleBackPage page, Bundle args) {
-//        Intent intent = new Intent(context, SimpleBackActivity.class);
-//        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, page.getValue());
-//        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_ARGS, args);
-//        context.startActivityForResult(intent, requestCode);
-//    }
-//
-//    public static void showSimpleBackForResult(Activity context,
-//            int requestCode, SimpleBackPage page) {
-//        Intent intent = new Intent(context, SimpleBackActivity.class);
-//        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, page.getValue());
-//        context.startActivityForResult(intent, requestCode);
-//    }
-//
+
+    public static void showSimpleBackForResult(Fragment fragment,
+            int requestCode, SimpleBackPage page) {
+        Intent intent = new Intent(fragment.getActivity(),
+                SimpleBackActivity.class);
+        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, page.getValue());
+        fragment.startActivityForResult(intent, requestCode);
+    }
+
+    public static void showSimpleBackForResult(Activity context,
+            int requestCode, SimpleBackPage page, Bundle args) {
+        Intent intent = new Intent(context, SimpleBackActivity.class);
+        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, page.getValue());
+        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_ARGS, args);
+        context.startActivityForResult(intent, requestCode);
+    }
+
+    public static void showSimpleBackForResult(Activity context,
+            int requestCode, SimpleBackPage page) {
+        Intent intent = new Intent(context, SimpleBackActivity.class);
+        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, page.getValue());
+        context.startActivityForResult(intent, requestCode);
+    }
+
     public static void showSimpleBack(Context context, SimpleBackPage page) {
         Intent intent = new Intent(context, SimpleBackActivity.class);
         intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, page.getValue());
         context.startActivity(intent);
     }
-//
+
     public static void showSimpleBack(Context context, SimpleBackPage page,
             Bundle args) {
         Intent intent = new Intent(context, SimpleBackActivity.class);
@@ -88,61 +90,61 @@ public class UIHelper {
         context.startActivity(intent);
     }
 
-    public static SpannableString parseActiveAction(int objecttype,
-            int objectcatalog, String objecttitle) {
-        String title = "";
-        int start = 0;
-        int end = 0;
-        if (objecttype == 32 && objectcatalog == 0) {
-            title = "加入了开源中国";
-        } else if (objecttype == 1 && objectcatalog == 0) {
-            title = "添加了开源项目 " + objecttitle;
-        } else if (objecttype == 2 && objectcatalog == 1) {
-            title = "在讨论区提问：" + objecttitle;
-        } else if (objecttype == 2 && objectcatalog == 2) {
-            title = "发表了新话题：" + objecttitle;
-        } else if (objecttype == 3 && objectcatalog == 0) {
-            title = "发表了博客 " + objecttitle;
-        } else if (objecttype == 4 && objectcatalog == 0) {
-            title = "发表一篇新闻 " + objecttitle;
-        } else if (objecttype == 5 && objectcatalog == 0) {
-            title = "分享了一段代码 " + objecttitle;
-        } else if (objecttype == 6 && objectcatalog == 0) {
-            title = "发布了一个职位：" + objecttitle;
-        } else if (objecttype == 16 && objectcatalog == 0) {
-            title = "在新闻 " + objecttitle + " 发表评论";
-        } else if (objecttype == 17 && objectcatalog == 1) {
-            title = "回答了问题：" + objecttitle;
-        } else if (objecttype == 17 && objectcatalog == 2) {
-            title = "回复了话题：" + objecttitle;
-        } else if (objecttype == 17 && objectcatalog == 3) {
-            title = "在 " + objecttitle + " 对回帖发表评论";
-        } else if (objecttype == 18 && objectcatalog == 0) {
-            title = "在博客 " + objecttitle + " 发表评论";
-        } else if (objecttype == 19 && objectcatalog == 0) {
-            title = "在代码 " + objecttitle + " 发表评论";
-        } else if (objecttype == 20 && objectcatalog == 0) {
-            title = "在职位 " + objecttitle + " 发表评论";
-        } else if (objecttype == 101 && objectcatalog == 0) {
-            title = "回复了动态：" + objecttitle;
-        } else if (objecttype == 100) {
-            title = "更新了动态";
-        }
-        SpannableString sp = new SpannableString(title);
-        // 设置标题字体大小、高亮
-        if (!StringUtils.isEmpty(objecttitle)) {
-            start = title.indexOf(objecttitle);
-            if (objecttitle.length() > 0 && start > 0) {
-                end = start + objecttitle.length();
-                sp.setSpan(new AbsoluteSizeSpan(14, true), start, end,
-                        Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-                sp.setSpan(
-                        new ForegroundColorSpan(Color.parseColor("#0e5986")),
-                        start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-            }
-        }
-        return sp;
-    }
+//    public static SpannableString parseActiveAction(int objecttype,
+//            int objectcatalog, String objecttitle) {
+//        String title = "";
+//        int start = 0;
+//        int end = 0;
+//        if (objecttype == 32 && objectcatalog == 0) {
+//            title = "加入了开源中国";
+//        } else if (objecttype == 1 && objectcatalog == 0) {
+//            title = "添加了开源项目 " + objecttitle;
+//        } else if (objecttype == 2 && objectcatalog == 1) {
+//            title = "在讨论区提问：" + objecttitle;
+//        } else if (objecttype == 2 && objectcatalog == 2) {
+//            title = "发表了新话题：" + objecttitle;
+//        } else if (objecttype == 3 && objectcatalog == 0) {
+//            title = "发表了博客 " + objecttitle;
+//        } else if (objecttype == 4 && objectcatalog == 0) {
+//            title = "发表一篇新闻 " + objecttitle;
+//        } else if (objecttype == 5 && objectcatalog == 0) {
+//            title = "分享了一段代码 " + objecttitle;
+//        } else if (objecttype == 6 && objectcatalog == 0) {
+//            title = "发布了一个职位：" + objecttitle;
+//        } else if (objecttype == 16 && objectcatalog == 0) {
+//            title = "在新闻 " + objecttitle + " 发表评论";
+//        } else if (objecttype == 17 && objectcatalog == 1) {
+//            title = "回答了问题：" + objecttitle;
+//        } else if (objecttype == 17 && objectcatalog == 2) {
+//            title = "回复了话题：" + objecttitle;
+//        } else if (objecttype == 17 && objectcatalog == 3) {
+//            title = "在 " + objecttitle + " 对回帖发表评论";
+//        } else if (objecttype == 18 && objectcatalog == 0) {
+//            title = "在博客 " + objecttitle + " 发表评论";
+//        } else if (objecttype == 19 && objectcatalog == 0) {
+//            title = "在代码 " + objecttitle + " 发表评论";
+//        } else if (objecttype == 20 && objectcatalog == 0) {
+//            title = "在职位 " + objecttitle + " 发表评论";
+//        } else if (objecttype == 101 && objectcatalog == 0) {
+//            title = "回复了动态：" + objecttitle;
+//        } else if (objecttype == 100) {
+//            title = "更新了动态";
+//        }
+//        SpannableString sp = new SpannableString(title);
+//        // 设置标题字体大小、高亮
+//        if (!StringUtils.isEmpty(objecttitle)) {
+//            start = title.indexOf(objecttitle);
+//            if (objecttitle.length() > 0 && start > 0) {
+//                end = start + objecttitle.length();
+//                sp.setSpan(new AbsoluteSizeSpan(14, true), start, end,
+//                        Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//                sp.setSpan(
+//                        new ForegroundColorSpan(Color.parseColor("#0e5986")),
+//                        start, end, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+//            }
+//        }
+//        return sp;
+//    }
 
     /**
      * 组合动态的回复文本
@@ -246,6 +248,16 @@ public class UIHelper {
     public static void showMyActive(Context context) {
         showSimpleBack(context, SimpleBackPage.MY_ACTIVE);
     }
+    public static void showMeSetting(Context context){
+        showSimpleBack(context,SimpleBackPage.MY_SETTING);
+    }
+    public static void showCityChoose(Fragment fragment,int requestCode){
+        showSimpleBackForResult(fragment,requestCode,SimpleBackPage.CITY_CHOOSE);
+    }
+    public static void showOrderList(Context context,Bundle bundle){
+        showSimpleBack(context,SimpleBackPage.ORDER_LIST,bundle);
+    }
+
 //    public static void showSeak(Context context) {
 //        Intent intent = new Intent(context, SimpleBackActivity.class);
 //        intent.putExtra(SimpleBackActivity.BUNDLE_KEY_PAGE, SimpleBackPage.SEEK_ACTIVE.getValue());

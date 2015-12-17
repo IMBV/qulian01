@@ -10,7 +10,8 @@
         <com.quliantrip.qulian.view.ObservableScroll.ObservableScrollView
             android:id="@+id/sv_scroll"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -76,7 +77,7 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/shape_oval_corner"
             android:gravity="center">
 
@@ -94,22 +95,27 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/iv_home_title_location"
+        <RelativeLayout
+            android:id="@+id/rl_city_choose"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_toRightOf="@+id/iv_home_title_search"
-            android:gravity="center"
-            android:text="北京"
-            android:textColor="@color/home_searck_backcolor" />
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_home_title_search">
 
-        <ImageView
-            android:id="@+id/iv_home_title_arrow"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="10dp"
-            android:layout_toRightOf="@+id/iv_home_title_location"
-            android:src="@mipmap/ic_zhankaijiantou_nor" />
+            <TextView
+                android:id="@+id/iv_home_title_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:text="北京"
+                android:textColor="@color/home_searck_backcolor" />
+
+            <ImageView
+                android:id="@+id/iv_home_title_arrow"
+                android:layout_width="50dp"
+                android:layout_height="29dp"
+                android:layout_toRightOf="@+id/iv_home_title_location"
+                android:src="@mipmap/ic_zhankaijiantou_nor" />
+        </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>

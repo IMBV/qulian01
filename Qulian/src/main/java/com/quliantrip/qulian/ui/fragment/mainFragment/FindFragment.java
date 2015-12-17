@@ -33,9 +33,9 @@ public class FindFragment extends BasePageCheckFragment {
     protected View getSuccessView() {
         view = View.inflate(mContext, R.layout.fragment_main_find, null);
         ButterKnife.bind(this, view);
-        MainFindAdapter MainFindAdapter = new MainFindAdapter(((FragmentActivity)mContext).getSupportFragmentManager());
+        MainFindAdapter mainFindAdapter = new MainFindAdapter(((FragmentActivity)mContext).getSupportFragmentManager());
 
-        container.setAdapter(MainFindAdapter);
+        container.setAdapter(mainFindAdapter);
         pagerSlidingTab.setViewPager(container);
         return view;
     }
@@ -49,10 +49,6 @@ public class FindFragment extends BasePageCheckFragment {
     public void onEventMainThread(BaseJson bean) {
 
     }
-
-
-
-
 
 //    private PopupWindow popupWindow;
 //    private View view;

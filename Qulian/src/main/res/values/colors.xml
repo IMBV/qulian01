@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <!--扫码的颜色-->
@@ -22,4 +22,16 @@
     <!--标题的颜色-->
     <color name="txt_title">#ff333333</color>
     <color name="txt_small">#ff7a7a7a</color>
+    <!--设置popwin是否选的按钮-->
+    <color name="group_item_pressed_bg">#F2F2F2</color>
+    <color name="group_item_bg">#FFFFFF</color>
+    <!--选着标题的颜色-->
+    <color name="consume_list_tab_pressed">#FC8600</color>
+    <color name="consume_list_tab">#8A8A8A</color>
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
 </resources>

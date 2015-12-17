@@ -40,7 +40,7 @@ public class QulianApplication extends Application {
         mainHandler = new Handler();
         initImageLoader(getContext());
         initLogin();
-        saveUserInfo(new UserBean(10, "于良阳"));
+        cleanLoginInfo();
     }
 
     public static QulianApplication getInstance() {

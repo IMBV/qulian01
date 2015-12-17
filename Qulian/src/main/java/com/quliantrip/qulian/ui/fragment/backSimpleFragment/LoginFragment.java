@@ -45,7 +45,9 @@ public class LoginFragment extends BaseFragment {
     @OnClick(R.id.iv_third_qq) void qqLogin(){
         login();
     }
+    @OnClick(R.id.iv_third_weixi) void weixinLogin(){
 
+    }
 
     private void login() {
         //如果session无效，就开始登录

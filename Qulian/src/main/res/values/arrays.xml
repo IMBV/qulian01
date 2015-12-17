@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="order_viewpage_arrays">
+        <item>全部订单</item>
+        <item>待付款</item>
+        <item>未使用</item>
+        <item>待评价</item>
+    </string-array>
+
+</resources>

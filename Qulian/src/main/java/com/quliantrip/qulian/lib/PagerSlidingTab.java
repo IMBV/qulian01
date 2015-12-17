@@ -86,7 +86,7 @@ public class PagerSlidingTab extends HorizontalScrollView {
 	private int indicatorHeight = 4;//指示线的高度
 	private int underlineHeight = 2;//
 	private int dividerPadding = 12;
-	private int tabPadding = 24;
+	private int tabPadding = 23;
 	private int dividerWidth = 1;
 
 	private int tabTextSize = 16;//标题的字体大小

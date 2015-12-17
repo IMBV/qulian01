@@ -7,7 +7,7 @@
 
     <include layout="@layout/view_systembar" />
 
-    <com.quliantrip.qulian.view.CustomerScrollView
+    <com.quliantrip.qulian.view.ObservableScroll.ObservableScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -17,64 +17,109 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <!--这里添加要显示的布局-->
-            <RelativeLayout
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp">
+                android:layout_height="200dp">
 
-                <TextView
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="个人中心" />
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.quliantrip.qulian.view.CircleImageView
+                        android:id="@id/tv_me_userImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/ic_launcher"
+                        app:border_color="@color/colorPrimary"
+                        app:border_width="2dp">
+
+                    </com.quliantrip.qulian.view.CircleImageView>
+
+                    <TextView
+                        android:id="@+id/tv_me_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="用户名"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="完善信息"
+                        android:textSize="12sp" />
+                </LinearLayout>
 
                 <Button
                     android:id="@id/tv_me_setting"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="@string/me_setting" />
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:text="@string/me_setting"
+                    android:textColor="#FFFFFF" />
 
-            </RelativeLayout>
+            </FrameLayout>
+            <RadioGroup
+                android:id="@+id/rg_order_state"
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="2dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="90dp">
+                <RadioButton
+                    android:id="@+id/rb_order_all"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:text="全部订单" />
 
-                <com.quliantrip.qulian.view.CircleImageView
-                    android:id="@id/tv_me_userImage"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:src="@mipmap/ic_launcher"
-                    app:border_color="@color/colorPrimary"
-                    app:border_width="2dp">
+                <RadioButton
+                    android:id="@+id/rb_order_nor"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:text="待付款"  />
+                 <RadioButton
+                     android:id="@+id/rb_order_norUser"
+                     style="@style/main_tab_bottom"
+                     android:drawableTop="@mipmap/ic_launcher"
+                     android:text="未使用" />
 
-                </com.quliantrip.qulian.view.CircleImageView>
+                 <RadioButton
+                     android:id="@+id/rb_order_norAssess"
+                     style="@style/main_tab_bottom"
+                     android:drawableTop="@mipmap/ic_launcher"
+                     android:text="待评价"  />
 
-                <TextView
-                    android:id="@+id/tv_me_username"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/tv_me_userImage"
-                    android:text="用户名"
-                    android:textSize="22sp" />
-            </RelativeLayout>
+            </RadioGroup>
 
-           <Button
-               android:id="@+id/bt_map"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="地图"/>
+            <!--<Button
+                android:id="@+id/bt_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地图"/>
 
-            <WebView
-                android:id="@+id/wv_map"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"></WebView>
+             <WebView
+                 android:id="@+id/wv_map"
+                 android:layout_width="match_parent"
+                 android:layout_height="300dp"></WebView>-->
 
         </LinearLayout>
 
-    </com.quliantrip.qulian.view.CustomerScrollView>
+    </com.quliantrip.qulian.view.ObservableScroll.ObservableScrollView>
 </LinearLayout>

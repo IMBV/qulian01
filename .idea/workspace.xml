@@ -26,50 +26,99 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56c703f1-4c86-4370-bc5b-16d8ad960bc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/drawable/grid_item_bg_normal.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/HomeRecommendAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomeBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomeRecommendBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/MyJsonObjectRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/MyStringRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseJsonListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/Base64Encoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/MyListView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_home_recommend_play.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_choiceness.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/drawable/image_sliding_block.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/drawable/sliding_tab_strip_background.9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/ic_qq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/up.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/weixin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xhdpi/ic_play_press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xhdpi/ic_shouye_press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xhdpi/ic_wode_nor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xhdpi/ic_wode_press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_play_press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_wode_nor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_wode_press.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/MyOrderAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/ViewPageFragmentAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/ViewPageInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/ChildAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/GroupAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseListFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseViewPagerFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ListBaseAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/CityBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/ShowGoodBean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTabStrip.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/CityChooseFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/MySetting.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/OrderFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/ShowGoodsFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/orderFragment/FragmentOrderFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/orderFragment/ShowFram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/widget/EmptyLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/TDevice.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/color/viewpage_selector_slide_title.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/drawable/selector_me.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/drawable/selector_play.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/base_viewpage_fragment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/base_viewpage_fragment_tab_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_city_choose.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_choiceness.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_my_order.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_my_setting.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_pull_refresh_listview.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_show_goods.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/item_child_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/item_group_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/popupwindow_sift_consume_city.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/values/arrays.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/library_1_0_0.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/systembartint_1_0_3.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/zxing.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/CategoryAdapter.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_shouye_press.png" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_shouye_press.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/androidTest/java/com/quliantrip/qulian/ApplicationTest.java" afterPath="$PROJECT_DIR$/Qulian/src/androidTest/java/com/quliantrip/qulian/ApplicationTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/HomeRecommendAdapter.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/HomeRecommendAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/MainFindAdapter.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/MainFindAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/QulianApplication.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/QulianApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/SimpleBackPage.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/SimpleBackPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTab.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTab.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeFunctionMode.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeFunctionMode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeSlideImageMode.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeSlideImageMode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/PacketStringReQuest.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/PacketStringReQuest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/scanner/activity/CaptureActivity.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/scanner/activity/CaptureActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/scanner/zxing/camera/CameraManager.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/scanner/zxing/camera/CameraManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/MapActivity.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/MapActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HappinessFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HappinessFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/LoginFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/LoginFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/FindFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/FindFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RatioImageView.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RatioImageView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_map.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_map.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_splash.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_splash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/camera.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/camera.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/UIHelper.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/UIHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/HorizontalScroll/HorizontalScrollViewAdapter.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/HorizontalScroll/HorizontalScrollViewAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_simple_fragment.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_simple_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_home_recommend_play.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_home_recommend_play.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_choiceness.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_choiceness.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/view_horizontalscrollview_item.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/view_horizontalscrollview_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/values/attrs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qulianAndroid0.1.iml" afterPath="$PROJECT_DIR$/qulianAndroid0.1.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/findFragment/FragmentFactory.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/findFragment/FragmentFindFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_play_nor.png" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xhdpi/ic_play_nor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_shouye_nor.png" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xhdpi/ic_shouye_nor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_zhankaijiantou_nor.png" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/ic_zhankaijiantou_nor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxxhdpi/ic_play_nor.png" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_play_nor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxxhdpi/ic_shouye_nor.png" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_shouye_nor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxxhdpi/ic_shouye_press.png" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/ic_icon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxxhdpi/ic_zhankaijiantou_nor.png" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xhdpi/ic_zhankaijiantou_nor.png" />
     </list>
     <ignored path="qulianAndroid0.1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,11 +146,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java">
+      <file leaf-file-name="PagerSlidingTabStrip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTabStrip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.2278481">
-              <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,14 +158,241 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adapter_home_recommend_play.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_home_recommend_play.xml">
+      <file leaf-file-name="ShowFram.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/orderFragment/ShowFram.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="R.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Qulian/build/generated/source/r/debug/com/quliantrip/qulian/R.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.035714">
+              <caret line="1731" column="30" selection-start-line="1731" selection-start-column="30" selection-end-line="1731" selection-end-column="30" />
+              <folding>
+                <marker date="1450319991375" expanded="true" signature="6480:6707" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="6785:7175" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="11507:11734" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="11811:12180" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="12253:12622" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="12691:12918" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="12996:13365" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="13425:13794" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="13855:14224" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="14286:14513" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="14594:14931" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="15306:15533" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="15603:15940" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="16007:16344" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="16412:16931" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="17000:17519" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="17895:18122" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="18186:18576" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="18645:19035" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="19106:19528" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="19596:20113" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="20185:20704" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="20767:21189" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="21255:21774" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="24258:24485" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="24555:24977" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="25041:25558" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="25920:26147" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="26221:26558" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="26912:27139" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="27208:27577" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="27657:27884" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="27950:28372" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="28431:28853" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="28918:29340" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="29411:29833" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="29908:30330" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="30405:30827" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="30899:31321" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="31387:31809" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="31879:32301" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="32377:32604" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="32668:33187" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="33256:33775" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="33845:34364" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="34435:34954" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="35323:35550" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="35626:35995" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="36065:36584" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="36660:36887" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="36952:37289" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="37359:38038" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="38106:38333" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="38394:38816" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="38882:39109" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="39180:39699" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="39767:39994" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="40063:40582" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="40945:41172" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="41247:41766" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="41851:42297" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="42360:42879" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="42942:43169" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="43241:43631" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="43698:43925" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="43992:44511" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="44574:44801" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="44891:45410" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="45478:45705" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="45765:46284" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="46344:46681" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="47343:47570" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="47628:47965" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="48037:48357" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="48427:48833" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="49206:49433" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="49513:49935" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="50003:50522" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="50591:50960" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="51034:51371" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="51437:51956" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="53507:53734" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="53808:54327" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="54404:54923" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="55005:55524" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="55606:56125" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="56207:56726" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="56809:57036" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="57094:57463" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="57532:58051" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="58120:58457" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="58534:58761" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="58836:59205" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="59287:59514" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="59582:59980" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="60048:60385" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="60452:60971" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="61035:61554" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="61916:62143" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="62215:62734" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="63392:63619" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="63689:64026" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="64099:64618" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="64690:64917" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="64987:65506" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="65578:65915" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="65984:66374" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="66452:66819" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="68072:68299" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="68367:68757" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="68830:69220" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="69295:69522" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="69599:69989" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="70061:70366" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="70444:71143" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="71204:71509" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="71576:71966" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="72048:72353" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="72436:72741" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="72829:73134" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="73511:73738" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="73807:74176" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="74536:74763" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="74831:75151" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="75215:75734" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="78181:78408" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="78474:78811" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="78877:79426" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="79492:79969" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="80035:80372" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="80434:80661" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="80737:81127" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="81193:81530" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="81897:82124" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="82190:82527" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="82591:82928" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="83000:83227" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="83297:83666" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="83728:83955" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="84031:84453" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="84822:85049" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="85122:85641" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="85709:86228" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="86888:87115" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="87182:87701" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="87774:88079" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="89691:89918" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="90000:90390" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="90472:90862" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="90934:91161" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="91220:91739" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="91802:92321" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="92391:92760" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="92819:93338" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="93409:93928" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="93996:94515" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="94585:95104" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="95172:95691" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="95757:95984" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="96057:96479" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="97444:97671" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="97730:98152" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="98220:98739" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="98808:99035" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="99098:99435" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="99504:99841" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="99917:100254" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="100331:101103" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="101179:101951" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="102027:102799" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="102874:103646" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="103721:104493" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="104566:105338" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="105411:105748" placeholder="/**...*/" />
+                <marker date="1450319991375" expanded="true" signature="105848:106505" placeholder="{...}" />
+                <marker date="1450319991375" expanded="true" signature="106542:113378" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/colors.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.333334">
+              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_pull_refresh_listview.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_pull_refresh_listview.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4027777">
-              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            <state vertical-scroll-proportion="-5.5694447">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListBaseAdapter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ListBaseAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49367088">
+              <caret line="170" column="38" selection-start-line="169" selection-start-column="2" selection-end-line="170" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseListFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseListFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.4">
+              <caret line="560" column="29" selection-start-line="560" selection-start-column="18" selection-end-line="560" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -2349,59 +2625,69 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/CommonHelp.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseFragment.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/SimpleBackActivity.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/ImageUpLoadUtil.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/UpLoadUtil.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/AppConfig.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/UserBean.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/ShowGoodBean.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HappinessFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/GroupAdapter.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/item_child_layout.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/ChildAdapter.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/CityBean.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/item_group_layout.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_choiceness.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/drawable/selector_me.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/popupwindow_sift_consume.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeSlideImageMode.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/drawable/selector_play.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/QulianApplication.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_login.xml" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/LoginFragment.java" />
-        <option value="$PROJECT_DIR$/Qulian/build.gradle" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/QulianApplication.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HappinessFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/MyOrderAdapter.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/FindFragment.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/view_page_loading.xml" />
-        <option value="$PROJECT_DIR$/Qulian/Qulian.iml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_splash.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/HomeRecommendAdapter.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomeRecommendBean.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RatioImageView.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/SimpleBackPage.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/UIHelper.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/orderFragment/FragmentOrderFactory.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/MapActivity.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_map.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/UploadUtil.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_guide.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/MyListView.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeFunctionMode.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeStopInfoMode.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/Base64Encoder.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseErrorListener.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/MyStringRequest.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/androidTest/java/com/quliantrip/qulian/ApplicationTest.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/MyJsonObjectRequest.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseJsonListener.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ContentPage.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_my_order.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/BaseJson.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomeBean.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RollViewPage.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeSlideImageMode.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/PacketStringReQuest.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTab.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/mainAcivity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_simple_fragment.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/values/attrs.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/ViewPageInfo.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/ViewPageFragmentAdapter.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTabStrip.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseViewPagerFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/base_viewpage_fragment.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/widget/EmptyLayout.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/MyOrderAdapter.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/OrderFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_pull_refresh_listview.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/TDevice.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_home_recommend_play.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_choiceness.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseListFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/orderFragment/ShowFram.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ListBaseAdapter.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -2454,6 +2740,27 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
@@ -2471,6 +2778,38 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Qulian" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2505,43 +2844,140 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orderFragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qulian" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2552,7 +2988,7 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="192.168.56.101:5555" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/Qulian/src/main/res/values" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Qulian/libs/libammsdk.jar" />
     <property name="ExportApk.ApkPath" value="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian" />
     <property name="ExportApk.Flavors" value="" />
@@ -2566,14 +3002,17 @@
       <recent name="com.quliantrip.qulian.ui.fragment.backSimpleFragment" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.quliantrip.qulian.ui.fragment.orderFragment" />
+      <recent name="com.quliantrip.qulian.adapter.popAdapter" />
+      <recent name="com.quliantrip.qulian.adapter" />
       <recent name="com.quliantrip.qulian.ui.fragment.findFragment" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian\src\main\java\com\quliantrip\qulian\util" />
+      <recent name="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian\src\main\java\com\quliantrip\qulian\base" />
+      <recent name="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian\src\main\res\values" />
       <recent name="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian\src\main\res\drawable" />
-      <recent name="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian\src\main\res\mipmap-hdpi" />
-      <recent name="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian\src\main\java\com\quliantrip\qulian\net\volleyManage" />
       <recent name="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian\src\main\res\layout" />
-      <recent name="D:\workspace\workspace_studio\qulianAndroid0.1\Qulian\src\main\assets" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.Qulian">
@@ -2902,7 +3341,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449643357503</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="布局的调整">
+      <created>1450055868320</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1450055868320</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2939,7 +3384,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -2956,12 +3401,12 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10244989" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49554566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18070363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25746268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73719376" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2972,38 +3417,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75167036" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18070363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73719376" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2707889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10244989" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -3021,7 +3434,8 @@
     <MESSAGE value="添加引导页和首次展示页&#10;" />
     <MESSAGE value="保存用户的登录信息&#10;" />
     <MESSAGE value="登录界面和部分第三方的库&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录界面和部分第三方的库&#10;&#10;" />
+    <MESSAGE value="布局的调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="布局的调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3037,125 +3451,186 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/HorizontalScroll/HorizontalScrollViewAdapter.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RollViewPage.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/ViewPageFragmentAdapter.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/MyOrderAdapter.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseListFragment.java</url>
+          <line>424</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseListFragment.java</url>
+          <line>423</line>
+          <properties class="com.quliantrip.qulian.base.BaseListFragment" method="needShowEmptyNoData" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="18" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="18" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml">
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/attrs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8778718">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state vertical-scroll-proportion="15.125">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomeRecommendBean.java">
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HappinessFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.6075949">
+          <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SDK/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/app/FragmentPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33256617">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_find.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.392723">
+          <caret line="298" column="0" selection-start-line="58" selection-start-column="4" selection-end-line="298" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/MainFindAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49367088">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#360#361#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#424#425#0" expanded="false" />
-            <element signature="e#454#455#0" expanded="false" />
-            <element signature="e#489#490#0" expanded="false" />
-            <element signature="e#520#521#0" expanded="false" />
-            <element signature="e#568#569#0" expanded="false" />
-            <element signature="e#608#609#0" expanded="false" />
+            <element signature="e#754#755#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RatioImageView.java">
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/FindFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51010704">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseSwipeBackActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.11392405">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/SimpleBackPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.08515535">
+          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+          <folding>
+            <element signature="e#637#666#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/UIHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="257" column="50" selection-start-line="257" selection-start-column="50" selection-end-line="257" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6835443">
+          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="100" selection-start-line="80" selection-start-column="100" selection-end-line="80" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="106" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/activity_map.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.046413504">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04453441">
-          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/MapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1494253">
-          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/BasicAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2835249">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/UploadUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="23" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/SDK/sources/android-23/android/widget/ListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.42528737">
-          <caret line="439" column="23" selection-start-line="439" selection-start-column="23" selection-end-line="439" selection-end-column="23" />
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#15945#15946#0" expanded="false" />
-            <element signature="e#15976#15977#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_login.xml">
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/SimpleBackActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="e#1248#1249#0" expanded="false" />
+            <element signature="e#1304#1305#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/activity_simple_fragment.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6357243">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="40" />
+        <state vertical-scroll-proportion="-4.5833335">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/MyListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46835443">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -3164,309 +3639,507 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7515684">
-          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        <state vertical-scroll-proportion="-0.9305556">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/mainAcivity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeFunctionMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03797468">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/Base64Encoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30870083">
-          <caret line="83" column="39" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/HomeRecommendAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56962025">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/SDK/sources/android-23/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomePageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/BaseMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/2bac9e638b022ca09262960f83e8c9da93d80468/library-1.0.19-sources.jar!/com/android/volley/toolbox/AndroidAuthenticator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256617">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/QuestBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256617">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/2bac9e638b022ca09262960f83e8c9da93d80468/library-1.0.19-sources.jar!/com/android/volley/toolbox/StringRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256617">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BasePageCheckFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/SDK/sources/android-23/android/test/ApplicationTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7880912">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/androidTest/java/com/quliantrip/qulian/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0287687">
-          <caret line="57" column="73" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/SDK/sources/android-23/android/test/InstrumentationTestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5857307">
-          <caret line="553" column="0" selection-start-line="553" selection-start-column="0" selection-end-line="553" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/2bac9e638b022ca09262960f83e8c9da93d80468/library-1.0.19-sources.jar!/com/android/volley/toolbox/Volley.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5443038">
-          <caret line="113" column="31" selection-start-line="113" selection-start-column="31" selection-end-line="113" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/2bac9e638b022ca09262960f83e8c9da93d80468/library-1.0.19-sources.jar!/com/android/volley/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/MyStringRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/2bac9e638b022ca09262960f83e8c9da93d80468/library-1.0.19-sources.jar!/com/android/volley/toolbox/JsonObjectRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="25" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/MyJsonObjectRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseJsonListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ContentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="31" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseErrorListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30379745">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/563dcb685903c96ce8abbd03adf7fa49e19aa8b4/gson-2.3.1-sources.jar!/com/google/gson/Gson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256617">
-          <caret line="174" column="9" selection-start-line="174" selection-start-column="9" selection-end-line="174" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/BaseJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6075949">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/PacketStringReQuest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/ImageLoaderOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16455697">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/RollViewPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03797468">
-          <caret line="106" column="124" selection-start-line="106" selection-start-column="124" selection-end-line="106" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7315599">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_choiceness.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57967377">
-          <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24050634">
-          <caret line="19" column="83" selection-start-line="19" selection-start-column="83" selection-end-line="19" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeSlideImageMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.721519">
-          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2094#2275#0" expanded="true" />
-            <element signature="e#2274#2275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/HomeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03797468">
-          <caret line="480" column="24" selection-start-line="480" selection-start-column="24" selection-end-line="480" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_home_recommend_play.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4027777">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        <state vertical-scroll-proportion="-11.0">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.2278481">
-          <caret line="100" column="5" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="60" selection-start-line="100" selection-start-column="60" selection-end-line="100" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5833335">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/color/viewpage_selector_slide_title.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9285715">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.928572">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.114286">
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.714286">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/base_viewpage_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/ViewPageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30379745">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/base_viewpage_fragment_tab_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_my_order.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33124214">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/orderFragment/FragmentOrderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/MyOrderAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#730#731#0" expanded="false" />
+            <element signature="e#771#772#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+            <element signature="e#890#891#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SDK/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/view/PagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33256617">
+          <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.357143">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/ViewPageFragmentAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2731#2732#0" expanded="true" />
+            <element signature="e#2779#2780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseViewPagerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.1">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/OrderFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+          <folding>
+            <element signature="e#3115#3116#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/widget/EmptyLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_my_setting.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2658228">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33249685">
+          <caret line="16" column="74" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/SDK/sources/android-23/android/content/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37054086">
+          <caret line="2749" column="0" selection-start-line="2749" selection-start-column="0" selection-end-line="2749" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/QulianApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1012658">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/TDevice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.726516">
+          <caret line="552" column="77" selection-start-line="552" selection-start-column="77" selection-end-line="552" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#16043#16075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/SDK/sources/android-23/android/widget/BaseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4556962">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/build/generated/source/r/debug/com/quliantrip/qulian/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.035714">
+          <caret line="1731" column="30" selection-start-line="1731" selection-start-column="30" selection-end-line="1731" selection-end-column="30" />
+          <folding>
+            <marker date="1450319991375" expanded="true" signature="6480:6707" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="6785:7175" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="11507:11734" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="11811:12180" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="12253:12622" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="12691:12918" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="12996:13365" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="13425:13794" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="13855:14224" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="14286:14513" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="14594:14931" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="15306:15533" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="15603:15940" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="16007:16344" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="16412:16931" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="17000:17519" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="17895:18122" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="18186:18576" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="18645:19035" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="19106:19528" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="19596:20113" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="20185:20704" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="20767:21189" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="21255:21774" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="24258:24485" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="24555:24977" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="25041:25558" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="25920:26147" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="26221:26558" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="26912:27139" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="27208:27577" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="27657:27884" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="27950:28372" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="28431:28853" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="28918:29340" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="29411:29833" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="29908:30330" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="30405:30827" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="30899:31321" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="31387:31809" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="31879:32301" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="32377:32604" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="32668:33187" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="33256:33775" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="33845:34364" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="34435:34954" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="35323:35550" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="35626:35995" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="36065:36584" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="36660:36887" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="36952:37289" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="37359:38038" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="38106:38333" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="38394:38816" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="38882:39109" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="39180:39699" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="39767:39994" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="40063:40582" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="40945:41172" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="41247:41766" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="41851:42297" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="42360:42879" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="42942:43169" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="43241:43631" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="43698:43925" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="43992:44511" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="44574:44801" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="44891:45410" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="45478:45705" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="45765:46284" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="46344:46681" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="47343:47570" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="47628:47965" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="48037:48357" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="48427:48833" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="49206:49433" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="49513:49935" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="50003:50522" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="50591:50960" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="51034:51371" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="51437:51956" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="53507:53734" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="53808:54327" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="54404:54923" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="55005:55524" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="55606:56125" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="56207:56726" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="56809:57036" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="57094:57463" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="57532:58051" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="58120:58457" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="58534:58761" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="58836:59205" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="59287:59514" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="59582:59980" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="60048:60385" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="60452:60971" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="61035:61554" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="61916:62143" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="62215:62734" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="63392:63619" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="63689:64026" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="64099:64618" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="64690:64917" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="64987:65506" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="65578:65915" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="65984:66374" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="66452:66819" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="68072:68299" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="68367:68757" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="68830:69220" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="69295:69522" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="69599:69989" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="70061:70366" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="70444:71143" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="71204:71509" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="71576:71966" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="72048:72353" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="72436:72741" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="72829:73134" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="73511:73738" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="73807:74176" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="74536:74763" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="74831:75151" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="75215:75734" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="78181:78408" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="78474:78811" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="78877:79426" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="79492:79969" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="80035:80372" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="80434:80661" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="80737:81127" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="81193:81530" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="81897:82124" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="82190:82527" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="82591:82928" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="83000:83227" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="83297:83666" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="83728:83955" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="84031:84453" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="84822:85049" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="85122:85641" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="85709:86228" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="86888:87115" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="87182:87701" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="87774:88079" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="89691:89918" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="90000:90390" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="90472:90862" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="90934:91161" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="91220:91739" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="91802:92321" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="92391:92760" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="92819:93338" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="93409:93928" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="93996:94515" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="94585:95104" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="95172:95691" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="95757:95984" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="96057:96479" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="97444:97671" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="97730:98152" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="98220:98739" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="98808:99035" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="99098:99435" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="99504:99841" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="99917:100254" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="100331:101103" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="101179:101951" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="102027:102799" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="102874:103646" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="103721:104493" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="104566:105338" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="105411:105748" placeholder="/**...*/" />
+            <marker date="1450319991375" expanded="true" signature="105848:106505" placeholder="{...}" />
+            <marker date="1450319991375" expanded="true" signature="106542:113378" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.333334">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/SDK/sources/android-23/android/widget/ListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56041425">
+          <caret line="2004" column="7" selection-start-line="2004" selection-start-column="7" selection-end-line="2004" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/lib/PagerSlidingTabStrip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/orderFragment/ShowFram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_pull_refresh_listview.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5694447">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BaseListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.4">
+          <caret line="560" column="29" selection-start-line="560" selection-start-column="18" selection-end-line="560" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ListBaseAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49367088">
+          <caret line="170" column="38" selection-start-line="169" selection-start-column="2" selection-end-line="170" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

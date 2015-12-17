@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/view_systembar" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="消费列表" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_consume_list_sort"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_consume_list_sort_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="全部分类"
+                android:textColor="#8F8F8F" />
+
+            <ImageView
+                android:id="@+id/iv_consume_list_sort_arrow"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@mipmap/down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#8F8F8F" />
+
+        <LinearLayout
+            android:id="@+id/ll_consume_list_city"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_consume_list_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="城市"
+                android:textColor="#8F8F8F" />
+
+            <ImageView
+                android:id="@+id/iv_consume_list_city_arrow"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@mipmap/down" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#8F8F8F" />
+
+        <LinearLayout
+            android:id="@+id/ll_consume_list_default"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_consume_list_default_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="默认"
+                android:textColor="#8F8F8F" />
+
+            <ImageView
+                android:id="@+id/iv_consume_list_default_arrow"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="4dp"
+                android:background="@mipmap/down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_consume_list_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#8F8F8F" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+</LinearLayout>

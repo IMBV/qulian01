@@ -12,6 +12,7 @@ import com.quliantrip.qulian.domain.HomePageBean;
 import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.mode.BaseMode;
 import com.quliantrip.qulian.util.CommonHelp;
+import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.view.RollViewPage;
 
 import java.util.ArrayList;
@@ -28,7 +29,7 @@ import butterknife.ButterKnife;
 /**
  * 首页的图片的滑动模块
  */
-public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>> {
+public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>>{
 
     private View view;
     private RollViewPage rollViewPage;
@@ -76,6 +77,7 @@ public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>> {
                 @Override
                 public void touchImage(String url) {
                     //这里是进行点击图片是的操作
+                    ToastUtil.showToast(QulianApplication.getContext(),url);
                 }
             });
             top_news_viewpager.removeAllViews();
@@ -101,9 +103,11 @@ public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>> {
         }
     }
 
+    //重新开始滚动
     public void restarteRoll(){
         if(rollViewPage != null){
             rollViewPage.roll();
         }
     }
+
 }

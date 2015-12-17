@@ -6,18 +6,30 @@
     <string name="tab_home_happiness">小确幸</string>
     <string name="tab_home_find">发现</string>
     <string name="tab_home_me">我</string>
+    <string name="tab_home_choiceness">精选</string>
 
 
     <string name="actionbar_title_active">测试</string>
-    <string name="actionbar_title_active_2">测试-2</string>
+    <string name="actionbar_title_setting">设置</string>
+    <string name="actionbar_city_choose">城市切换</string>
+    <string name="actionbar_order_list">我的订单</string>
+
+
     <string name="load_error">加载失败,点击重试</string>
 
-    <string name="me_setting">设置</string>
+    <string name="me_setting">点击登录</string>
     <!--发现的viewpage的显示头的信息-->
 
     <string-array name="find_tab_names">
         <item>语音导航</item>
         <item>晒图</item>
+    </string-array>
+    <!--订单的指示器-->
+    <string-array name="order_tab_names">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>未使用</item>
+        <item>待评价</item>
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.quliantrip.qulian.R;
-import com.quliantrip.qulian.ui.fragment.findFragment.FragmentFactory;
+import com.quliantrip.qulian.ui.fragment.findFragment.FragmentFindFactory;
 import com.quliantrip.qulian.util.CommonHelp;
 
 public class MainFindAdapter extends FragmentPagerAdapter {
@@ -23,7 +23,7 @@ public class MainFindAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return FragmentFactory.create(position);
+        return FragmentFindFactory.create(position);
     }
 
     @Override

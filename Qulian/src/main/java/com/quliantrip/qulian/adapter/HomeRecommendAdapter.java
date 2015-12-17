@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.quliantrip.qulian.R;
-import com.quliantrip.qulian.domain.HomeRecommendBean;
+import com.quliantrip.qulian.domain.HomeBean;
 import com.quliantrip.qulian.global.ImageLoaderOptions;
 import com.quliantrip.qulian.global.QulianApplication;
 
@@ -20,9 +20,9 @@ import butterknife.ButterKnife;
  * Created by Yuly on 2015/12/10.
  * www.quliantrip.com
  */
-public class HomeRecommendAdapter extends BasicAdapter<HomeRecommendBean> {
+public class HomeRecommendAdapter extends BasicAdapter<HomeBean.DealListEntity> {
 
-    public HomeRecommendAdapter(ArrayList<HomeRecommendBean> list) {
+    public HomeRecommendAdapter(ArrayList<HomeBean.DealListEntity> list) {
         super(list);
     }
 
@@ -32,13 +32,19 @@ public class HomeRecommendAdapter extends BasicAdapter<HomeRecommendBean> {
             convertView = View.inflate(QulianApplication.getContext(),R.layout.adapter_home_recommend_play,null);
         }
         Holder holder = Holder.getHolder(convertView);
-        holder.des.setText(list.get(position).getDes());
-        ImageLoader.getInstance().displayImage(list.get(position).getImageUrl(), holder.pic, ImageLoaderOptions.pager_options);
+//        holder.des.setText(list.get(position).getDes());
+        HomeBean.DealListEntity bean = list.get(position);
+        ImageLoader.getInstance().displayImage(bean.getIcon(), holder.pic, ImageLoaderOptions.options);
+        holder.dealName.setText(bean.getName());
+        holder.newPrice.setText("￥"+bean.getCurrent_price());
+        holder.oldPrice.setText("￥"+bean.getOrigin_price());
         return convertView;
     }
     static class Holder{
         @Bind(R.id.iv_home_recommend_pic) ImageView pic ;
-        @Bind(R.id.iv_home_recommend_des)TextView des;
+        @Bind(R.id.tv_home_deal_name) TextView dealName;
+        @Bind(R.id.tv_home_deal_currentprice) TextView newPrice;
+        @Bind(R.id.tv_home_deal_oldprice) TextView oldPrice;
         public Holder(View convertView) {
             super();
             ButterKnife.bind(this,convertView);

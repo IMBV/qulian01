@@ -1,28 +1,13 @@
 package com.quliantrip.qulian.ui.fragment.mainFragment;
 
-import android.content.Intent;
-import android.graphics.Bitmap;
+import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+import android.widget.RadioGroup;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
 import com.quliantrip.qulian.global.QulianApplication;
-import com.quliantrip.qulian.ui.activity.MapActivity;
-import com.quliantrip.qulian.util.CommonHelp;
-import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.util.UIHelper;
-import com.quliantrip.qulian.view.RollViewPage;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -33,20 +18,48 @@ import butterknife.OnClick;
  */
 
 public class MyFragment extends BaseFragment {
-    @Bind(R.id.tv_me_setting)
-    Button setting;
-    @Bind(R.id.tv_me_username)
-    TextView userName;
-    @Bind(R.id.wv_map)
-    WebView map;
+    @Bind(R.id.rg_order_state)
+    RadioGroup orderRadioGroup;
+    //    @Bind(R.id.tv_me_setting)
+//    Button setting;
+//    @Bind(R.id.tv_me_username)
+//    TextView userName;
+//    @Bind(R.id.wv_map)
+//    WebView map;
+    private Bundle bundle = new Bundle();
 
     @Override
     public View initView() {
         View view = View.inflate(mContext, R.layout.fragment_main_me, null);
         ButterKnife.bind(this, view);
-        userName.setText(QulianApplication.getInstance().getUser().getName());
+//        userName.setText(QulianApplication.getInstance().getUser().getName());
         initMap();
+//        initOrderList();
         return view;
+    }
+
+    @OnClick(R.id.rb_order_all)
+    void orderAll() {
+        bundle.putInt("orderState", 0);
+        UIHelper.showOrderList(mContext, bundle);
+    }
+
+    @OnClick(R.id.rb_order_nor)
+    void ordernor() {
+        bundle.putInt("orderState", 1);
+        UIHelper.showOrderList(mContext, bundle);
+    }
+
+    @OnClick(R.id.rb_order_norUser)
+    void ordernorUser() {
+        bundle.putInt("orderState", 2);
+        UIHelper.showOrderList(mContext, bundle);
+    }
+
+    @OnClick(R.id.rb_order_norAssess)
+    void orderNorAssess() {
+        bundle.putInt("orderState", 3);
+        UIHelper.showOrderList(mContext, bundle);
     }
 
     @Override
@@ -57,29 +70,29 @@ public class MyFragment extends BaseFragment {
     @OnClick(R.id.tv_me_setting)
     void setting() {
         if (QulianApplication.getInstance().isLogin()) {
-            ToastUtil.showToast(mContext, "已经登录请操作");
+            UIHelper.showMeSetting(mContext);
         } else {
             UIHelper.showMyActive(mContext);
         }
 
     }
 
-    @OnClick(R.id.bt_map)
-    void enterMap() {
-        Intent intent = new Intent(mContext,MapActivity.class);
-        startActivity(intent);
-
-    }
+//    @OnClick(R.id.bt_map)
+//    void enterMap() {
+//        Intent intent = new Intent(mContext,MapActivity.class);
+//        startActivity(intent);
+//
+//    }
 
     private void initMap() {
 
 //        WebSettings settings = map.getSettings();
 //        map.loadUrl("http://www.quliantrip.com/index.php?ctl=deal&act=188");
 //        settings.setJavaScriptEnabled(true);
-        map.loadUrl("http://www.quliantrip.com/wap/index.php?ctl=deal&act=map&id=192");
-        WebSettings ws = map.getSettings();
-        ws.setAllowFileAccess(true);
-        ws.setJavaScriptEnabled(true);
+//        map.loadUrl("http://www.quliantrip.com/wap/index.php?ctl=deal&act=map&id=192");
+//        WebSettings ws = map.getSettings();
+//        ws.setAllowFileAccess(true);
+//        ws.setJavaScriptEnabled(true);
 //        map.setWebViewClient(new WebViewClient() {
 //            public boolean shouldOverrideUrlLoading(WebView view, String url) {
 //                //  重写此方法表明点击网页里面的链接还是在当前的webview里跳转，不跳到浏览器那边

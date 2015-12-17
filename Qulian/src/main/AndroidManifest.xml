@@ -16,6 +16,8 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
     <!--定位要添加的权限-->
     <uses-permission
         android:name="android.permission.ACCESS_MOCK_LOCATION"
@@ -27,7 +29,7 @@
     <application
         android:name="com.quliantrip.qulian.global.QulianApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
