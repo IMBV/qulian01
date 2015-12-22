@@ -109,5 +109,22 @@ public class CommonHelp {
         return sp.getString(key, defaultValue);
     }
 
+    /**
+     * 字符串转整数
+     *
+     * @param str
+     * @param defValue
+     * @return
+     */
+    public static int toInt(String str, int defValue) {
+        if("".equals(str))
+            return defValue;
+        try {
+            return Integer.parseInt(str);
+        } catch (Exception e) {
+        }
+        return defValue;
+    }
+
 
 }

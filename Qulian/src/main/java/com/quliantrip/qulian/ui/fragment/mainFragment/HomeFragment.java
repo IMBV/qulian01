@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,13 +15,16 @@ import com.quliantrip.qulian.adapter.HomeRecommendAdapter;
 import com.quliantrip.qulian.base.BasePageCheckFragment;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.HomeBean;
+import com.quliantrip.qulian.domain.TuanBean;
 import com.quliantrip.qulian.mode.homeMode.HomeChoicenessMode;
 import com.quliantrip.qulian.mode.homeMode.HomeFunctionMode;
 import com.quliantrip.qulian.mode.homeMode.HomeSlideImageMode;
 import com.quliantrip.qulian.net.constant.HttpConstants;
+import com.quliantrip.qulian.net.volleyManage.PacketStringReQuest;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.scanner.activity.CaptureActivity;
 import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
+import com.quliantrip.qulian.ui.activity.GoodDetailActivity;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.util.EvaluateUtil;
 import com.quliantrip.qulian.util.ToastUtil;
@@ -78,6 +82,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         homeFunctionMode = new HomeFunctionMode();
         modelContainer.addView(homeFunctionMode.getModelView());
         homeChoicenessMode = new HomeChoicenessMode();
+        homeChoicenessMode.setContext(mContext);
         modelContainer.addView(homeChoicenessMode.getModelView());
     }
 
@@ -87,7 +92,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         map.put("ctl", "index");
         map.put("act", "index");
         map.put("r_type", "1");
-        return new QuestBean(map, new HomeBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_Test);
+        return new QuestBean(map, new HomeBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST);
     }
 
     @Override
@@ -105,6 +110,15 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
     private void initListIView(List<HomeBean.DealListEntity> dealList) {
         HomeRecommendAdapter homeRecommendAdapter = new HomeRecommendAdapter((ArrayList<HomeBean.DealListEntity>) dealList);
         listView.setAdapter(homeRecommendAdapter);
+        //条目数据适配
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(mContext, GoodDetailActivity.class);
+                intent.putExtra("goodId", "http://www.quliantrip.com/wap/index.php?ctl=deal&data_id="+((HomeBean.DealListEntity) parent.getAdapter().getItem(position)).getId());
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -124,7 +138,6 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != Activity.RESULT_OK) {
-
             return;
         }
         if (requestCode == 0) {
@@ -136,10 +149,13 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
             } else {
                 ToastUtil.showToast(mContext, "请扫描正确的二维码");
             }
-        }else if(requestCode == 1){
-            ToastUtil.showToast(mContext,"开始进行切换城市");
+        } else if (requestCode == 1) {
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("act", "city_change");
+            map.put("area_id", data.getStringExtra("cityId"));
+            map.put("r_type", "1");
+            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST, new HomeBean().setTag(HomeFragment.this.getClass().getName()), map, null);
         }
-
     }
 
     @Override
@@ -148,7 +164,8 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         homeSlideImageMode.restarteRoll();
     }
 
-    @OnClick(R.id.rl_city_choose) void chooseSity(){
-        UIHelper.showCityChoose(this,1);
+    @OnClick(R.id.rl_city_choose)
+    void chooseSity() {
+        UIHelper.showCityChoose(this, 1);
     }
 }

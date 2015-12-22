@@ -3,21 +3,12 @@ package com.quliantrip.qulian;
 import android.app.Application;
 import android.test.ApplicationTestCase;
 
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
 import com.quliantrip.qulian.global.QulianApplication;
-import com.quliantrip.qulian.net.constant.HttpConstants;
-import com.quliantrip.qulian.net.volleyManage.MyJsonObjectRequest;
-import com.quliantrip.qulian.net.volleyManage.PacketStringReQuest;
-import com.quliantrip.qulian.util.ToastUtil;
 
 import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
@@ -107,6 +98,273 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 //                                System.err.println("网络异常");
 //                            }
 //                        }));
+
+    }
+//    public void testJieshon(){
+//        String json = "{\n" +
+//                "    \"0\": [\n" +
+//                "        {\n" +
+//                "            \"id\": \"8\",\n" +
+//                "            \"name\": \"韩国\",\n" +
+//                "            \"pid\": \"0\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"9\",\n" +
+//                "            \"name\": \"日本\",\n" +
+//                "            \"pid\": \"0\"\n" +
+//                "        }\n" +
+//                "    ],\n" +
+//                "    \"8\": [\n" +
+//                "        {\n" +
+//                "            \"id\": \"51\",\n" +
+//                "            \"name\": \"济州岛\",\n" +
+//                "            \"pid\": \"8\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"52\",\n" +
+//                "            \"name\": \"仁川\",\n" +
+//                "            \"pid\": \"8\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"20\",\n" +
+//                "            \"name\": \"屏山\",\n" +
+//                "            \"pid\": \"8\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"14\",\n" +
+//                "            \"name\": \"首尔\",\n" +
+//                "            \"pid\": \"8\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"13\",\n" +
+//                "            \"name\": \"釜山\",\n" +
+//                "            \"pid\": \"8\"\n" +
+//                "        }\n" +
+//                "    ],\n" +
+//                "    \"9\": [\n" +
+//                "        {\n" +
+//                "            \"id\": \"44\",\n" +
+//                "            \"name\": \"东京\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"43\",\n" +
+//                "            \"name\": \"大阪\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"61\",\n" +
+//                "            \"name\": \"箱根\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"45\",\n" +
+//                "            \"name\": \"北海道\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"53\",\n" +
+//                "            \"name\": \"京都\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"60\",\n" +
+//                "            \"name\": \"静冈\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"55\",\n" +
+//                "            \"name\": \"富士山\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"56\",\n" +
+//                "            \"name\": \"冲绳\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"57\",\n" +
+//                "            \"name\": \"名古屋\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"58\",\n" +
+//                "            \"name\": \"横滨\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"59\",\n" +
+//                "            \"name\": \"福冈\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        },\n" +
+//                "        {\n" +
+//                "            \"id\": \"46\",\n" +
+//                "            \"name\": \"新宿\",\n" +
+//                "            \"pid\": \"9\"\n" +
+//                "        }\n" +
+//                "    ]\n" +
+//                "}";
+//        try {
+//
+//
+//            JSONObject jsonObject = new JSONObject(json);
+//
+////            Map result = new HashMap();
+////            Iterator<String> iter =  jsonObject.keys();
+////
+////            String key = null;
+////            String value = null;
+////
+////            while (iter.hasNext()){
+////                JSONArray array = JSONArray.optJSONArray(iter.next());
+////                int i,j;
+////                for (i=0;i<array.length();i++) {
+////                    for (j=0;array.optJSONArray(i).length();j++){
+////
+////                    }
+////
+////                }
+////
+////            }
+//
+//            System.out.println(jsonObject.opt("8"));
+//
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
+//    }
+    public void testJieshon2(){
+        String json = "{\n" +
+                "        \"8\": \"韩国\",\n" +
+                "        \"9\": \"日本\"\n" +
+                "    }";
+
+
+                String json2 = "{\n" +
+                "    \"0\": [\n" +
+                "        {\n" +
+                "            \"id\": \"8\",\n" +
+                "            \"name\": \"韩国\",\n" +
+                "            \"pid\": \"0\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"9\",\n" +
+                "            \"name\": \"日本\",\n" +
+                "            \"pid\": \"0\"\n" +
+                "        }\n" +
+                "    ],\n" +
+                "    \"8\": [\n" +
+                "        {\n" +
+                "            \"id\": \"51\",\n" +
+                "            \"name\": \"济州岛\",\n" +
+                "            \"pid\": \"8\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"52\",\n" +
+                "            \"name\": \"仁川\",\n" +
+                "            \"pid\": \"8\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"20\",\n" +
+                "            \"name\": \"屏山\",\n" +
+                "            \"pid\": \"8\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"14\",\n" +
+                "            \"name\": \"首尔\",\n" +
+                "            \"pid\": \"8\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"13\",\n" +
+                "            \"name\": \"釜山\",\n" +
+                "            \"pid\": \"8\"\n" +
+                "        }\n" +
+                "    ],\n" +
+                "    \"9\": [\n" +
+                "        {\n" +
+                "            \"id\": \"44\",\n" +
+                "            \"name\": \"东京\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"43\",\n" +
+                "            \"name\": \"大阪\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"61\",\n" +
+                "            \"name\": \"箱根\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"45\",\n" +
+                "            \"name\": \"北海道\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"53\",\n" +
+                "            \"name\": \"京都\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"60\",\n" +
+                "            \"name\": \"静冈\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"55\",\n" +
+                "            \"name\": \"富士山\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"56\",\n" +
+                "            \"name\": \"冲绳\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"57\",\n" +
+                "            \"name\": \"名古屋\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"58\",\n" +
+                "            \"name\": \"横滨\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"59\",\n" +
+                "            \"name\": \"福冈\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"id\": \"46\",\n" +
+                "            \"name\": \"新宿\",\n" +
+                "            \"pid\": \"9\"\n" +
+                "        }\n" +
+                "    ]\n" +
+                "}";
+//        try {
+//            Test test = new Test();
+//            JSONObject jsonObject = new JSONObject(json);
+//            Iterator<String> iter = jsonObject.keys();//转化为支付串1的key的值
+//
+//            JSONObject jsonObject2 = new JSONObject(json2);
+//            while (iter.hasNext()){
+//                JSONArray jsonArray = jsonObject2.getJSONArray(iter.next()+"");
+//
+//                ArrayList<Test.TextCity> cityList = new ArrayList<Test.TextCity>();
+//                for (int i= 0;i<jsonArray.length();i++){
+//                    JSONObject object = jsonArray.optJSONObject(i);
+//
+////                    cityList.add(new Test.TextCity(object.getString("id"),object.getString("name")
+////                    ,object.getString("pid")));
+//                }
+//
+//                test.getCityList().put(iter.next(),cityList);
+//            }
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
     }
 }

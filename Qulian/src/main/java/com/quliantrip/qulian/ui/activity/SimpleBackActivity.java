@@ -22,11 +22,6 @@ public class SimpleBackActivity extends BaseSwipeBackActivity {
     private static final String TAG = "FLAG_TAG";
     protected WeakReference<Fragment> mFragment;
     protected int mPageValue = -1;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
 
     @Override
     protected void onActivityResult(int arg0, int arg1, Intent arg2) {

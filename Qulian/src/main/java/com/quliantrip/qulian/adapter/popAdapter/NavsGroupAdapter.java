@@ -9,6 +9,9 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.quliantrip.qulian.R;
+import com.quliantrip.qulian.domain.TuanBean;
+
+import java.util.List;
 
 /**
  * 父ListView适配器
@@ -16,21 +19,14 @@ import com.quliantrip.qulian.R;
  * @author zihao
  * 
  */
-public class GroupAdapter extends BaseAdapter {
+public class NavsGroupAdapter extends BaseAdapter {
 
 	Context mContext;// 上下文对象
-	String[] mGroupNameArr;// 父item标题数组
+	List<TuanBean.NavsEntity> mGroupNameArr;
 	int mPosition = 0;// 选中的位置
 
-	/**
-	 * 构造方法
-	 * 
-	 * @param context
-	 *            // 上下文对象
-	 * @param groupArr
-	 *            // item标题数组
-	 */
-	public GroupAdapter(Context context, String[] groupArr) {
+
+	public NavsGroupAdapter(Context context, List<TuanBean.NavsEntity> groupArr) {
 		this.mContext = context;
 		this.mGroupNameArr = groupArr;
 	}
@@ -52,7 +48,7 @@ public class GroupAdapter extends BaseAdapter {
 		}
 
 		// 设置控件内容
-		holder.groupName.setText(mGroupNameArr[position]);
+		holder.groupName.setText(mGroupNameArr.get(position).getName());
 		if (mPosition == position) {
 			convertView.setBackgroundColor(mContext.getResources().getColor(
 					R.color.group_item_pressed_bg));
@@ -69,7 +65,7 @@ public class GroupAdapter extends BaseAdapter {
 	 */
 	@Override
 	public int getCount() {
-		return mGroupNameArr.length;
+		return mGroupNameArr.size();
 	}
 
 	/**
@@ -77,7 +73,7 @@ public class GroupAdapter extends BaseAdapter {
 	 */
 	@Override
 	public Object getItem(int position) {
-		return mGroupNameArr[position];
+		return mGroupNameArr.get(position);
 	}
 
 	/**

@@ -4,8 +4,6 @@ import com.android.volley.Response;
 import com.google.gson.Gson;
 import com.quliantrip.qulian.base.ContentPage;
 import com.quliantrip.qulian.domain.BaseJson;
-import com.quliantrip.qulian.global.QulianApplication;
-import com.quliantrip.qulian.util.CommonHelp;
 
 import de.greenrobot.event.EventBus;
 
@@ -24,8 +22,9 @@ public class ResponseListenner implements Response.Listener<String> {
         if (object != null) {
             tag = object.getTag();
         }
+        //打印请求的字符串
         System.out.println(json);
-        object = new Gson().fromJson(json, object.getClass());
+        object = new Gson().fromJson(json.trim(), object.getClass());
         object.setTag(tag);
 //        //这里使用||进行判断是否进行数据的缓存
 //        if ("com.quliantrip.qulian.ui.fragment.mainFragment.HomeFragment".equals(tag)) {

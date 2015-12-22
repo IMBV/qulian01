@@ -13,7 +13,6 @@ public enum SimpleBackPage {
     CITY_CHOOSE(3,R.string.actionbar_city_choose, CityChooseFragment.class),
     ORDER_LIST(4,R.string.actionbar_order_list, OrderFragment.class);
 
-
     private int title;
     private Class<?> clz;
     private int value;

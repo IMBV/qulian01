@@ -12,6 +12,7 @@
 //import android.widget.ProgressBar;
 //import android.widget.TextView;
 //
+//import com.quliantrip.qulian.R;
 //import com.quliantrip.qulian.domain.BaseJson;
 //import com.quliantrip.qulian.util.TDevice;
 //

@@ -7,6 +7,14 @@
 
     <include layout="@layout/view_systembar" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="个人中心"
+        android:textSize="18sp" />
+
+
     <com.quliantrip.qulian.view.ObservableScroll.ObservableScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,18 +27,19 @@
             <!--这里添加要显示的布局-->
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
+                android:layout_height="168dp">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@mipmap/mebackgroud" />
 
                 <LinearLayout
+                    android:id="@+id/ll_user_loading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="20dp"
                     android:orientation="vertical"
                     android:visibility="gone">
 
@@ -38,7 +47,7 @@
                         android:id="@id/tv_me_userImage"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@mipmap/ic_launcher"
+                        android:src="@mipmap/ic_icon"
                         app:border_color="@color/colorPrimary"
                         app:border_width="2dp">
 
@@ -58,12 +67,12 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="5dp"
-                        android:text="完善信息"
+                        android:text="修改信息"
                         android:textSize="12sp" />
                 </LinearLayout>
 
                 <Button
-                    android:id="@id/tv_me_setting"
+                    android:id="@+id/tv_me_loading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -72,10 +81,34 @@
                     android:textColor="#FFFFFF" />
 
             </FrameLayout>
-            <RadioGroup
+
+            <LinearLayout
+                android:id="@+id/ll_me_orderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/dingdan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="我的订单"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <!--<RadioGroup
                 android:id="@+id/rg_order_state"
                 android:layout_width="fill_parent"
-                android:layout_height="75dp"
+                android:layout_height="50dp"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="bottom"
                 android:background="#FFFFFF"
@@ -86,27 +119,27 @@
                 <RadioButton
                     android:id="@+id/rb_order_all"
                     style="@style/main_tab_bottom"
-                    android:drawableTop="@mipmap/ic_launcher"
+                    android:drawableTop="@mipmap/dingdan"
                     android:text="全部订单" />
 
                 <RadioButton
                     android:id="@+id/rb_order_nor"
                     style="@style/main_tab_bottom"
-                    android:drawableTop="@mipmap/ic_launcher"
+                    android:drawableTop="@mipmap/dingdan"
                     android:text="待付款"  />
                  <RadioButton
                      android:id="@+id/rb_order_norUser"
                      style="@style/main_tab_bottom"
-                     android:drawableTop="@mipmap/ic_launcher"
+                     android:drawableTop="@mipmap/dingdan"
                      android:text="未使用" />
 
                  <RadioButton
                      android:id="@+id/rb_order_norAssess"
                      style="@style/main_tab_bottom"
-                     android:drawableTop="@mipmap/ic_launcher"
+                     android:drawableTop="@mipmap/dingdan"
                      android:text="待评价"  />
 
-            </RadioGroup>
+            </RadioGroup>-->
 
             <!--<Button
                 android:id="@+id/bt_map"

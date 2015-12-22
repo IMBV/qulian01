@@ -9,19 +9,22 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.quliantrip.qulian.R;
+import com.quliantrip.qulian.domain.TuanBean;
+
+import java.util.List;
 
 
-public class ChildAdapter extends BaseAdapter {
+public class CityChildAdapter extends BaseAdapter {
 
 	Context mContext;
-	String[] mChildArr;// 子item标题数组
+	List<TuanBean.QuanListEntity.QuanSubEntity> mChildArr;// 子item标题数组
 
 	/**
 	 * 构造方法
 	 * 
 	 * @param context
 	 */
-	public ChildAdapter(Context context) {
+	public CityChildAdapter(Context context) {
 		mContext = context;
 	}
 
@@ -30,7 +33,7 @@ public class ChildAdapter extends BaseAdapter {
 	 * 
 	 * @param childArr
 	 */
-	public void setChildData(String[] childArr) {
+	public void setChildData(List<TuanBean.QuanListEntity.QuanSubEntity> childArr) {
 		this.mChildArr = childArr;
 	}
 
@@ -47,7 +50,7 @@ public class ChildAdapter extends BaseAdapter {
 		} else {
 			holder = (ViewHolder) convertView.getTag();
 		}
-		holder.childText.setText(mChildArr[position]);
+		holder.childText.setText(mChildArr.get(position).getName());
 		return convertView;
 	}
 
@@ -63,7 +66,7 @@ public class ChildAdapter extends BaseAdapter {
 		if (mChildArr == null) {
 			return 0;
 		}
-		return mChildArr.length;
+		return mChildArr.size();
 	}
 
 	/**
@@ -71,7 +74,7 @@ public class ChildAdapter extends BaseAdapter {
 	 */
 	@Override
 	public Object getItem(int position) {
-		return mChildArr[position];
+		return mChildArr.get(position);
 	}
 
 	/**
