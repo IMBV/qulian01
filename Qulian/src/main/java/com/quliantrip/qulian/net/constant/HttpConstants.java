@@ -18,7 +18,7 @@ public class HttpConstants {
     public static final String HOST_ADDR_ROOT_LOCAL_TEST = "http://dev.qulian.com/mapi/index.php";
 
     /**加载webView的连接路径*/
-//    public static
+    public static final String WEBVIEW_ROOT = "http://dev.qulian.com/wap/index.php";
 
 
 }

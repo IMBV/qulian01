@@ -115,7 +115,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(mContext, GoodDetailActivity.class);
-                intent.putExtra("goodId", "http://www.quliantrip.com/wap/index.php?ctl=deal&data_id="+((HomeBean.DealListEntity) parent.getAdapter().getItem(position)).getId());
+                intent.putExtra("goodId", HttpConstants.WEBVIEW_ROOT+"?ctl=deal&data_id="+((HomeBean.DealListEntity) parent.getAdapter().getItem(position)).getId());
                 mContext.startActivity(intent);
             }
         });

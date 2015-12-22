@@ -78,7 +78,18 @@
                     android:layout_gravity="center"
                     android:background="@android:color/transparent"
                     android:text="@string/me_setting"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/tv_me_loadout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:text="点击退出"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone" />
 
             </FrameLayout>
 
@@ -104,6 +115,11 @@
 
             </LinearLayout>
 
+            <WebView
+                android:id="@+id/wb_login_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"></WebView>
 
             <!--<RadioGroup
                 android:id="@+id/rg_order_state"

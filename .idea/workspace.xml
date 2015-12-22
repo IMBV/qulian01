@@ -26,60 +26,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56c703f1-4c86-4370-bc5b-16d8ad960bc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/dingdan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/mebackgroud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/tuichu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/ClassifyCityListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/CountryCityListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/HotCityListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/QuanItemAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/NavsGroupAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/CityListBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/TuanBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/UserInfoBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/GoodDetailActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/MyGridView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_city_country.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_city_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_tuan_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_good_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/popupwindow_sift_consume_navs.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_1_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/library_1_0_0.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_1_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_1_1.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/systembartint_1_0_3.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/zxing.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/CityBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/ShowGoodBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/UserBean.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/androidTest/java/com/quliantrip/qulian/ApplicationTest.java" afterPath="$PROJECT_DIR$/Qulian/src/androidTest/java/com/quliantrip/qulian/ApplicationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ListBaseAdapter.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ListBaseAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/QulianApplication.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/QulianApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/SimpleBackPage.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/SimpleBackPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/SimpleBackActivity.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/SimpleBackActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/CityChooseFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/CityChooseFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/LoginFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/LoginFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/MySetting.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/MySetting.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/GoodDetailActivity.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/GoodDetailActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/CommonHelp.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/CommonHelp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_city_choose.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_city_choose.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_choiceness.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_choiceness.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_my_setting.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_my_setting.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_choiceness.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_choiceness.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Qulian/src/main/res/values/strings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/ChildAdapter.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/CityChildAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/GroupAdapter.java" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/CityGroupAdapter.java" />
     </list>
     <ignored path="qulianAndroid0.1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,110 +68,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/mainAcivity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.6">
-              <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpConstants.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11392405">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoodDetailActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/GoodDetailActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="62" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.5268176">
+              <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageLoaderOptions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/ImageLoaderOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChoicenessFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.5">
-              <caret line="132" column="38" selection-start-line="132" selection-start-column="38" selection-end-line="132" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuanItemAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/QuanItemAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
-              <folding>
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adapter_tuan_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_tuan_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2083333">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ic_erweima_nor.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/ic_erweima_nor.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_good_detail.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_good_detail.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9166667">
-              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListBaseAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ListBaseAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -2021,7 +1886,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="D:\workspace\workspace_studio\qulianAndroid0.1" value="5797081473214" />
+        <entry key="D:\workspace\workspace_studio\qulianAndroid0.1" value="5797151323189" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2442,8 +2307,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/TextBean.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/UserInfoBean.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/util/CommonHelp.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/MySetting.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_login.xml" />
@@ -2481,18 +2344,20 @@
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/CountryCityListAdapter.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/CityChooseFragment.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_home.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseListenner.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/list_cell_footer.xml" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ListBaseAdapter.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_good_detail.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/GoodDetailActivity.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/adapter_tuan_item.xml" />
-        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java" />
         <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/GoodDetailActivity.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/mainAcivity/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -2650,37 +2515,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mainFragment" />
+              <option name="myItemId" value="activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2709,89 +2544,9 @@
               <option name="myItemId" value="activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
+              <option name="myItemId" value="mainAcivity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="constant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qulian" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -3260,7 +3015,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450322230020</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="第一版的简单布局，但是第二版的代码在里边。">
+      <created>1450754154516</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1450754154516</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -3305,6 +3066,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4621381" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3320,13 +3082,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26385927" sideWeight="0.49554566" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6636971" sideWeight="0.7398721" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66258353" sideWeight="0.7398721" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -3349,7 +3110,8 @@
     <MESSAGE value="登录界面和部分第三方的库&#10;&#10;" />
     <MESSAGE value="布局的调整" />
     <MESSAGE value="1和2版本我整理的内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="1和2版本我整理的内容" />
+    <MESSAGE value="第一版的简单布局，但是第二版的代码在里边。" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一版的简单布局，但是第二版的代码在里边。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3421,7 +3183,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java</url>
-          <line>127</line>
+          <line>135</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -3443,45 +3205,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/SimpleBackPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07594936">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/mode_home_choiceness.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9166667">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/563dcb685903c96ce8abbd03adf7fa49e19aa8b4/gson-2.3.1-sources.jar!/com/google/gson/JsonObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/SDK/sources/android-23/android/test/InstrumentationTestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.3804536">
-          <caret line="476" column="6" selection-start-line="476" selection-start-column="6" selection-end-line="476" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/SDK/sources/android-23/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56041425">
-          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/SDK/sources/android-23/org/json/JSONArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3657,13 +3380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.9666667">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/volleyManage/ResponseJsonListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3725,38 +3441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5">
-          <caret line="45" column="10" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="10" />
-          <folding>
-            <element signature="e#6031#6047#0" expanded="false" />
-            <element signature="e#6537#6538#0" expanded="false" />
-            <element signature="e#6585#6586#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/CityChooseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35443038">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3055556">
-          <caret line="74" column="50" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="50" />
-          <folding>
-            <element signature="e#1264#2942#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/popupwindow_sift_consume_city.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3766,14 +3450,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5">
-          <caret line="132" column="38" selection-start-line="132" selection-start-column="38" selection-end-line="132" selection-end-column="38" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/global/ImageLoaderOptions.java">
@@ -3830,29 +3506,121 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/GoodDetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.9">
+          <caret line="117" column="39" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/mode/homeMode/HomeChoicenessMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="16.5">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/HappinessFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="62" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/backSimpleFragment/CityChooseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4556962">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/MyFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6">
-          <caret line="70" column="9" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.25268176">
+          <caret line="83" column="53" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/fragment/mainFragment/ChoicenessFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35443038">
+          <caret line="446" column="26" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_main_me.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9058971">
+          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+          <folding>
+            <element signature="e#1264#2942#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/GoodDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.47795">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2947#3714#0" expanded="true" />
+            <element signature="e#3713#3714#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/net/constant/HttpConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11392405">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.62025315">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31922612">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2083333">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://D:/SDK/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-sources.jar!/android/support/v4/app/BackStackRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0851554">
+          <caret line="711" column="0" selection-start-line="711" selection-start-column="0" selection-end-line="711" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/mainAcivity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5268176">
+          <caret line="53" column="29" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
