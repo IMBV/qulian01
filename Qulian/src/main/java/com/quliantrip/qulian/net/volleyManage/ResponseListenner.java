@@ -36,7 +36,7 @@ public class ResponseListenner implements Response.Listener<String> {
         EventBus.getDefault().post(object);
     }
 
-    public interface OnLoadFinishListener extends ResponseJsonListener.OnLoadFinishListener {
+    public interface OnLoadFinishListener {
         void onLoadFinish(int object);
     }
 

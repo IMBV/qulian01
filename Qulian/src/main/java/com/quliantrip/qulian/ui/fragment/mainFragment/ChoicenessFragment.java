@@ -87,6 +87,10 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
     private int page;//当前的页码数
     private boolean[] tabStateArr = new boolean[3];
 
+    //定义一个数据请求的对象
+    private QuestBean questBean;
+    private String sortName;//大分类的名称
+
     @Override
     protected View getSuccessView() {
         view = View.inflate(mContext, R.layout.fragment_main_choiceness, null);
@@ -103,15 +107,24 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
 
     @Override
     protected QuestBean requestData() {
-        Map<String, String> map = new HashMap<String, String>();
-        map.put("ctl", "tuan");
-        map.put("r_type", "1");
-        return new QuestBean(map, new TuanBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_Test);
+
+        if (questBean==null){
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("ctl", "tuan");
+            map.put("r_type", "1");
+            return new QuestBean(map, new TuanBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_Test);
+        }else{
+            return  questBean;
+        }
     }
 
     @Override
     public void onEventMainThread(BaseJson bean) {
         if (bean != null && this.getClass().getName().equals(bean.getTag())) {
+            if(sortName !=null){
+                shortName.setText(sortName);
+            }
+            sortName = null;
             //想mode添加数据
             TuanBean tuanbean = (TuanBean) bean;
             quanArray = tuanbean.getQuan_list();
@@ -125,7 +138,6 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
 
     private void initListView(TuanBean tuanbean) {
         item = tuanbean.getItem();
-        System.out.println(page);
         if(page>=2){
             quanItemAdapter.addList((ArrayList<TuanBean.ItemEntity>)tuanbean.getItem());
         }else{
@@ -514,4 +526,28 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
             mSwipeRefreshLayout.setEnabled(true);
         }
     }
+
+    //进行切换大的分类的数据的显示,外部数据进行调用
+    public void changeBigSortNoFragemnt(String sortName,String id){
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("ctl", "tuan");
+        map.put("cate_id", id);
+        map.put("r_type", "1");
+        questBean = new QuestBean(map, new TuanBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_Test);
+        this.sortName = sortName;
+    }
+
+    public void changeBigSort(String sortName,String id){
+        shortName.setText(sortName);
+        defaultorName.setText("城市");
+        cityName.setText("默认");
+        cate_id = id;
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("ctl", "tuan");
+        map.put("cate_id", id);
+        map.put("r_type", "1");
+        new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_Test, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
+
+    }
+
 }

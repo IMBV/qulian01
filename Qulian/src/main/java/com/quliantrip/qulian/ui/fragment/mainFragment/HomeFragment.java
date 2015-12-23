@@ -25,6 +25,7 @@ import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.scanner.activity.CaptureActivity;
 import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
 import com.quliantrip.qulian.ui.activity.GoodDetailActivity;
+import com.quliantrip.qulian.ui.activity.mainAcivity.MainActivity;
 import com.quliantrip.qulian.util.CommonHelp;
 import com.quliantrip.qulian.util.EvaluateUtil;
 import com.quliantrip.qulian.util.ToastUtil;
@@ -63,6 +64,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
     HomeFunctionMode homeFunctionMode;
     HomeChoicenessMode homeChoicenessMode;
 
+    private MainActivity activity ;
 
     @Override
     protected View getSuccessView() {
@@ -70,16 +72,18 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         ButterKnife.bind(this, view);
         ViewHelper.setAlpha(titleBackgroud, 0.0f);
         scroll.setScrollViewListener(this);
+        activity = (MainActivity) getActivity();
         initModel();
         listView.setFocusable(false);
         return view;
     }
 
+
     //添加model到linearlayout中
     private void initModel() {
         homeSlideImageMode = new HomeSlideImageMode();
         modelContainer.addView(homeSlideImageMode.getModelView());
-        homeFunctionMode = new HomeFunctionMode();
+        homeFunctionMode = new HomeFunctionMode(activity);
         modelContainer.addView(homeFunctionMode.getModelView());
         homeChoicenessMode = new HomeChoicenessMode();
         homeChoicenessMode.setContext(mContext);
