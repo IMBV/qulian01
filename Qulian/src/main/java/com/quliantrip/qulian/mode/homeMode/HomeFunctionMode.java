@@ -4,10 +4,10 @@ import android.view.View;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.domain.HomeBean;
+import com.quliantrip.qulian.domain.ImageBean;
 import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.mode.BaseMode;
 import com.quliantrip.qulian.ui.activity.mainAcivity.MainActivity;
-import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.view.HorizontalScroll.HorizontalScrollViewAdapter;
 import com.quliantrip.qulian.view.HorizontalScroll.MyHorizontalScrollView;
 
@@ -48,7 +48,15 @@ public class HomeFunctionMode extends BaseMode<List<HomeBean.IndexsEntity>> {
 
     @Override
     public void setData(final List<HomeBean.IndexsEntity> list) {
-        mAdapter = new HorizontalScrollViewAdapter(QulianApplication.getContext(), list);
+        final ArrayList<ImageBean> list2 = new ArrayList<ImageBean>();
+        list2.add(new ImageBean("17", "特色餐厅", "http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_01.png"));
+        list2.add(new ImageBean("16", "门票", "http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_02.png"));
+        list2.add(new ImageBean("8", "玩乐", "http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_03.png"));
+        list2.add(new ImageBean("9", "购物", "http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_04.png"));
+        list2.add(new ImageBean("10", "交通", "http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_05.png"));
+        list2.add(new ImageBean("11", "Wifi", "http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_06.png"));
+
+        mAdapter = new HorizontalScrollViewAdapter(QulianApplication.getContext(), list2);
 //        //添加滚动回调
 //        mHorizontalScrollView
 //                .setCurrentImageChangeListener(new MyHorizontalScrollView.CurrentImageChangeListener()
@@ -65,12 +73,9 @@ public class HomeFunctionMode extends BaseMode<List<HomeBean.IndexsEntity>> {
 
             @Override
             public void onClick(View view, int position) {
-                if (mMainActivity == null) {
-                    ToastUtil.showToast(QulianApplication.getContext(), list.get(position).getName());
-                } else {
-                    //这里可以通过适配的类获取数据的名称和筛选的id
-                    mMainActivity.changeChoicenessContion("玩乐", "8");//这里可以进行切换
-                }
+                ImageBean bean = list2.get(position);
+                //这里可以通过适配的类获取数据的名称和筛选的id
+                mMainActivity.changeChoicenessContion(bean.name, bean.id);//这里可以进行切换
             }
         });
         mHorizontalScrollView.initDatas(mAdapter);

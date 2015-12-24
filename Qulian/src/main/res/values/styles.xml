@@ -49,10 +49,17 @@
         <item name="android:textColor">@color/viewpage_selector_slide_title</item>
         <item name="android:textSize">17sp</item>
     </style>
-
+   <!--填充满整个屏幕的宽度-->
     <style name="fill_fill">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
+    </style>
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressloading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
     </style>
 
 

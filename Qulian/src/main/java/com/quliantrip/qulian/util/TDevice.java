@@ -558,7 +558,7 @@ public class TDevice {
 
     /**
      * 发送邮件
-     * 
+     *
      * @param context
      * @param subject
      *            主题
@@ -631,7 +631,7 @@ public class TDevice {
 
     /**
      * 调用系统安装了的应用分享
-     * 
+     *
      * @param context
      * @param title
      * @param url
@@ -647,7 +647,7 @@ public class TDevice {
 
     /**
      * 获取当前网络类型
-     * 
+     *
      * @return 0：没有网络 1：WIFI网络 2：WAP网络 3：NET网络
      */
     public static int getNetworkType() {

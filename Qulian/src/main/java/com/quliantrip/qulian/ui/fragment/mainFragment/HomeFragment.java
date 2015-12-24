@@ -172,4 +172,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
     void chooseSity() {
         UIHelper.showCityChoose(this, 1);
     }
+    @OnClick(R.id.tv_loading_more) void loadMore(){
+        activity.changeChoicenessContion("全部分类","0");
+    }
 }

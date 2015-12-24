@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<color name="colorPrimary">#FFFFFF</color>
-<color name="colorPrimaryDark">#303F9F</color>
-<color name="colorAccent">#FF4081</color>
-<!--扫码的颜色-->
-<color name="viewfinder_mask">#60000000</color>
-<color name="result_view">#b0000000</color>
-<color name="viewfinder_frame">#ff000000</color>
-<color name="viewfinder_laser">#ffff0000</color>
-<color name="possible_result_points">#c0ffff00</color>
-<!--指示头的显示界面-->
-<color name="background_tab_pressed">#6633B5E5</color>
-<color name="slidingtab_indicatorcolor">#0084FF</color>
-<!--首页搜索栏的背景颜色-->
-<color name="home_searck_backcolor">#666666</color>
-<!--首页框的背景颜色-->
-<color name="home_ll_backcolor">#ff0000</color>
-<!--状态栏的背景颜色-->
-<color name="systembar_zhuangtai">#000000</color>
-<color name="common_signin_btn_dark_text_default">#FAFAFA</color>
-<!--标题的颜色-->
-<color name="txt_title">#ff333333</color>
-<color name="txt_small">#ff7a7a7a</color>
-<!--设置popwin是否选的按钮-->
-<color name="group_item_pressed_bg">#F2F2F2</color>
-<color name="group_item_bg">#FFFFFF</color>
-<!--选着标题的颜色-->
-<color name="consume_list_tab_pressed">#FC8600</color>
-<color name="consume_list_tab">#8A8A8A</color>
+    <color name="main_gray">#9A9A9A</color>
 
-<!-- 下拉刷新时，颜色值 -->
-<color name="swiperefresh_color1">#ff00ddff</color>
-<color name="swiperefresh_color2">#ffffbb33</color>
-<color name="swiperefresh_color3">#ffff4444</color>
-<color name="swiperefresh_color4">#ffaa66cc</color>
-<!--城市列表的背景颜色-->
-<color name="city_list_collor">#ECECEC</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--扫码的颜色-->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#FFD2D2D2</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_frame_corner">#fff4a51b</color>
+    <!--指示头的显示界面-->
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="slidingtab_indicatorcolor">#0084FF</color>
+    <!--首页搜索栏的背景颜色-->
+    <color name="home_searck_backcolor">#666666</color>
+    <!--首页框的背景颜色-->
+    <color name="home_ll_backcolor">#ff0000</color>
+    <!--状态栏的背景颜色-->
+    <color name="systembar_zhuangtai">#000000</color>
+    <color name="common_signin_btn_dark_text_default">#FAFAFA</color>
+    <!--标题的颜色-->
+    <color name="txt_title">#ff333333</color>
+    <color name="txt_small">#ff7a7a7a</color>
+    <!--设置popwin是否选的按钮-->
+    <color name="group_item_pressed_bg">#F2F2F2</color>
+    <color name="group_item_bg">#FFFFFF</color>
+    <!--选着标题的颜色-->
+    <color name="consume_list_tab_pressed">#FC8600</color>
+    <color name="consume_list_tab">#8A8A8A</color>
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+    <color name="swiperefresh_color2">#ffffbb33</color>
+    <color name="swiperefresh_color3">#ffff4444</color>
+    <color name="swiperefresh_color4">#ffaa66cc</color>
+
+    <!--城市列表的背景颜色-->
+    <color name="city_list_collor">#ECECEC</color>
+
+    <!--listview的选择是的背景颜色-->
+    <color name="list_item_background_normal">@color/group_item_bg</color>
+    <color name="teamlist_item_background_normal">#ffffff</color>
+    <color name="list_item_background_pressed">#efefef</color>
 </resources>

@@ -1,60 +1,33 @@
 package com.quliantrip.qulian.global;
 
+import android.content.Context;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Properties;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.os.Environment;
-import android.preference.PreferenceManager;
-
 /**
- * 应用程序配置类：用于保存用户相关信息及设置
-
+ * 用于保存用户相关信息及设置
  */
 public class AppConfig {
 
     private final static String APP_CONFIG = "config";
-
-    public final static String CONF_COOKIE = "cookie";
-
     public final static String CONF_APP_UNIQUEID = "APP_UNIQUEID";
 
-    public static final String KEY_LOAD_IMAGE = "KEY_LOAD_IMAGE";
-    public static final String KEY_NOTIFICATION_ACCEPT = "KEY_NOTIFICATION_ACCEPT";
-    public static final String KEY_NOTIFICATION_SOUND = "KEY_NOTIFICATION_SOUND";
-    public static final String KEY_NOTIFICATION_VIBRATION = "KEY_NOTIFICATION_VIBRATION";
-    public static final String KEY_NOTIFICATION_DISABLE_WHEN_EXIT = "KEY_NOTIFICATION_DISABLE_WHEN_EXIT";
-    public static final String KEY_CHECK_UPDATE = "KEY_CHECK_UPDATE";
-    public static final String KEY_DOUBLE_CLICK_EXIT = "KEY_DOUBLE_CLICK_EXIT";
-
-    public static final String LAST_QUESTION_CATEGORY_IDX = "LAST_QUESTION_CATEGORY_IDX";
-    public static final String KEY_DAILY_ENGLISH = "KEY_DAILY_ENGLISH";
-    public static final String KEY_GET_LAST_DAILY_ENG = "KEY_GET_LAST_DAILY_ENG";
-    public static final String KEY_TWEET_DRAFT = "KEY_TWEET_DRAFT";
-    public static final String KEY_NOTE_DRAFT = "KEY_NOTE_DRAFT";
-    public static final String KEY_QUESTION_TITLE_DRAFT = "KEY_QUESTION_TITLE_DRAFT";
-    public static final String KEY_QUESTION_CONTENT_DRAFT = "KEY_QUESTION_CONTENT_DRAFT";
-    public static final String KEY_QUESTION_TYPE_DRAFT = "KEY_QUESTION_TYPE_DRAFT";
-    public static final String KEY_QUESTION_LMK_DRAFT = "KEY_QUESTION_LMK_DRAFT";
-
-    public static final String KEY_FIRST_START = "KEY_FIRST_START";
-
-    // 默认存放图片的路径
-    public final static String DEFAULT_SAVE_IMAGE_PATH = Environment
-            .getExternalStorageDirectory()
-            + File.separator
-            + "OSChina"
-            + File.separator + "osc_img" + File.separator;
-
-    // 默认存放文件下载的路径
-    public final static String DEFAULT_SAVE_FILE_PATH = Environment
-            .getExternalStorageDirectory()
-            + File.separator
-            + "OSChina"
-            + File.separator + "download" + File.separator;
+//    // 默认存放图片的路径
+//    public final static String DEFAULT_SAVE_IMAGE_PATH = Environment
+//            .getExternalStorageDirectory()
+//            + File.separator
+//            + "quLianTrip"
+//            + File.separator + "quLian_img" + File.separator;
+//
+//    // 默认存放文件下载的路径
+//    public final static String DEFAULT_SAVE_FILE_PATH = Environment
+//            .getExternalStorageDirectory()
+//            + File.separator
+//            + "quLianTrip"
+//            + File.separator + "download" + File.separator;
 
     private Context mContext;
     private static AppConfig appConfig;
@@ -65,13 +38,6 @@ public class AppConfig {
             appConfig.mContext = context;
         }
         return appConfig;
-    }
-
-    /**
-     * 获取Preference设置
-     */
-    public static SharedPreferences getSharedPreferences(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context);
     }
 
     public String get(String key) {

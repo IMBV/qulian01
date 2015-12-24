@@ -27,7 +27,9 @@ import android.view.View;
 
 import com.google.zxing.ResultPoint;
 import com.quliantrip.qulian.R;
+import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.scanner.zxing.camera.CameraManager;
+import com.quliantrip.qulian.util.CommonHelp;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -50,6 +52,8 @@ public final class ViewfinderView extends View {
     private final int frameColor;
     private final int laserColor;
     private final int resultPointColor;
+    private final int frameCorner;
+
     private int scannerAlpha;
     private Collection<ResultPoint> possibleResultPoints;
     private Collection<ResultPoint> lastPossibleResultPoints;
@@ -66,6 +70,7 @@ public final class ViewfinderView extends View {
         frameColor = resources.getColor(R.color.viewfinder_frame);
         laserColor = resources.getColor(R.color.viewfinder_laser);
         resultPointColor = resources.getColor(R.color.possible_result_points);
+        frameCorner = resources.getColor(R.color.viewfinder_frame_corner);
         scannerAlpha = 0;
         possibleResultPoints = new HashSet<ResultPoint>(5);
     }
@@ -99,12 +104,35 @@ public final class ViewfinderView extends View {
             canvas.drawRect(frame.right - 1, frame.top, frame.right + 1, frame.bottom - 1, paint);
             canvas.drawRect(frame.left, frame.bottom - 1, frame.right + 1, frame.bottom + 1, paint);
 
-            // Draw a red "laser scanner" line through the middle to show decoding is active
-            paint.setColor(laserColor);
-            paint.setAlpha(SCANNER_ALPHA[scannerAlpha]);
-            scannerAlpha = (scannerAlpha + 1) % SCANNER_ALPHA.length;
-            int middle = frame.height() / 2 + frame.top;
-            canvas.drawRect(frame.left + 2, middle - 1, frame.right - 1, middle + 2, paint);
+            //draw frame corner
+            paint.setColor(frameCorner);
+            canvas.drawRect(frame.left, frame.top, frame.left + CommonHelp.dip2px(QulianApplication.getContext(),16),
+                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),3), paint);
+            canvas.drawRect(frame.left, frame.top, frame.left + CommonHelp.dip2px(QulianApplication.getContext(),3),
+                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),16), paint);
+
+            canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),16), frame.top, frame.right,
+                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),3), paint);
+            canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),3), frame.top, frame.right,
+                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),16), paint);
+
+            canvas.drawRect(frame.left, frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),3),
+                    frame.left + CommonHelp.dip2px(QulianApplication.getContext(),16),frame.bottom, paint);
+            canvas.drawRect(frame.left, frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),16),
+                    frame.left + CommonHelp.dip2px(QulianApplication.getContext(),3),frame.bottom, paint);
+
+            canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),16),
+                    frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),3),frame.right,frame.bottom,paint);
+            canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),3),
+                    frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),16),frame.right,frame.bottom,paint);
+
+
+//            // Draw a red "laser scanner" line through the middle to show decoding is active
+//            paint.setColor(laserColor);
+//            paint.setAlpha(SCANNER_ALPHA[scannerAlpha]);
+//            scannerAlpha = (scannerAlpha + 1) % SCANNER_ALPHA.length;
+//            int middle = frame.height() / 2 + frame.top;
+//            canvas.drawRect(frame.left + 2, middle - 1, frame.right - 1, middle + 2, paint);
 
             Collection<ResultPoint> currentPossible = possibleResultPoints;
             Collection<ResultPoint> currentLast = lastPossibleResultPoints;

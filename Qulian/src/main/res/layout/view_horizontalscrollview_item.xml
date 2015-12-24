@@ -8,7 +8,7 @@
         android:id="@+id/iv_home_horizontalscroll_pic"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/bg_default_min"/>
     <TextView
         android:id="@+id/tv_home_function_name"
         android:layout_width="100dp"
@@ -16,5 +16,8 @@
         android:gravity="center"
         android:background="@android:color/transparent"
         android:text="nihao"/>
-
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/yuanimg"/>
 </RelativeLayout>

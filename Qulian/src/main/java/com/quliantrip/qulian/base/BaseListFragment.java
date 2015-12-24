@@ -1,14 +1,5 @@
 //package com.quliantrip.qulian.base;
 //
-//import java.io.ByteArrayInputStream;
-//import java.io.InputStream;
-//import java.io.Serializable;
-//import java.lang.ref.WeakReference;
-//import java.util.ArrayList;
-//import java.util.List;
-//
-//
-//
 //import android.content.Context;
 //import android.os.AsyncTask;
 //import android.os.Bundle;
@@ -21,10 +12,19 @@
 //import android.widget.AdapterView;
 //import android.widget.AdapterView.OnItemClickListener;
 //import android.widget.ListView;
-//import android.widget.TextView;
 //
 //import com.quliantrip.qulian.R;
+//import com.quliantrip.qulian.cache.CacheManager;
 //import com.quliantrip.qulian.domain.BaseJson;
+//import com.quliantrip.qulian.domain.ListEntity;
+//import com.quliantrip.qulian.util.TDevice;
+//
+//import java.io.ByteArrayInputStream;
+//import java.io.InputStream;
+//import java.io.Serializable;
+//import java.lang.ref.WeakReference;
+//import java.util.ArrayList;
+//import java.util.List;
 //
 //import butterknife.Bind;
 //import butterknife.ButterKnife;
@@ -72,22 +72,18 @@
 //    private AsyncTask<String, Void, ListEntity<T>> mCacheTask;
 //    private ParserTask mParserTask;
 //
-//    @Override
-//    protected int getLayoutId() {
-//        return R.layout.fragment_pull_refresh_listview;
-//    }
 //
 //    @Override
 //    public View onCreateView(LayoutInflater inflater, ViewGroup container,
 //            Bundle savedInstanceState) {
-//        View view = inflater.inflate(getLayoutId(), container, false);
+//        View view = inflater.inflate(R.layout.fragment_pull_refresh_listview, container, false);
 //        return view;
 //    }
 //
 //    @Override
 //    public void onViewCreated(View view, Bundle savedInstanceState) {
 //        super.onViewCreated(view, savedInstanceState);
-//        ButterKnife.inject(this, view);
+//        ButterKnife.bind(this, view);
 //        initView(view);
 //    }
 //
@@ -108,23 +104,23 @@
 //                R.color.swiperefresh_color1, R.color.swiperefresh_color2,
 //                R.color.swiperefresh_color3, R.color.swiperefresh_color4);
 //
-//        mErrorLayout.setOnLayoutClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                mCurrentPage = 0;
-//                mState = STATE_REFRESH;
-//                mErrorLayout.setErrorType(EmptyLayout.NETWORK_LOADING);
-//                requestData(true);
-//            }
-//        });
+////        mErrorLayout.setOnLayoutClickListener(new View.OnClickListener() {
+////
+////            @Override
+////            public void onClick(View v) {
+////                mCurrentPage = 0;
+////                mState = STATE_REFRESH;
+////                mErrorLayout.setErrorType(EmptyLayout.NETWORK_LOADING);
+////                requestData(true);
+////            }
+////        });
 //
 //        mListView.setOnItemClickListener(this);
 //        mListView.setOnScrollListener(this);
 //
 //        if (mAdapter != null) {
 //            mListView.setAdapter(mAdapter);
-//            mErrorLayout.setErrorType(EmptyLayout.HIDE_LAYOUT);
+////            mErrorLayout.setErrorType(EmptyLayout.HIDE_LAYOUT);
 //        } else {
 //            mAdapter = getListAdapter();
 //            mListView.setAdapter(mAdapter);
@@ -248,36 +244,6 @@
 //        }
 //
 //        return false;
-//    }
-//
-//    // 是否到时间去刷新数据了
-//    private boolean onTimeRefresh() {
-//        String lastRefreshTime = AppContext.getLastRefreshTime(getCacheKey());
-//        String currTime = StringUtils.getCurTimeStr();
-//        long diff = StringUtils.calDateDifferent(lastRefreshTime, currTime);
-//        return needAutoRefresh() && diff > getAutoRefreshTime();
-//    }
-//
-//    /***
-//     * 自动刷新的时间
-//     *
-//     * 默认：自动刷新的时间为半天时间
-//     *
-//     * @author 火蚁 2015-2-9 下午5:55:11
-//     *
-//     * @return long
-//     * @return
-//     */
-//    protected long getAutoRefreshTime() {
-//        return 12 * 60 * 60;
-//    }
-//
-//    @Override
-//    public void onResume() {
-//        super.onResume();
-//        if (onTimeRefresh()) {
-//            onRefresh();
-//        }
 //    }
 //
 //    protected void sendRequestData() {}
@@ -583,22 +549,5 @@
 //        // requestData(true);
 //        // }
 //        // }
-//    }
-//
-//    /**
-//     * 保存已读的文章列表
-//     *
-//     * @param view
-//     * @param prefFileName
-//     * @param key
-//     */
-//    protected void saveToReadedList(final View view, final String prefFileName,
-//            final String key) {
-//        // 放入已读列表
-//        AppContext.putReadedPostList(prefFileName, key, "true");
-//        TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
-//        if (tvTitle != null) {
-//            tvTitle.setTextColor(0xff9a9a9a);
-//        }
 //    }
 //}

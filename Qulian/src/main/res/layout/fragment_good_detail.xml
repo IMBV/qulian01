@@ -4,12 +4,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <WebView
-        android:id="@+id/wv_good_detail"
+    <RelativeLayout
+        android:id="@+id/wv_good_activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone" />
+        android:visibility="gone">
+        <WebView
+            android:id="@+id/wv_good_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_good_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_good_menu"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+
+    </RelativeLayout>
 
     <FrameLayout
         android:id="@+id/pb_good_list_loading"

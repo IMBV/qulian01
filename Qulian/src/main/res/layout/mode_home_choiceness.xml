@@ -6,6 +6,14 @@
     android:background="@drawable/grid_item_bg_normal"
     android:orientation="vertical"
     android:padding="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="精选一条"
+        android:layout_margin="5dp"
+        android:textSize="16sp"/>
     <!-- 第一行 -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +24,7 @@
             android:id="@+id/iv_home_quality_icon"
             android:layout_width="125dp"
             android:layout_height="100dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/bg_default_min" />
 
         <RelativeLayout
             android:layout_width="match_parent"

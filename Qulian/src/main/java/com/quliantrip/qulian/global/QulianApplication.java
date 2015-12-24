@@ -19,6 +19,9 @@ import com.quliantrip.qulian.util.CommonHelp;
 import java.util.Properties;
 import java.util.UUID;
 
+/**
+ * 应用全局的变量
+ */
 public class QulianApplication extends Application {
 
     private static Handler mainHandler;
@@ -66,12 +69,7 @@ public class QulianApplication extends Application {
         AppConfig.getAppConfig(this).set(key, value);
     }
 
-    /**
-     * 获取cookie时传AppConfig.CONF_COOKIE
-     *
-     * @param key
-     * @return
-     */
+
     public String getProperty(String key) {
         String res = AppConfig.getAppConfig(this).get(key);
         return res;
@@ -84,7 +82,7 @@ public class QulianApplication extends Application {
 
     private void initLogin() {
         user = getLoginUser();
-        if (null != user && 1==user.getStatus()) {
+        if (null != user && 1 == user.getStatus()) {
             this.isLogin = true;
             userId = user.getId();
         } else {
@@ -212,25 +210,25 @@ public class QulianApplication extends Application {
         user.setInfo(getProperty("user.info"));
         user.setIs_tmp(getProperty("user.is_tmp"));
         user.setMobile(getProperty("user.mobile"));
-        user.setReturnX(CommonHelp.toInt(getProperty("user.returnX"),0));
+        user.setReturnX(CommonHelp.toInt(getProperty("user.returnX"), 0));
         user.setSess_id(getProperty("user.sess_id"));
 
-        user.setStatus(CommonHelp.toInt(getProperty("user.status"),0));
+        user.setStatus(CommonHelp.toInt(getProperty("user.status"), 0));
         user.setUser_name(getProperty("user.user_name"));
         user.setUser_pwd(getProperty("user.user_pwd"));
         return user;
     }
+
     /**
      * 清除登录信息
      */
     public void cleanLoginInfo() {
         this.userId = "0";
         this.isLogin = false;
-        removeProperty("user.act", "user.city_name","user.ctl","user.email","user.id",
-                "user.info","user.is_tmp","user.mobile","user.returnX","user.sess_id"
-                ,"user.status","user.user_name","user.user_pwd");
+        removeProperty("user.act", "user.city_name", "user.ctl", "user.email", "user.id",
+                "user.info", "user.is_tmp", "user.mobile", "user.returnX", "user.sess_id"
+                , "user.status", "user.user_name", "user.user_pwd");
     }
-
 
     //这里是返回voley的消息的队列
     public static RequestQueue getRequestQueue() {

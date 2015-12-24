@@ -6,24 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Yuly on 2015/12/17.
  * www.quliantrip.com
  */
-public class UserInfoBean extends BaseJson{
-
-
-    /**
-     * act : dologin
-     * city_name : 东京
-     * ctl : user
-     * email : dev@quliantrip.com
-     * id : 71
-     * info : 登录成功
-     * is_tmp : 0
-     * mobile : 17001288684
-     * return : 1
-     * sess_id : qhukm9ima3ekqli379pm0iuaj5
-     * status : 1
-     * user_name : fanwe
-     * user_pwd : 6714ccb93be0fda4e51f206b91b46358
-     */
+public class UserInfoBean extends BaseJson {
 
     private String act;
     private String city_name;

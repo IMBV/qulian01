@@ -3,7 +3,6 @@ package com.quliantrip.qulian.ui.fragment.mainFragment;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -31,7 +30,6 @@ import com.quliantrip.qulian.net.constant.HttpConstants;
 import com.quliantrip.qulian.net.volleyManage.PacketStringReQuest;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.ui.activity.GoodDetailActivity;
-import com.quliantrip.qulian.util.UIHelper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -108,20 +106,20 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
     @Override
     protected QuestBean requestData() {
 
-        if (questBean==null){
+        if (questBean == null) {
             Map<String, String> map = new HashMap<String, String>();
             map.put("ctl", "tuan");
             map.put("r_type", "1");
             return new QuestBean(map, new TuanBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_Test);
-        }else{
-            return  questBean;
+        } else {
+            return questBean;
         }
     }
 
     @Override
     public void onEventMainThread(BaseJson bean) {
         if (bean != null && this.getClass().getName().equals(bean.getTag())) {
-            if(sortName !=null){
+            if (sortName != null) {
                 shortName.setText(sortName);
             }
             sortName = null;
@@ -138,9 +136,9 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
 
     private void initListView(TuanBean tuanbean) {
         item = tuanbean.getItem();
-        if(page>=2){
-            quanItemAdapter.addList((ArrayList<TuanBean.ItemEntity>)tuanbean.getItem());
-        }else{
+        if (page >= 2) {
+            quanItemAdapter.addList((ArrayList<TuanBean.ItemEntity>) tuanbean.getItem());
+        } else {
             item = tuanbean.getItem();
             quanItemAdapter = new QuanItemAdapter((ArrayList<TuanBean.ItemEntity>) item);
             listView.setAdapter(quanItemAdapter);
@@ -196,7 +194,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         }
     }
 
-    private void setAllNot() {
+    public void setAllNot() {
         tabStateArr[0] = false;
         setTabState(sortArrow, shortName, tabStateArr[0]);
         tabStateArr[1] = false;
@@ -207,13 +205,17 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
 
     private void setTabState(ImageView img, TextView textView, boolean state) {
         if (state) {// 选中状态
-            img.setBackgroundResource(R.mipmap.up);
-            textView.setTextColor(getResources().getColor(
-                    R.color.consume_list_tab_pressed));
+            if (img != null)
+                img.setBackgroundResource(R.mipmap.up);
+            if (textView != null)
+                textView.setTextColor(getResources().getColor(
+                        R.color.consume_list_tab_pressed));
         } else {
-            img.setBackgroundResource(R.mipmap.down);
-            textView.setTextColor(getResources().getColor(
-                    R.color.consume_list_tab));
+            if (img != null)
+                img.setBackgroundResource(R.mipmap.down);
+            if (textView != null)
+                textView.setTextColor(getResources().getColor(
+                        R.color.consume_list_tab));
         }
     }
 
@@ -301,7 +303,6 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
                 checkLogin();
             }
         });
-
         sortPopupWindow = new PopupWindow(popView, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         sortPopupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//设置可以使用动画popupWindow.setBackgroundDrawable(new BitmapDrawable());
 
@@ -342,6 +343,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
             }
         });
 
+
         sortPopupWindow = new PopupWindow(popView, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         sortPopupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//设置可以使用动画popupWindow.setBackgroundDrawable(new BitmapDrawable());
 
@@ -372,7 +374,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
     }
 
     //隐藏pouwindow
-    private void hidePopupWindow() {
+    public void hidePopupWindow() {
         //在onsrcll中的方法在oncreate会调用,所以判断是否为空
         if (sortPopupWindow != null) {
             sortPopupWindow.dismiss();
@@ -428,12 +430,10 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
     }
 
     private String cate_id;
-
     class MySortItemClick implements AdapterView.OnItemClickListener {
 
         @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position,
-                                long id) {
+        public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
             cate_id = ((TuanBean.BcateListEntity) parent.getAdapter().getItem(position)).getId() + "";
 
             sortGroupAdapter.setSelectedPosition(position);
@@ -464,7 +464,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent intent = new Intent(mContext, GoodDetailActivity.class);
-        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=deal&data_id="+((TuanBean.ItemEntity)parent.getAdapter().getItem(position)).getId());
+        intent.putExtra("goodId", HttpConstants.WEBVIEW_ROOT + "?ctl=deal&data_id=" + ((TuanBean.ItemEntity) parent.getAdapter().getItem(position)).getId());
         mContext.startActivity(intent);
     }
 
@@ -483,8 +483,8 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         if (quanItemAdapter == null || quanItemAdapter.getCount() == 0) {
             return;
         }
-        if (page*10-1 == view.getLastVisiblePosition()) {
-            page= page+1;
+        if (page * 10 - 1 == view.getLastVisiblePosition()) {
+            page = page + 1;
             Map<String, String> map = new HashMap<String, String>();
             map.put("ctl", "tuan");
             if (cate_id != null)
@@ -496,8 +496,8 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
                 map.put("qid", qid);
             if (order_type != null)
                 map.put("order_type", order_type);
-            map.put("page",page+"");
-            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_Test, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map,null);
+            map.put("page", page + "");
+            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_Test, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
         }
     }
 
@@ -528,7 +528,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
     }
 
     //进行切换大的分类的数据的显示,外部数据进行调用
-    public void changeBigSortNoFragemnt(String sortName,String id){
+    public void changeBigSortNoFragemnt(String sortName, String id) {
         Map<String, String> map = new HashMap<String, String>();
         map.put("ctl", "tuan");
         map.put("cate_id", id);
@@ -537,10 +537,10 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         this.sortName = sortName;
     }
 
-    public void changeBigSort(String sortName,String id){
+    public void changeBigSort(String sortName, String id) {
         shortName.setText(sortName);
-        defaultorName.setText("城市");
-        cityName.setText("默认");
+        cityName.setText("城市");
+        defaultorName.setText("默认");
         cate_id = id;
         Map<String, String> map = new HashMap<String, String>();
         map.put("ctl", "tuan");

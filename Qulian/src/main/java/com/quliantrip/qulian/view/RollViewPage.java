@@ -104,7 +104,7 @@ public class RollViewPage extends ViewPager {
         public Object instantiateItem(ViewGroup container, final int position) {
             View view = View.inflate(getContext(), R.layout.viewpager_item, null);
             ImageView image = (ImageView) view.findViewById(R.id.image);
-            ImageLoader.getInstance().displayImage(imageList.get(position%imageList.size()), image, ImageLoaderOptions.pager_options);
+            ImageLoader.getInstance().displayImage(imageList.get(position%imageList.size()), image, ImageLoaderOptions.options_big);
             // 点击图片的和进行回调函数的使用
             image.setOnTouchListener(new OnTouchListener() {
 

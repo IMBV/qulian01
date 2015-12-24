@@ -25,42 +25,37 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:background="@drawable/navbar"
+            android:background="#0F000000"
             android:gravity="center"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
-            android:text="扫码"
+            android:text="扫码WiFi"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btn_cancel_scan"
-            android:layout_width="230dp"
-            android:layout_height="40dp"
-            android:layout_alignParentBottom="true"
+        <ImageView
+            android:id="@+id/iv_move_line"
+            android:layout_width="249dp"
+            android:layout_height="249dp"
             android:layout_centerInParent="true"
-            android:layout_marginBottom="75dp"
-            android:text="返回"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <!-- <LinearLayout
-            android:layout_width="fill_parent"
+            android:src="@mipmap/saomiao_middle"/>
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/btn_cancel_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="2dp"
-                android:gravity="center"
-                android:text="@string/scan_prompt_info"
-                android:textColor="@android:color/white"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-        </LinearLayout> -->
+            android:text="将设备上的二维码置于框内，即可扫描上网"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginBottom="115dp"/>
 
     </RelativeLayout>
 

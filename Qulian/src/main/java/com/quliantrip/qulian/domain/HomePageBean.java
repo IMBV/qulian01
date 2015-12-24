@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Created by Yuly on 2015/12/2.
  * www.quliantrip.com
  */
-public class HomePageBean extends BaseJson implements Serializable {
+public class HomePageBean extends BaseJson {
     private ArrayList<String> name;
 
     public ArrayList<String> getName() {

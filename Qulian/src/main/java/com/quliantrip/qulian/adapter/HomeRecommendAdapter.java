@@ -34,7 +34,7 @@ public class HomeRecommendAdapter extends BasicAdapter<HomeBean.DealListEntity> 
         Holder holder = Holder.getHolder(convertView);
 //        holder.des.setText(list.get(position).getDes());
         HomeBean.DealListEntity bean = list.get(position);
-        ImageLoader.getInstance().displayImage(bean.getIcon(), holder.pic, ImageLoaderOptions.options);
+        ImageLoader.getInstance().displayImage(bean.getIcon(), holder.pic, ImageLoaderOptions.options_big);
         holder.dealName.setText(bean.getName());
         holder.newPrice.setText("￥"+bean.getCurrent_price());
         holder.oldPrice.setText("￥"+bean.getOrigin_price());

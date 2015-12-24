@@ -126,9 +126,9 @@ public class EmptyLayout extends LinearLayout implements
 
     /**
      * 新添设置背景
-     * 
+     *
      * @author 火蚁 2015-1-27 下午2:14:00
-     * 
+     *
      */
     public void setErrorImag(int imgResource) {
         try {

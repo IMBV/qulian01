@@ -28,6 +28,9 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.SurfaceHolder;
 
+import com.quliantrip.qulian.global.QulianApplication;
+import com.quliantrip.qulian.util.CommonHelp;
+
 /**
  * This object wraps the Camera service object and expects to be the only one talking to it. The
  * implementation encapsulates the steps needed to take preview-sized images, which are used for
@@ -40,8 +43,8 @@ public final class CameraManager {
 
   private static final int MIN_FRAME_WIDTH = 240;
   private static final int MIN_FRAME_HEIGHT = 240;
-  private static final int MAX_FRAME_WIDTH = 480;
-  private static final int MAX_FRAME_HEIGHT = 360;
+  private static final int MAX_FRAME_WIDTH = CommonHelp.dip2px(QulianApplication.getContext(),249);
+  private static final int MAX_FRAME_HEIGHT = CommonHelp.dip2px(QulianApplication.getContext(),249);
 
   private static CameraManager cameraManager;
 

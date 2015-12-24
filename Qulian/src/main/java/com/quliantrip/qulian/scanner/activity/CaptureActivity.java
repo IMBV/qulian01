@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Vector;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
@@ -18,31 +19,28 @@ import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.Result;
+import com.nineoldandroids.view.ViewHelper;
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.scanner.zxing.camera.CameraManager;
 import com.quliantrip.qulian.scanner.zxing.decoding.CaptureActivityHandler;
 import com.quliantrip.qulian.scanner.zxing.decoding.InactivityTimer;
 import com.quliantrip.qulian.scanner.zxing.view.ViewfinderView;
+import com.quliantrip.qulian.util.CommonHelp;
 
-/**
- * 使用：Intent openCameraIntent = new Intent(BarCodeTestActivity.this,CaptureActivity.class);
- * startActivityForResult(openCameraIntent, 0);开启activity和获取返回的监听
- *
- * @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
- * super.onActivityResult(requestCode, resultCode, data);
- * if (resultCode == RESULT_OK) {
- * data.setClass(this, OpenWifiActivity.class);
- * startActivity(data);
- * 建立监听返回
- * }
- * }
- */
-public class CaptureActivity extends Activity implements Callback {
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
+
+public class CaptureActivity extends SwipeBackActivity implements Callback {
 
     private CaptureActivityHandler handler;
     private ViewfinderView viewfinderView;
@@ -54,7 +52,7 @@ public class CaptureActivity extends Activity implements Callback {
     private boolean playBeep;
     private static final float BEEP_VOLUME = 0.10f;
     private boolean vibrate;
-    private Button cancelScanButton;
+    private Context mContext;
 
     /**
      * Called when the activity is first created.
@@ -63,14 +61,31 @@ public class CaptureActivity extends Activity implements Callback {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera);
-        //ViewUtil.addTopView(getApplicationContext(), this, R.string.scan_card);
+        ButterKnife.bind(this);
+        mContext = this;
         CameraManager.init(getApplication());
         viewfinderView = (ViewfinderView) findViewById(R.id.viewfinder_view);
-        cancelScanButton = (Button) this.findViewById(R.id.btn_cancel_scan);
         hasSurface = false;
         inactivityTimer = new InactivityTimer(this);
+        initAnimation();
     }
-   
+
+    @OnClick(R.id.btn_cancel_scan) void finishCamera(){
+        CaptureActivity.this.finish();
+    }
+    //添加线的动画
+    private void initAnimation() {
+
+        ImageView moveLine = (ImageView) findViewById(R.id.iv_move_line);
+        TranslateAnimation animation = new TranslateAnimation(0,0,moveLine.getY()-CommonHelp.dip2px(mContext,120),moveLine.getY()+CommonHelp.dip2px(mContext,120));
+
+        animation.setRepeatCount(-1);
+        animation.setRepeatMode(Animation.RESTART);
+        animation.setInterpolator(new LinearInterpolator());
+        animation.setDuration(3000);
+        moveLine.startAnimation(animation);
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -93,14 +108,7 @@ public class CaptureActivity extends Activity implements Callback {
         initBeepSound();
         vibrate = true;
 
-        //quit the scan view
-        cancelScanButton.setOnClickListener(new OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                CaptureActivity.this.finish();
-            }
-        });
     }
 
     @Override
@@ -133,7 +141,6 @@ public class CaptureActivity extends Activity implements Callback {
         if (resultString.equals("")) {
             Toast.makeText(CaptureActivity.this, "Scan failed!", Toast.LENGTH_SHORT).show();
         } else {
-//			System.out.println("Result:"+resultString);
             Intent resultIntent = new Intent();
             Bundle bundle = new Bundle();
             bundle.putString("result", resultString);

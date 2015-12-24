@@ -14,6 +14,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.net.constant.HttpConstants;
@@ -22,6 +23,7 @@ import com.quliantrip.qulian.util.ToastUtil;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
 
 /**
@@ -30,6 +32,8 @@ import me.imid.swipebacklayout.lib.app.SwipeBackActivity;
  */
 public class GoodDetailActivity extends SwipeBackActivity {
     private Context mContext;
+    @Bind(R.id.wv_good_activity)
+    RelativeLayout activity;
     @Bind(R.id.wv_good_detail)
     WebView mGoodDetail;
     @Bind(R.id.pb_good_list_loading)
@@ -69,9 +73,12 @@ public class GoodDetailActivity extends SwipeBackActivity {
                     String content = "android";
                     mGoodDetail.loadUrl("javascript:javacalljswithargs('" + content + "')");
                 }
-
+                if(getIntent().getStringExtra("goodId").toString().endsWith("?ctl=user&act=getpassword")){
+                    String content = "android";
+                    mGoodDetail.loadUrl("javascript:javacalljswithargs('" + content + "')");
+                }
                 loading.setVisibility(View.GONE);
-                mGoodDetail.setVisibility(View.VISIBLE);
+                activity.setVisibility(View.VISIBLE);
                 super.onPageFinished(view, url);
             }
 
@@ -116,5 +123,11 @@ public class GoodDetailActivity extends SwipeBackActivity {
         public void tipsInfo(String arg) {
 //            ToastUtil.showToast(mContext, arg);
         }
+    }
+    @OnClick(R.id.tv_good_back) void finishGoogDetail(){
+        finish();
+    }
+    @OnClick(R.id.tv_good_menu) void showMenu(){
+        ToastUtil.showToast(mContext,"该功能尚未开通，敬请期待");
     }
 }

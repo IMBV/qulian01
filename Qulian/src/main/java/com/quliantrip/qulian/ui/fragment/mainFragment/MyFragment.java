@@ -102,12 +102,6 @@ public class MyFragment extends BaseFragment {
         initLogin();
     }
 
-    @OnClick(R.id.ll_me_orderList) void showOrderList(){
-        Intent intent = new Intent(mContext, GoodDetailActivity.class);
-        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=uc_order");
-        mContext.startActivity(intent);
-    }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != Activity.RESULT_OK) {
@@ -150,8 +144,36 @@ public class MyFragment extends BaseFragment {
         mContext.startActivity(intent);
     }
 
+    //我的积分
+    @OnClick(R.id.ll_me_integral) void showIntegral(){
+        Intent intent = new Intent(mContext, GoodDetailActivity.class);
+        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=uc_ecv&act=exchange");
+        mContext.startActivity(intent);
+    }
 
-    //    public void checkLogin(){
+    //我的收藏
+    @OnClick(R.id.ll_me_collect) void showCollect(){
+        Intent intent = new Intent(mContext, GoodDetailActivity.class);
+        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=uc_collect");
+        mContext.startActivity(intent);
+    }
+
+    //我的订单
+    @OnClick(R.id.ll_me_orderList) void showOrderList(){
+        Intent intent = new Intent(mContext, GoodDetailActivity.class);
+        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=uc_order");
+        mContext.startActivity(intent);
+    }
+
+    //设置
+    @OnClick(R.id.ll_me_setting_out) void goOutLogin(){
+        Intent intent = new Intent(mContext, GoodDetailActivity.class);
+        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=user&act=getpassword");
+        mContext.startActivity(intent);
+    }
+
+
+  //    public void checkLogin(){
 //        if (QulianApplication.getInstance().isLogin()) {
 //            userLoading.setVisibility(View.VISIBLE);
 //            loading.setVisibility(View.GONE);

@@ -62,9 +62,12 @@ public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>>{
 
         imageList.clear();
         dotList.clear();
-        for (HomeBean.AdvsEntity adv:advs) {
-            imageList.add(adv.getImg());
-        }
+//        for (HomeBean.AdvsEntity adv:advs) {
+//            imageList.add(adv.getImg());
+//        }
+        imageList.add("http://www.quliantrip.com/public/attachment/201511/20/16/564ed3a64400b.png");
+        imageList.add("http://www.quliantrip.com/public/attachment/201511/20/16/564ed3762c8e5.png");
+        imageList.add("http://www.quliantrip.com/public/attachment/201511/20/16/564ed327a6642.png");
         if (imageList.size() > 0) {
             //初始化小点
             initDoc();
@@ -77,7 +80,7 @@ public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>>{
                 @Override
                 public void touchImage(String url) {
                     //这里是进行点击图片是的操作
-                    ToastUtil.showToast(QulianApplication.getContext(),url);
+//                    ToastUtil.showToast(QulianApplication.getContext(),url);
                 }
             });
             top_news_viewpager.removeAllViews();

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <include layout="@layout/view_systembar" />
@@ -79,7 +80,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/me_setting"
                     android:textColor="#FFFFFF"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <Button
                     android:id="@+id/tv_me_loadout"
@@ -92,6 +93,65 @@
                     android:visibility="gone" />
 
             </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_me_collect"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/shoucang"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="我的收藏"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#ECECEC"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:id="@+id/ll_me_integral"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/jifen"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="我的积分"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#ECECEC"/>
 
             <LinearLayout
                 android:id="@+id/ll_me_orderList"
@@ -114,6 +174,37 @@
                     android:textSize="18sp" />
 
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="2dp"
+                android:background="#ECECEC"/>
+            <LinearLayout
+                android:id="@+id/ll_me_setting_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/setting_me" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="设置"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="2dp"
+                android:background="#ECECEC"/>
 
             <WebView
                 android:id="@+id/wb_login_info"
