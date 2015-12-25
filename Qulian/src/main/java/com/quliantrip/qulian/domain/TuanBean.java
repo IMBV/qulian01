@@ -368,7 +368,7 @@ public class TuanBean extends BaseJson {
         }
     }
 
-    public static class ItemEntity {
+    public static class ItemEntity extends BaseJson{
         private String auto_order;
         private String begin_time;
         private String begin_time_format;

@@ -17,7 +17,7 @@ public interface ImageLoaderOptions {
             .cacheOnDisk(true)// 在硬盘中缓存该图片
             .considerExifParams(true)// 会识别图片的方向信息
             // .displayer(new FadeInBitmapDisplayer(800)).build();//渐渐显示的动画效果
-            .displayer(new RoundedBitmapDisplayer(28)).build();// 圆角的效果
+            .displayer(new RoundedBitmapDisplayer(10)).build();// 圆角的效果
 
     DisplayImageOptions pager_options = new DisplayImageOptions.Builder()
             .showImageOnLoading(R.mipmap.bg_default_min)// 加载图片过程中显示哪张图片
@@ -37,5 +37,5 @@ public interface ImageLoaderOptions {
             .cacheOnDisk(true)// 在硬盘中缓存该图片
             .considerExifParams(true)// 会识别图片的方向信息
             // .displayer(new FadeInBitmapDisplayer(800)).build();//渐渐显示的动画效果
-            .displayer(new RoundedBitmapDisplayer(28)).build();// 圆角的效果
+            .displayer(new RoundedBitmapDisplayer(10)).build();// 圆角的效果
 }

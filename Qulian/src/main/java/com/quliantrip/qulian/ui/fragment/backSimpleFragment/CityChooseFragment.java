@@ -85,9 +85,4 @@ public class CityChooseFragment extends BasePageCheckFragment {
         }
     }
 
-//    @OnClick(R.id.bt_choose_finish)void finishChoose() {
-//        Intent intent = new Intent(mContext, MainActivity.class);
-//        ((SimpleBackActivity)mContext).setResult(((SimpleBackActivity)mContext).RESULT_OK, intent);
-//        ((SimpleBackActivity)mContext).finish();
-//    }
 }

@@ -41,12 +41,7 @@ public class CommonHelp {
         return getResources().getString(id);
     }
 
-    /**
-     * 获取字符串数组资源
-     *
-     * @param id
-     * @return
-     */
+
     public static String[] getStringArray(int id) {
         return getResources().getStringArray(id);
     }
@@ -88,7 +83,7 @@ public class CommonHelp {
         sp.edit().putBoolean(key, value).commit();
     }
 
-    public static boolean getsp(Context context, String key,
+    public static boolean getSp(Context context, String key,
                                 boolean defaultValue) {
         SharedPreferences sp = context.getSharedPreferences(CONFIG_NAME,
                 context.MODE_PRIVATE);

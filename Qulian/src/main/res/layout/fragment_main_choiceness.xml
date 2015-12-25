@@ -13,6 +13,10 @@
         android:gravity="center"
         android:text="精选列表"
         android:textSize="18sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#8F8F8F" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -22,28 +26,16 @@
 
         <LinearLayout
             android:id="@+id/ll_consume_list_sort"
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="5dp">
+            style="@style/choiceness_condition_every_page">
 
             <TextView
                 android:id="@+id/tv_consume_list_sort_name"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="全部分类"
-                android:textColor="#8F8F8F" />
+                style="@style/choiceness_condition_title"
+                android:text="全部分类" />
 
             <ImageView
                 android:id="@+id/iv_consume_list_sort_arrow"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="4dp"
+                style="@style/choiceness_condition_Image"
                 android:background="@mipmap/down" />
         </LinearLayout>
 
@@ -54,28 +46,16 @@
 
         <LinearLayout
             android:id="@+id/ll_consume_list_city"
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="5dp">
+            style="@style/choiceness_condition_every_page">
 
             <TextView
                 android:id="@+id/tv_consume_list_city_name"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="城市"
-                android:textColor="#8F8F8F" />
+                style="@style/choiceness_condition_title"
+                android:text="城市" />
 
             <ImageView
                 android:id="@+id/iv_consume_list_city_arrow"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="4dp"
+                style="@style/choiceness_condition_Image"
                 android:background="@mipmap/down" />
         </LinearLayout>
 
@@ -86,28 +66,16 @@
 
         <LinearLayout
             android:id="@+id/ll_consume_list_default"
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="5dp">
+            style="@style/choiceness_condition_every_page">
 
             <TextView
                 android:id="@+id/tv_consume_list_default_name"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="默认"
-                android:textColor="#8F8F8F" />
+                style="@style/choiceness_condition_title"
+                android:text="默认" />
 
             <ImageView
                 android:id="@+id/iv_consume_list_default_arrow"
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="4dp"
+                style="@style/choiceness_condition_Image"
                 android:background="@mipmap/down" />
         </LinearLayout>
     </LinearLayout>
@@ -130,7 +98,7 @@
             android:layout_height="fill_parent"
             android:background="@color/group_item_bg"
             android:divider="@color/group_item_pressed_bg"
-            android:dividerHeight="1px"
+            android:dividerHeight="@null"
             android:scrollbars="none"
             android:scrollingCache="true" />
     </android.support.v4.widget.SwipeRefreshLayout>

@@ -14,8 +14,9 @@ import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.adapter.HomeRecommendAdapter;
 import com.quliantrip.qulian.base.BasePageCheckFragment;
 import com.quliantrip.qulian.domain.BaseJson;
+import com.quliantrip.qulian.domain.ChangeCityBean;
+import com.quliantrip.qulian.domain.CityListBean;
 import com.quliantrip.qulian.domain.HomeBean;
-import com.quliantrip.qulian.domain.TuanBean;
 import com.quliantrip.qulian.mode.homeMode.HomeChoicenessMode;
 import com.quliantrip.qulian.mode.homeMode.HomeFunctionMode;
 import com.quliantrip.qulian.mode.homeMode.HomeSlideImageMode;
@@ -109,6 +110,16 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
             homeTitle.setText(((HomeBean) bean).getCity_name());
             initListIView(((HomeBean) bean).getDeal_list());
         }
+        if (bean != null && (this.getClass().getName()+"changeCity").equals(bean.getTag())) {
+
+            ChangeCityBean beanCity = (ChangeCityBean)bean;
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("ctl", "index");
+            map.put("act", "index");
+            map.put("sess_id", beanCity.getSess_id());
+            map.put("r_type", "1");
+            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST, new HomeBean().setTag(HomeFragment.this.getClass().getName()), map, null);
+        }
     }
 
     private void initListIView(List<HomeBean.DealListEntity> dealList) {
@@ -132,13 +143,6 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
                 EvaluateUtil.evaluateFloat(percent, 0.0f, 1.0f));
     }
 
-    //连接wifi
-    @OnClick(R.id.iv_home_title_wifi)
-    void connectWifi() {
-        Intent openCameraIntent = new Intent(mContext, CaptureActivity.class);
-        startActivityForResult(openCameraIntent, 0);
-    }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != Activity.RESULT_OK) {
@@ -155,10 +159,11 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
             }
         } else if (requestCode == 1) {
             Map<String, String> map = new HashMap<String, String>();
+            map.put("ctl","city");
             map.put("act", "city_change");
             map.put("area_id", data.getStringExtra("cityId"));
             map.put("r_type", "1");
-            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST, new HomeBean().setTag(HomeFragment.this.getClass().getName()), map, null);
+            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST, new ChangeCityBean().setTag(HomeFragment.this.getClass().getName()+"changeCity"), map, null);
         }
     }
 
@@ -168,11 +173,21 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         homeSlideImageMode.restarteRoll();
     }
 
+    //点击切换城市
     @OnClick(R.id.rl_city_choose)
     void chooseSity() {
         UIHelper.showCityChoose(this, 1);
     }
+
+    //点击加载更多
     @OnClick(R.id.tv_loading_more) void loadMore(){
         activity.changeChoicenessContion("全部分类","0");
+    }
+
+    //连接wifi
+    @OnClick(R.id.iv_home_title_wifi)
+    void connectWifi() {
+        Intent openCameraIntent = new Intent(mContext, CaptureActivity.class);
+        startActivityForResult(openCameraIntent, 0);
     }
 }

@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--应用的主要颜色-->
+    <color name="app_main_bg">#F8F4F1</color>
+    <color name="app_main_dev_line">#DCDCDC</color>
+    <color name="app_main_tag_dec_line">#CBCBCB</color>
+    <color name="app_main_sub_title_text">#969696</color>
+    <color name="app_main_title_text">#646464</color>
+    <color name="app_main_title">#323232</color>
+    <color name="app_main_price_text">#f83c3a</color>
+    <color name="app_main_collor">#f4a51b</color>
+    <color name="app_main_sub_collor">#f7c05f</color>
+
+
     <color name="main_gray">#9A9A9A</color>
 
     <color name="colorPrimary">#FFFFFF</color>
@@ -45,4 +57,6 @@
     <color name="list_item_background_normal">@color/group_item_bg</color>
     <color name="teamlist_item_background_normal">#ffffff</color>
     <color name="list_item_background_pressed">#efefef</color>
+    <!--错误界面的背景颜色-->
+    <color name="window_background">#EBEBEB</color>
 </resources>

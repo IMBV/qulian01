@@ -34,11 +34,6 @@ import com.quliantrip.qulian.util.CommonHelp;
 import java.util.Collection;
 import java.util.HashSet;
 
-/**
- * This view is overlaid on top of the camera preview. It adds the viewfinder rectangle and partial
- * transparency outside it, as well as the laser scanner animation and result points.
- * �Զ����View������ʱ�м���ʾ��
- */
 public final class ViewfinderView extends View {
 
     private static final int[] SCANNER_ALPHA = {0, 64, 128, 192, 255, 192, 128, 64};
@@ -106,10 +101,10 @@ public final class ViewfinderView extends View {
 
             //draw frame corner
             paint.setColor(frameCorner);
-            canvas.drawRect(frame.left, frame.top, frame.left + CommonHelp.dip2px(QulianApplication.getContext(),16),
-                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),3), paint);
-            canvas.drawRect(frame.left, frame.top, frame.left + CommonHelp.dip2px(QulianApplication.getContext(),3),
-                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),16), paint);
+            canvas.drawRect(frame.left+1, frame.top+1, frame.left + CommonHelp.dip2px(QulianApplication.getContext(),16)+1,
+                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),3)+1, paint);
+            canvas.drawRect(frame.left+1, frame.top+1, frame.left + CommonHelp.dip2px(QulianApplication.getContext(),3)+1,
+                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),16)+1, paint);
 
             canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),16), frame.top, frame.right,
                     frame.top + CommonHelp.dip2px(QulianApplication.getContext(),3), paint);

@@ -19,18 +19,8 @@ import com.quliantrip.qulian.util.TDevice;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author poplar
- *
- * 实现了加载更多的功能的BaseAdapter (数据适配器的基类)
- *
- * 实现功能:
- * 		1. 封装了一个脚布局(用于上拉加载更多), 子Adapter通过重写getRealView方法定义真正的条目内容
- * 		2. 定义默认的方法. 子类通过setData, 或addData即可方便添加数据
- *
- * @param <T> 声明条目数据内容的类型: 必须是Entity的子类
- */
 public class ListBaseAdapter<T extends BaseJson> extends BaseAdapter {
+
     public static final int STATE_EMPTY_ITEM = 0;
     public static final int STATE_LOAD_MORE = 1;
     public static final int STATE_NO_MORE = 2;
@@ -39,7 +29,7 @@ public class ListBaseAdapter<T extends BaseJson> extends BaseAdapter {
     public static final int STATE_NETWORK_ERROR = 5;
     public static final int STATE_OTHER = 6;
 
-    protected int state = STATE_LESS_ONE_PAGE;
+    protected int state = STATE_LOAD_MORE;
 
     protected int _loadmoreText;
     protected int _loadFinishText;
@@ -169,8 +159,6 @@ public class ListBaseAdapter<T extends BaseJson> extends BaseAdapter {
         return true;
     }
 
-    @SuppressWarnings("deprecation")
-    @SuppressLint("InflateParams")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (position == getCount() - 1) {// 最后一条
@@ -206,7 +194,7 @@ public class ListBaseAdapter<T extends BaseJson> extends BaseAdapter {
                     progress.setVisibility(View.GONE);
                     text.setVisibility(View.VISIBLE);
                     if (TDevice.hasInternet()) {
-//                      text.setText("加载出错了");
+                      text.setText("加载出错了");
                       text.setText(_loadFinishText);
                     } else {
                         text.setText("没有可用的网络");

@@ -24,12 +24,14 @@ import com.quliantrip.qulian.adapter.popAdapter.NavsGroupAdapter;
 import com.quliantrip.qulian.adapter.popAdapter.SortChildAdapter;
 import com.quliantrip.qulian.adapter.popAdapter.SortGroupAdapter;
 import com.quliantrip.qulian.base.BasePageCheckFragment;
+import com.quliantrip.qulian.base.ListBaseAdapter;
 import com.quliantrip.qulian.domain.BaseJson;
 import com.quliantrip.qulian.domain.TuanBean;
 import com.quliantrip.qulian.net.constant.HttpConstants;
 import com.quliantrip.qulian.net.volleyManage.PacketStringReQuest;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.ui.activity.GoodDetailActivity;
+import com.quliantrip.qulian.util.ToastUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -136,13 +138,15 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
 
     private void initListView(TuanBean tuanbean) {
         item = tuanbean.getItem();
+
         if (page >= 2) {
             quanItemAdapter.addList((ArrayList<TuanBean.ItemEntity>) tuanbean.getItem());
         } else {
-            item = tuanbean.getItem();
             quanItemAdapter = new QuanItemAdapter((ArrayList<TuanBean.ItemEntity>) item);
             listView.setAdapter(quanItemAdapter);
         }
+
+
         setSwipeRefreshLoadedState();
     }
 
@@ -430,10 +434,11 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
     }
 
     private String cate_id;
+
     class MySortItemClick implements AdapterView.OnItemClickListener {
 
         @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position,long id) {
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             cate_id = ((TuanBean.BcateListEntity) parent.getAdapter().getItem(position)).getId() + "";
 
             sortGroupAdapter.setSelectedPosition(position);
@@ -483,7 +488,8 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         if (quanItemAdapter == null || quanItemAdapter.getCount() == 0) {
             return;
         }
-        if (page * 10 - 1 == view.getLastVisiblePosition()) {
+        if (page*10 - 1 == view.getLastVisiblePosition()) {
+            ToastUtil.showToast(mContext,"正在加载");
             page = page + 1;
             Map<String, String> map = new HashMap<String, String>();
             map.put("ctl", "tuan");

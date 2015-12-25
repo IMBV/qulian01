@@ -33,10 +33,13 @@
         <item>待评价</item>
     </string-array>
 
-    <!-- -->
+    <!-- 下拉的加载提示信息-->
     <string name="loading">加载中…</string>
     <string name="loading_no_more">已加载全部</string>
     <string name="error_view_no_data">暂无内容</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- 错误界面的提示信息-->
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="error_view_loading">加载中…</string>
 </resources>

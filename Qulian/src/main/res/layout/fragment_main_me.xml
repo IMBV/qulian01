@@ -96,62 +96,58 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
 
                 <LinearLayout
                     android:id="@+id/ll_me_collect"
                     android:layout_width="0dp"
-                    android:layout_height="55dp"
-                    android:gravity="center"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center">
+
                     <ImageView
-                        android:padding="5dp"
-                        android:layout_gravity="center"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@mipmap/shoucang"/>
+                        style="@style/me_icon_style_shang"
+                        android:src="@mipmap/shoucang" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/me_text_style"
                         android:layout_gravity="center"
-                        android:text="我的收藏"
-                        android:textSize="16sp"/>
+                        android:text="我的收藏" />
                 </LinearLayout>
+
                 <View
-                    android:layout_width="1px"
+                    android:layout_width="1.5px"
                     android:layout_height="match_parent"
-                    android:background="#ECECEC"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"/>
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#DCDCDC" />
+
                 <LinearLayout
                     android:id="@+id/ll_me_integral"
                     android:layout_width="0dp"
-                    android:layout_height="55dp"
-                    android:gravity="center"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:gravity="center">
+
                     <ImageView
-                        android:padding="5dp"
-                        android:layout_gravity="center"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@mipmap/jifen"/>
+                        style="@style/me_icon_style_shang"
+                        android:src="@mipmap/jifen" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        style="@style/me_text_style"
                         android:layout_gravity="center"
-                        android:text="我的积分"
-                        android:textSize="16sp"/>
+                        android:text="我的积分" />
                 </LinearLayout>
 
             </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:background="#ECECEC"/>
+                android:background="#ECECEC" />
 
             <LinearLayout
                 android:id="@+id/ll_me_orderList"
@@ -161,24 +157,22 @@
                 android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="20dp"
+                    style="@style/me_icon_style_xia"
                     android:src="@mipmap/dingdan" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="我的订单"
-                    android:textSize="18sp" />
+                    style="@style/me_text_style"
+                    android:layout_marginLeft="15dp"
+                    android:text="我的订单" />
 
             </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:layout_marginTop="2dp"
-                android:background="#ECECEC"/>
+                android:background="#ECECEC" />
+
             <LinearLayout
                 android:id="@+id/ll_me_setting_out"
                 android:layout_width="match_parent"
@@ -187,30 +181,28 @@
                 android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="20dp"
-                    android:src="@mipmap/setting_me" />
+                    style="@style/me_icon_style_xia"
+                    android:src="@mipmap/shezhi" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="设置"
-                    android:textSize="18sp" />
+                    style="@style/me_text_style"
+                    android:layout_marginLeft="15dp"
+                    android:text="设置" />
 
             </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:layout_marginTop="2dp"
-                android:background="#ECECEC"/>
+                android:background="#ECECEC" />
 
             <WebView
                 android:id="@+id/wb_login_info"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:visibility="gone"></WebView>
+
 
             <!--<RadioGroup
                 android:id="@+id/rg_order_state"

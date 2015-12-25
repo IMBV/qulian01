@@ -7,12 +7,6 @@
 
     <TextView
         android:id="@+id/child_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="15dp"
-        android:focusable="false"
-        android:gravity="center_vertical"
-        android:textSize="18sp" />
+        style="@style/choiceness_condition_every_page_context" />
 
 </LinearLayout>
