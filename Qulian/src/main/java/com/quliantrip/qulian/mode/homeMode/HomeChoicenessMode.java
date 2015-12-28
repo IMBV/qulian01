@@ -50,7 +50,7 @@ public class HomeChoicenessMode extends BaseMode<HomeBean.QualityGoodsEntity> {
     @Override
     public void setData(HomeBean.QualityGoodsEntity bean) {
         goodId = bean.getId();
-        ImageLoader.getInstance().displayImage(bean.getIcon(), icon, ImageLoaderOptions.pager_options);
+        ImageLoader.getInstance().displayImage(bean.getIcon(), icon, ImageLoaderOptions.options);
         name.setText(bean.getName());
         price.setText("￥" + bean.getCurrent_price());
         saleNumber.setText("已售:" + bean.getBuy_count());

@@ -55,7 +55,7 @@ public class CityChooseFragment extends BasePageCheckFragment {
         Map<String, String> map = new HashMap<String, String>();
         map.put("ctl", "city");
         map.put("r_type", "1");
-        return new QuestBean(map, new CityListBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST);
+        return new QuestBean(map, new CityListBean().setTag(getClass().getName()), HttpConstants.CITY_CHOOSE_ADDR);
     }
 
     @Override
@@ -80,8 +80,7 @@ public class CityChooseFragment extends BasePageCheckFragment {
             countryCityListAdapter.setmContext(mContext);
             countryListView.setAdapter(countryCityListAdapter);
             countryListView.setFocusable(false);
-            locationCountry.setText(cityListBean.getCity_name());
-
+            locationCountry.setText("当前城市："+cityListBean.getCity_name());
         }
     }
 

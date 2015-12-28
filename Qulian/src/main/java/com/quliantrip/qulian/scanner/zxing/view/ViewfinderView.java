@@ -106,15 +106,15 @@ public final class ViewfinderView extends View {
             canvas.drawRect(frame.left+1, frame.top+1, frame.left + CommonHelp.dip2px(QulianApplication.getContext(),3)+1,
                     frame.top + CommonHelp.dip2px(QulianApplication.getContext(),16)+1, paint);
 
-            canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),16), frame.top, frame.right,
-                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),3), paint);
-            canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),3), frame.top, frame.right,
-                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),16), paint);
+            canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),16), frame.top+1, frame.right,
+                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),3)+1, paint);
+            canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),3), frame.top+1, frame.right,
+                    frame.top + CommonHelp.dip2px(QulianApplication.getContext(),16)+1, paint);
 
-            canvas.drawRect(frame.left, frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),3),
-                    frame.left + CommonHelp.dip2px(QulianApplication.getContext(),16),frame.bottom, paint);
-            canvas.drawRect(frame.left, frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),16),
-                    frame.left + CommonHelp.dip2px(QulianApplication.getContext(),3),frame.bottom, paint);
+            canvas.drawRect(frame.left+1, frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),3),
+                    frame.left + CommonHelp.dip2px(QulianApplication.getContext(),16)+1,frame.bottom, paint);
+            canvas.drawRect(frame.left+1, frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),16),
+                    frame.left + CommonHelp.dip2px(QulianApplication.getContext(),3)+1,frame.bottom, paint);
 
             canvas.drawRect(frame.right-CommonHelp.dip2px(QulianApplication.getContext(),16),
                     frame.bottom-CommonHelp.dip2px(QulianApplication.getContext(),3),frame.right,frame.bottom,paint);

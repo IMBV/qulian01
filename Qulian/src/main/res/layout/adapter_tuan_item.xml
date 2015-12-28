@@ -36,14 +36,14 @@
                     android:layout_marginTop="3dp"
                     android:lines="2"
                     android:text="为了部落,一起加油！"
-                    android:textColor="@color/txt_title"
+                    android:textColor="@color/app_main_title"
                     android:textSize="16sp" />
                 <TextView
                     android:id="@+id/iv_tuan_quality_subNname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:lines="2"
-                    android:textColor="@color/txt_title"
+                    android:textColor="@color/app_main_sub_title_text"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -61,7 +61,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="￥60"
-                        android:textColor="#FFAA00"
+                        android:textColor="@color/app_main_collor"
                         android:textSize="16sp" />
 
                     <FrameLayout
@@ -74,7 +74,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="2dp"
                             android:layout_gravity="center"
-                            android:background="#A5B5D5" />
+                            android:background="#999999" />
 
                         <TextView
                             android:id="@+id/tv_tuan_deal_oldprice"
@@ -82,6 +82,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:layout_gravity="center"
+                            android:textColor="@color/app_main_sub_title_text"
                             android:text="￥60"
                             android:textSize="12sp" />
                     </FrameLayout>
@@ -92,6 +93,7 @@
                     android:layout_height="wrap_content"
                     android:text="nisafd"
                     android:layout_alignParentRight="true"
+                    android:textColor="@color/app_main_title_text"
                     android:textSize="16sp"/>
             </RelativeLayout>
         </RelativeLayout>

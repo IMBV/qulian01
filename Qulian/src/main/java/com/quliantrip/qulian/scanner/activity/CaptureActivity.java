@@ -77,7 +77,7 @@ public class CaptureActivity extends SwipeBackActivity implements Callback {
     private void initAnimation() {
 
         ImageView moveLine = (ImageView) findViewById(R.id.iv_move_line);
-        TranslateAnimation animation = new TranslateAnimation(0,0,moveLine.getY()-CommonHelp.dip2px(mContext,120),moveLine.getY()+CommonHelp.dip2px(mContext,120));
+        TranslateAnimation animation = new TranslateAnimation(0,0,moveLine.getY()-CommonHelp.dip2px(mContext,110),moveLine.getY()+CommonHelp.dip2px(mContext,120));
 
         animation.setRepeatCount(-1);
         animation.setRepeatMode(Animation.RESTART);

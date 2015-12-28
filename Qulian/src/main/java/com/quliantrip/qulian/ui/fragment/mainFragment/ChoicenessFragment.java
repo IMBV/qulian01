@@ -488,8 +488,8 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         if (quanItemAdapter == null || quanItemAdapter.getCount() == 0) {
             return;
         }
-        if (page*10 - 1 == view.getLastVisiblePosition()) {
-            ToastUtil.showToast(mContext,"正在加载");
+
+        if (quanItemAdapter.getCount() - 1 == view.getLastVisiblePosition()) {
             page = page + 1;
             Map<String, String> map = new HashMap<String, String>();
             map.put("ctl", "tuan");

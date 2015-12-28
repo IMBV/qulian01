@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="90dp"
     android:layout_gravity="bottom"
-    android:background="@android:color/white"
+    android:background="#ECECEC"
     android:scrollbars="none">
 
     <LinearLayout

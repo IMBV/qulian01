@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import com.quliantrip.qulian.R;
 
 public class RatioImageView extends ImageView {
-	private float ratio = 2.0f;
+	private float ratio = 1.5f;
 
 	public RatioImageView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);

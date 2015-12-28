@@ -1,39 +1,23 @@
 package com.quliantrip.qulian.ui.fragment.mainFragment;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.JavascriptInterface;
-import android.webkit.JsResult;
-import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.quliantrip.qulian.R;
 import com.quliantrip.qulian.base.BaseFragment;
-import com.quliantrip.qulian.domain.HomeBean;
-import com.quliantrip.qulian.domain.TuanBean;
-import com.quliantrip.qulian.global.QulianApplication;
 import com.quliantrip.qulian.net.constant.HttpConstants;
-import com.quliantrip.qulian.net.volleyManage.PacketStringReQuest;
-import com.quliantrip.qulian.scanner.activity.OpenWifiActivity;
 import com.quliantrip.qulian.ui.activity.GoodDetailActivity;
-import com.quliantrip.qulian.ui.activity.mainAcivity.MainActivity;
-import com.quliantrip.qulian.util.ToastUtil;
 import com.quliantrip.qulian.util.UIHelper;
 import com.quliantrip.qulian.view.CircleImageView;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -44,7 +28,7 @@ import butterknife.OnClick;
  */
 
 public class MyFragment extends BaseFragment {
-//    @Bind(R.id.rg_order_state)
+    //    @Bind(R.id.rg_order_state)
 //    RadioGroup orderRadioGroup;
     @Bind(R.id.ll_user_loading)
     LinearLayout userLoading;
@@ -61,6 +45,7 @@ public class MyFragment extends BaseFragment {
 
     private Bundle bundle = new Bundle();
     private View view;
+
     @Override
     public View initView() {
         view = View.inflate(mContext, R.layout.fragment_main_me, null);
@@ -71,18 +56,18 @@ public class MyFragment extends BaseFragment {
     }
 
     //检查是否登录
-    private void initLogin(){
-        checkLoginWebView.loadUrl(HttpConstants.WEBVIEW_ROOT+"?ctl=user_center");
+    private void initLogin() {
+        checkLoginWebView.loadUrl(HttpConstants.WEBVIEW_ROOT + "?ctl=user_center");
         checkLoginWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         checkLoginWebView.getSettings().setJavaScriptEnabled(true);
 
         checkLoginWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
-                if(checkLoginWebView.getUrl().endsWith("ctl=user&act=login")){
+                if (checkLoginWebView.getUrl().endsWith("ctl=user&act=login")) {
                     loading.setVisibility(View.VISIBLE);
                     loadout.setVisibility(View.GONE);
-                }else{
+                } else {
                     loading.setVisibility(View.GONE);
                     loadout.setVisibility(View.VISIBLE);
                 }
@@ -130,50 +115,54 @@ public class MyFragment extends BaseFragment {
 //        UIHelper.showMyActive(mContext);
         //使用web进行登录
         Intent intent = new Intent(mContext, GoodDetailActivity.class);
-        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=user&act=login");
+        intent.putExtra("goodId", HttpConstants.WEBVIEW_ROOT + "?ctl=user&act=login");
         startActivityForResult(intent, 2);
         initLogin();
     }
 
     //点击退出
     @OnClick(R.id.tv_me_loadout)
-    void loadout(){
+    void loadout() {
         Intent intent = new Intent(mContext, GoodDetailActivity.class);
-        intent.putExtra("isFinish","finish");
-        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=uc_ecv&act=exchange");
+        intent.putExtra("isFinish", "finish");
+        intent.putExtra("goodId", HttpConstants.WEBVIEW_ROOT + "?ctl=user&act=loginout");
         mContext.startActivity(intent);
     }
 
     //我的积分
-    @OnClick(R.id.ll_me_integral) void showIntegral(){
+    @OnClick(R.id.ll_me_integral)
+    void showIntegral() {
         Intent intent = new Intent(mContext, GoodDetailActivity.class);
-        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=uc_ecv&act=exchange");
+        intent.putExtra("goodId", HttpConstants.WEBVIEW_ROOT + "?ctl=uc_ecv&act=exchange");
         mContext.startActivity(intent);
     }
 
     //我的收藏
-    @OnClick(R.id.ll_me_collect) void showCollect(){
+    @OnClick(R.id.ll_me_collect)
+    void showCollect() {
         Intent intent = new Intent(mContext, GoodDetailActivity.class);
-        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=uc_collect");
+        intent.putExtra("goodId", HttpConstants.WEBVIEW_ROOT + "?ctl=uc_collect");
         mContext.startActivity(intent);
     }
 
     //我的订单
-    @OnClick(R.id.ll_me_orderList) void showOrderList(){
+    @OnClick(R.id.ll_me_orderList)
+    void showOrderList() {
         Intent intent = new Intent(mContext, GoodDetailActivity.class);
-        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=uc_order");
+        intent.putExtra("goodId", HttpConstants.WEBVIEW_ROOT + "?ctl=uc_order");
         mContext.startActivity(intent);
     }
 
     //设置
-    @OnClick(R.id.ll_me_setting_out) void goOutLogin(){
+    @OnClick(R.id.ll_me_setting_out)
+    void goOutLogin() {
         Intent intent = new Intent(mContext, GoodDetailActivity.class);
-        intent.putExtra("goodId",HttpConstants.WEBVIEW_ROOT+"?ctl=user&act=getpassword");
+        intent.putExtra("goodId", HttpConstants.WEBVIEW_ROOT + "?ctl=user&act=getpassword");
         mContext.startActivity(intent);
     }
 
 
-  //    public void checkLogin(){
+    //    public void checkLogin(){
 //        if (QulianApplication.getInstance().isLogin()) {
 //            userLoading.setVisibility(View.VISIBLE);
 //            loading.setVisibility(View.GONE);

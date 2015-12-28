@@ -13,12 +13,12 @@ public class HttpConstants {
     /**后面的一进行字符串的拼接*/
     public static final String TEST_URL = HOST_ADDR_ROOT +"01.jsp";
     /**切换城市的接口*/
-    public static final String CITY_CHOOSE_ADDR = "http://www.quliantrip.com/mapi/index.php";
+    public static final String CITY_CHOOSE_ADDR = "http://dev.qulian.com/mapi/index.php";
     /**local url*/
     public static final String HOST_ADDR_ROOT_LOCAL_TEST = "http://www.quliantrip.com/mapi/index.php";
 
     /**加载webView的连接路径*/
-    public static final String WEBVIEW_ROOT = "http://dev.qulian.com/wap/index.php";
+    public static final String WEBVIEW_ROOT = "http://www.quliantrip.com/wap/index.php";
 
 
 }
