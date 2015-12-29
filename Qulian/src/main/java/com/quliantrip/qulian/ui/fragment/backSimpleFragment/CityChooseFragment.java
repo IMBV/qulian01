@@ -55,7 +55,7 @@ public class CityChooseFragment extends BasePageCheckFragment {
         Map<String, String> map = new HashMap<String, String>();
         map.put("ctl", "city");
         map.put("r_type", "1");
-        return new QuestBean(map, new CityListBean().setTag(getClass().getName()), HttpConstants.CITY_CHOOSE_ADDR);
+        return new QuestBean(map, new CityListBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_NET);
     }
 
     @Override

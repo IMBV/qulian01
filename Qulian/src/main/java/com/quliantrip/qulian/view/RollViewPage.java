@@ -76,7 +76,7 @@ public class RollViewPage extends ViewPager {
         } else {
             myPageAdapter.notifyDataSetChanged();
         }
-        handler.postDelayed(myRunnable, 5000);
+        handler.postDelayed(myRunnable, 6000);
     }
 
     private class MyRunnable implements Runnable {

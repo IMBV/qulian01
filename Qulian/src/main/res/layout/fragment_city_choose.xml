@@ -37,6 +37,7 @@
 
 
         <com.quliantrip.qulian.view.MyGridView
+            android:layout_marginTop="5dp"
             android:id="@+id/mgv_city_hot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

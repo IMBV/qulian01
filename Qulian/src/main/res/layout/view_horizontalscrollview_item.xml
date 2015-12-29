@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
     android:gravity="center">
 
     <ImageView
@@ -12,6 +13,7 @@
         android:id="@+id/tv_home_function_name"
         style="@style/home_main_function_fragment"
         android:gravity="center"
+        android:textColor="#FFFFFF"
         android:background="@android:color/transparent"
         android:text="nihao"/>
     <ImageView

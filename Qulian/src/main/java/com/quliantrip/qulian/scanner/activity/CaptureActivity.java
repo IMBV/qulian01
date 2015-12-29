@@ -35,6 +35,7 @@ import com.quliantrip.qulian.scanner.zxing.decoding.CaptureActivityHandler;
 import com.quliantrip.qulian.scanner.zxing.decoding.InactivityTimer;
 import com.quliantrip.qulian.scanner.zxing.view.ViewfinderView;
 import com.quliantrip.qulian.util.CommonHelp;
+import com.quliantrip.qulian.util.ToastUtil;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -141,13 +142,25 @@ public class CaptureActivity extends SwipeBackActivity implements Callback {
         if (resultString.equals("")) {
             Toast.makeText(CaptureActivity.this, "Scan failed!", Toast.LENGTH_SHORT).show();
         } else {
-            Intent resultIntent = new Intent();
-            Bundle bundle = new Bundle();
-            bundle.putString("result", resultString);
-            resultIntent.putExtras(bundle);
-            this.setResult(RESULT_OK, resultIntent);
+//            Bundle bundle = data.getExtras();
+//            String scanResult = bundle.getString("result");
+            if (resultString.startsWith("SSID")) {
+                Intent resultIntent = new Intent(this,OpenWifiActivity.class);
+                resultIntent.putExtra("result",resultString);
+//                data.setClass(mContext, OpenWifiActivity.class);
+                startActivity(resultIntent
+                );
+            } else {
+                ToastUtil.showToast(mContext, "请扫描正确的二维码");
+            }
+//            Intent resultIntent = new Intent();
+//            Bundle bundle = new Bundle();
+//            bundle.putString("result", resultString);
+//            resultIntent.putExtras(bundle);
+//            this.setResult(RESULT_OK, resultIntent);
         }
         CaptureActivity.this.finish();
+
     }
 
     private void initCamera(SurfaceHolder surfaceHolder) {
@@ -195,7 +208,6 @@ public class CaptureActivity extends SwipeBackActivity implements Callback {
 
     public void drawViewfinder() {
         viewfinderView.drawViewfinder();
-
     }
 
     private void initBeepSound() {

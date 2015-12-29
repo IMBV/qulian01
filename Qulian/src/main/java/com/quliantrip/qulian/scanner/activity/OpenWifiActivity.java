@@ -48,11 +48,11 @@ public class OpenWifiActivity extends Activity {
 				wifiAdmin.openWifi();
 				// 这里在主线程中睡是不对的。
 				try {
-					Thread.sleep(3000);// 休眠3s，不休眠则会在程序首次开启WIFI时候，处理getScanResults结果，wifiResultList.size()发生异常
+					Thread.sleep(4000);// 休眠3s，不休眠则会在程序首次开启WIFI时候，处理getScanResults结果，wifiResultList.size()发生异常
 				} catch (InterruptedException e) {
 					e.printStackTrace();
-				}wifiAdmin
-						.setAddNetWorkFinishListener(new WifiAdmin.AddNetWorkFinishListener() {
+				}
+				wifiAdmin.setAddNetWorkFinishListener(new WifiAdmin.AddNetWorkFinishListener() {
 
 							@Override
 							public void onFinishActivity() {

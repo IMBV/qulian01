@@ -112,7 +112,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
             Map<String, String> map = new HashMap<String, String>();
             map.put("ctl", "tuan");
             map.put("r_type", "1");
-            return new QuestBean(map, new TuanBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_Test);
+            return new QuestBean(map, new TuanBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_NET);
         } else {
             return questBean;
         }
@@ -373,7 +373,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
             map.put("order_type", order_type);
         setAllNot();
         hidePopupWindow();
-        new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_Test, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
+        new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
         page = 1;
     }
 
@@ -503,7 +503,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
             if (order_type != null)
                 map.put("order_type", order_type);
             map.put("page", page + "");
-            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_Test, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
+            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
         }
     }
 
@@ -539,7 +539,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         map.put("ctl", "tuan");
         map.put("cate_id", id);
         map.put("r_type", "1");
-        questBean = new QuestBean(map, new TuanBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_Test);
+        questBean = new QuestBean(map, new TuanBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_NET);
         this.sortName = sortName;
     }
 
@@ -552,7 +552,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         map.put("ctl", "tuan");
         map.put("cate_id", id);
         map.put("r_type", "1");
-        new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_Test, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
+        new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
 
     }
 

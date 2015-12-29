@@ -33,7 +33,7 @@ public class ShowGoodsFragment extends BasePageCheckFragment {
         map.put("ctl", "index");
         map.put("act", "index");
         map.put("r_type", "1");
-        return new QuestBean(map, new HomeBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_Test);
+        return new QuestBean(map, new HomeBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_NET);
 
     }
 

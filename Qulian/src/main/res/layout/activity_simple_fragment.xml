@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="56dp"
         android:background="@color/consume_list_tab_pressed">
         <ImageView
             android:id="@+id/iv_simple_back"
@@ -15,7 +15,7 @@
             android:layout_height="35dp"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
-            android:src="@mipmap/back"/>
+            android:src="@drawable/selector_back"/>
 
         <TextView
             android:id="@+id/tv_Title_name"
@@ -23,7 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="简单返回activity"
-            android:textColor="@color/systembar_zhuangtai" />
+            android:textSize="18sp"
+            android:textColor="#FFF7EE" />
     </RelativeLayout>
 
     <FrameLayout

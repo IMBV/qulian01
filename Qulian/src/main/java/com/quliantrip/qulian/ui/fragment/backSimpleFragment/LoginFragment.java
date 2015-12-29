@@ -87,7 +87,7 @@ public class LoginFragment extends BaseFragment {
         map.put("user_pwd", inPassword);
         map.put("r_type","1");
 
-        new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_Test,
+        new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET,
                 new UserInfoBean().setTag(getClass().getName()), map, null);
 
     }

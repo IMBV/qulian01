@@ -56,7 +56,7 @@ public class MyFragment extends BaseFragment {
     }
 
     //检查是否登录
-    private void initLogin() {
+    public void initLogin() {
         checkLoginWebView.loadUrl(HttpConstants.WEBVIEW_ROOT + "?ctl=user_center");
         checkLoginWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         checkLoginWebView.getSettings().setJavaScriptEnabled(true);
@@ -64,18 +64,20 @@ public class MyFragment extends BaseFragment {
         checkLoginWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
-                if (checkLoginWebView.getUrl().endsWith("ctl=user&act=login")) {
-                    loading.setVisibility(View.VISIBLE);
-                    loadout.setVisibility(View.GONE);
-                } else {
+                if (!checkLoginWebView.getUrl().endsWith("ctl=user&act=login")) {
                     loading.setVisibility(View.GONE);
                     loadout.setVisibility(View.VISIBLE);
+                } else {
+                    loading.setVisibility(View.VISIBLE);
+                    loadout.setVisibility(View.GONE);
                 }
             }
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
+                loading.setVisibility(View.GONE);
+                loadout.setVisibility(View.GONE);
             }
         });
     }
@@ -85,6 +87,7 @@ public class MyFragment extends BaseFragment {
         super.onResume();
 //        checkLogin();
         initLogin();
+
     }
 
     @Override

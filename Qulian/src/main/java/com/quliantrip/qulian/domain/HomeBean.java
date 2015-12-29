@@ -13,77 +13,19 @@ public class HomeBean extends BaseJson {
 
     /**
      * return : 1
-     * city_id : 24
-     * city_name : 东京
-     * advs : [{"id":"12","name":"方维o2o","img":"http://dev.qulian.com/public/attachment/sjmapi/4f2ce3d1827e4.jpg","type":"0","data":{"url":"http://www.fanwe.com"},"ctl":"url"},{"id":"10","name":"支付宝广告","img":"http://dev.qulian.com/public/attachment/sjmapi/4f5176077b5e6.jpg","type":"0","data":{"url":"http://bizpartner.alipay.com/fangwei/"},"ctl":"url"}]
-     * indexs : [{"id":"72","name":"餐饮美食","img":"http://dev.qulian.com/public/attachment/sjmapi/546c651d83c20.png","icon_name":"","color":"","data":{"cate_id":"8"},"ctl":"tuan","type":"11"},{"id":"74","name":"亲子母婴","img":"http://dev.qulian.com/public/attachment/sjmapi/54475407206cd.png","icon_name":"","color":"","data":{"cate_id":"29"},"ctl":"goods","type":"12"},{"id":"76","name":"商家","img":"http://dev.qulian.com/public/attachment/sjmapi/546c65928f3fd.png","icon_name":"","color":"","data":{"cate_id":""},"ctl":"stores","type":"16"},{"id":"78","name":"优惠券","img":"http://dev.qulian.com/public/attachment/sjmapi/546c651d83c20.png","icon_name":"","color":"","data":{"cate_id":""},"ctl":"youhuis","type":"15"},{"id":"80","name":"活动","img":"http://dev.qulian.com/public/attachment/sjmapi/546c644653000.png","icon_name":"","color":"","data":{"cate_id":""},"ctl":"events","type":"14"},{"id":"82","name":"积分商城","img":"http://dev.qulian.com/public/attachment/sjmapi/544753bc5bd98.png","icon_name":"","color":"","data":{"cate_id":""},"ctl":"scores","type":"13"},{"id":"84","name":"公告","img":"http://dev.qulian.com/public/attachment/sjmapi/5461d5d7a6e54.png","icon_name":"","color":"","data":{"":null},"ctl":"notices","type":"17"},{"id":"86","name":"扫一扫","img":"http://dev.qulian.com/public/attachment/sjmapi/544753eebe38c.png","icon_name":"","color":"","data":{"":null},"ctl":"scan","type":"31"}]
-     * quality_goods : {"id":"139","distance":0,"ypoint":0,"xpoint":0,"name":"韩国首尔63大厦天空美术馆门票","sub_name":"韩国首尔63大厦天空美术馆门票","brief":"63大厦是首尔的地标性建筑，视野极佳。大厦交通便利、设施齐备，这里有水族馆、观景台、剧场一应俱全，家长们喜欢带孩子前来游玩，恋人们则喜欢来这里约会。","buy_count":"45","current_price":64,"origin_price":74,"icon":"http://dev.qulian.com/public/attachment/201511/11/14/5642e33e75e0d_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0}
-     * deal_list : [{"id":"138","distance":0,"ypoint":0,"xpoint":0,"name":"首尔明洞3D夜光美术馆门票","sub_name":"首尔明洞3D夜光美术馆门票","brief":"位于明洞的3D夜光美术馆 (3D BLACK ART)比普通的3D美术馆更加有趣。日光灯下和关灯以后，画作呈现两种不同的魅力，超级好玩！","buy_count":"25","current_price":50,"origin_price":88,"icon":"http://dev.qulian.com/public/attachment/201511/11/14/5642e2a33182a_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"137","distance":0,"ypoint":0,"xpoint":0,"name":"韩国首尔游乐园套票","sub_name":"韩国首尔游乐园套票","brief":"韩国最大的主题游乐园，占地面积约10万平米，主题乐园包括展现世界各国风貌的世界广场，也有表现韩国传统美感的三千里东山。多样化的娱乐项目，总有一种适合您！ ","buy_count":"32","current_price":87,"origin_price":195,"icon":"http://dev.qulian.com/public/attachment/201511/11/14/5642e184df9d4_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"135","distance":0,"ypoint":0,"xpoint":0,"name":"花样跳舞爷爷喜剧演出门票","sub_name":"花样跳舞爷爷喜剧演出门票","brief":"这里是什么都能改变的调音世界！\r\n表面上华丽，实际上经营困难的调音时间遇到了好机会\u2014\u2014\u201c治疗我公公的心理，给你600万！\u201d","buy_count":"28","current_price":154,"origin_price":220,"icon":"http://dev.qulian.com/public/attachment/201511/11/14/5642dec62b7e2_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"134","distance":0,"ypoint":126.49658203125,"xpoint":33.302986181224,"name":"西归浦市城邑乐园骑马体验","sub_name":"西归浦市城邑乐园骑马体验","brief":"在草原上奔跑的梦幻般的体验！骑马！\r\n最近通过重新装修，提高了顾客的满足度。\r\n保有基础体验路线，以及济州最高级的野外骑乘路线。","buy_count":"9","current_price":130,"origin_price":160,"icon":"http://dev.qulian.com/public/attachment/201511/11/14/5642ddeede0cc_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"133","distance":0,"ypoint":126.49658203125,"xpoint":33.302986181224,"name":"济州岛Don&Dol烤肉店【黑猪肉套餐】","sub_name":"济州岛Don&Dol烤肉店【黑猪肉套餐】","brief":"前往济州旅行，当然必须要吃一次黑猪肉。","buy_count":"19","current_price":130,"origin_price":150,"icon":"http://dev.qulian.com/public/attachment/201511/11/14/5642dd1b2648c_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"132","distance":0,"ypoint":0,"xpoint":0,"name":"韩国首尔美笑《MISO》演出门票","sub_name":"韩国首尔美笑《MISO》演出门票","brief":"受全世界喜爱的韩国No.1传统艺术表演 <美笑>！\r\n\u201c一顾佳人倾我心，焉能言其谁之过\u201d","buy_count":"8","current_price":178,"origin_price":220,"icon":"http://dev.qulian.com/public/attachment/201511/11/14/5642dad32e765_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"131","distance":0,"ypoint":126.49658203125,"xpoint":33.302986181224,"name":"济州龙头岩海水乐园汗蒸幕","sub_name":"济州龙头岩海水乐园汗蒸幕","brief":"汗蒸是一种休闲项目，是能量谷热疗的一种，是韩国的一大特色。韩式汗蒸是将黄泥和各种石头加温，人或坐或躺，古代只是贵族或皇室的特权享受，文化渊源深厚。","buy_count":"31","current_price":50,"origin_price":55,"icon":"http://dev.qulian.com/public/attachment/201511/11/14/5642da0ab703a_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"130","distance":0,"ypoint":126.49658203125,"xpoint":33.302986181224,"name":"韩国首尔Gaonhiljo发型设计","sub_name":"韩国首尔Gaonhiljo发型设计","brief":"强发型设计师用智慧和热情的融合。\r\n在韩国著名美法发沙龙JENNYHOUSE 深造多年的美发设计师根据您的需求打造完美的明星发型风格。","buy_count":"12","current_price":257,"origin_price":280,"icon":"http://dev.qulian.com/public/attachment/201511/11/13/5642d95710511_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"129","distance":0,"ypoint":0,"xpoint":0,"name":"古馆韩服摄影体验【明洞店】","sub_name":"古馆韩服摄影体验【明洞店】","brief":"古馆是一家打造韩国传统美的摄影工作室，在这里你可以挑选自己喜欢的韩服，在专业摄影师的镜头下，化身高贵、优雅的韩国古装美女！","buy_count":"3","current_price":255,"origin_price":331,"icon":"http://dev.qulian.com/public/attachment/201511/11/13/5642d886572c3_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0},{"id":"128","distance":0,"ypoint":126.49658203125,"xpoint":33.302986181224,"name":"济州岛西线【火山岛】一日游","sub_name":"济州岛西线【火山岛】一日游","brief":"民俗自然史博物馆、龙头海岸、泰迪熊博物馆、柱状节理带、乐天免税店、天地渊瀑布一日游。","buy_count":"21","current_price":400,"origin_price":460,"icon":"http://dev.qulian.com/public/attachment/201511/11/13/5642d79d9da6d_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0}]
-     * supplier_deal_list : []
-     * zt_html : <!--app专题需定义的公共头部-->
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
-     <script type="text/javascript">
-     var APP_ROOT = '';
-     </script>
-     <script type="text/javascript" src="http://dev.qulian.com/mapi/mobile_zt//js/utils/jquery-1.6.2.min.js"></script>
-     <script type="text/javascript" src="http://dev.qulian.com/mapi/mobile_zt//js/utils/jquery.timer.js"></script><!--index_zt1_p1-->
-     <!--index_zt1_p2-->
-     <!--index_zt1_p3-->
-     <style type="text/css">
-     .index_zt1_table{width:100%;  margin:0px; padding:0px; border-collapse:collapse; border-left:solid 1px #f4f4f4; border-top:solid 1px #f4f4f4;}
-     .index_zt1_table img{width:100%; border:0px;}
-     .index_zt1_table td{border-right:solid 1px #f4f4f4;border-bottom:solid 1px #f4f4f4; padding:0px;}
-
-     .index_zt1_title{width:100%; border:solid 1px #f4f4f4; border-collapse:collapse; font-size:14px; color:#333; border-bottom:0px;}
-     .index_zt1_title .title{border-left:#f60 4px solid; font-weight:bolder; font-family:"微软雅黑"; font-size:16px;}
-     .index_zt1_title td{padding:5px; height:25px; line-height:25px;}
-     .index_zt1_title td a{color:#333; text-decoration:none;}
-     </style>
-     <body style="margin:0px;">
-
-     <table class="index_zt1_table">
-     <tr>
-     <td rowspan=2 width=50%><a href="javascript:App.app_detail(21,74)"><img src="http://dev.qulian.com/public/attachment/201507/04/10/5597453b30d51.png" /></a></td>
-     <td width=50%><a href="http://www.fanwe.com"><img src="http://dev.qulian.com/public/attachment/201507/04/10/559745893dfe8.png" /></a></td>
-     </tr>
-     <tr>
-     <td width=50%><a href="javascript:App.app_detail(21,73)"><img src="http://dev.qulian.com/public/attachment/201507/04/10/559745b5c786d.png" /></a></td>
-     </tr>
-     </table>
-     </body><!--index_zt2_p1-->
-     <!--index_zt2_p2-->
-     <!--index_zt2_p3-->
-     <!--index_zt2_p4-->
-     <style type="text/css">
-     .index_zt2_table{width:100%;  margin:0px; padding:0px; border-collapse:collapse; border-left:solid 1px #ccc; border-top:solid 1px #ccc;}
-     .index_zt2_table img{width:100%; border:0px;}
-     .index_zt2_table td{border-right:solid 1px #ccc;border-bottom:solid 1px #ccc; padding:0px;}
-
-     .index_zt2_title{width:100%; border:solid 1px #ccc; border-collapse:collapse; font-size:14px; color:#333; border-bottom:0px;}
-     .index_zt2_title .title{border-left:#f60 4px solid; font-weight:bolder; font-family:"微软雅黑"; font-size:16px;}
-     .index_zt2_title td{padding:5px; height:25px; line-height:25px;}
-     .index_zt2_title td a{color:#333; text-decoration:none;}
-     </style>
-     <body style="margin:0px;">
-
-     <table class="index_zt2_table">
-     <tr>
-     <td colspan=3><a href="javascript:App.app_detail(11,0)"><img src="http://dev.qulian.com/public/attachment/201507/04/10/55974622111e8.png" /></a></td>
-     </tr>
-     <tr>
-     <td width=33%><a href="javascript:App.app_detail(16,0)"><img src="http://dev.qulian.com/public/attachment/201507/04/10/559746443a7a0.png" /></a></td>
-     <td width=33%><a href="javascript:void(0);"><img src="http://dev.qulian.com/public/attachment/201507/04/10/559746657cac4.png" /></a></td>
-     <td width=33%><a href="javascript:App.app_detail(27,1)"><img src="http://dev.qulian.com/public/attachment/201507/04/10/5597468849542.png" /></a></td>
-     </tr>
-     </table>
-     </body>
+     * city_id : 26
+     * city_name : 北海道
+     * advs : [{"id":"20","name":"趣连旅行","img":"http://dev.qulian.com/public/attachment/201511/20/16/564ed327a6642.png","type":"0","data":{"url":"http://www.quliantrip.com"},"ctl":"url"},{"id":"19","name":"韩国美食","img":"http://dev.qulian.com/public/attachment/201511/20/16/564ed3762c8e5.png","type":"0","data":{"url":"http://shop.dev.quliantrip.com/wap/index.php?ctl=sale&cate_id=17"},"ctl":"url"},{"id":"37","name":"韩国美景","img":"http://dev.qulian.com/public/attachment/201511/20/16/564ed3a64400b.png","type":"0","data":{"url":"http://shop.dev.quliantrip.com/wap/index.php?ctl=sale&cate_id=8"},"ctl":"url"}]
+     * indexs : [{"id":"87","name":"特色餐厅","icon_name":"","color":"","data":{"url":"http://www.quliantrip.com/wap/index.php?ctl=sale&cate_id=17"},"ctl":"url"},{"id":"88","name":"门票","icon_name":"","color":"","data":{"url":"http://www.quliantrip.com/wap/index.php?ctl=sale&cate_id=16"},"ctl":"url"},{"id":"89","name":"玩乐","icon_name":"","color":"","data":{"url":"http://www.quliantrip.com/wap/index.php?ctl=sale&cate_id=8"},"ctl":"url"},{"id":"90","name":"购物","icon_name":"","color":"","data":{"url":"http://www.quliantrip.com/wap/index.php?ctl=sale&cate_id=9"},"ctl":"url"},{"id":"91","name":"交通","icon_name":"","color":"","data":{"url":"http://www.quliantrip.com/wap/index.php?ctl=sale&cate_id=10"},"ctl":"url"},{"id":"92","name":"WIFI","icon_name":"","color":"","data":{"url":"http://www.quliantrip.com/wap/index.php?ctl=sale&cate_id=11"},"ctl":"url"}]
+     * quality_goods : {"id":"104","name":"韩国首尔南怡岛+小法兰西一日游","sub_name":"韩国首尔南怡岛+小法兰西一日游","brief":"南怡岛美景\r\n\r\n南怡岛的春夏秋冬各有特色，一直是攻略上推荐的必到之处\r\n","current_price":180,"origin_price":200,"icon":"http://dev.qulian.com/public/attachment/201511/09/18/5640740d7c70c_600x0.jpg","begin_time":"0","end_time":"0","time_status":"1","now_time":1451257459,"buy_count":"23","buy_type":"0","is_shop":"0","deal_attr":null,"avg_point":0,"dp_count":"0","supplier_location_count":null,"last_time":0,"last_time_format":0,"deal_tags":[],"images":[],"oimages":[],"description":"<strong>行程线路 (约7小时)：<\/strong> <p class=\"MsoNormal\">东和免税店门口集合出发 (08:00) / 明洞乐天酒店1楼Star Avenue 前集合出发 (08:20)→小法兰西村&nbsp;(约90分钟)→午餐 (春川辣炒鸡排)→南怡岛 (约90分钟)→新罗免税店 (约120分钟)→东和免税店门口解散 <\/p>\r\n<p class=\"MsoNormal\" style=\"text-align:center;\"><br />\r\n<\/p>\r\n<h3 style=\"text-align:center;\">小法兰西 <\/h3>\r\n<p style=\"text-align:left;\"><span>小法兰西 (Petite France)是从圣埃克苏佩里创作的给人以梦想和希望的小王子身上获得灵感而建的，是韩剧《贝多芬病毒》的主要拍摄地。指挥者的工作室、斗鲁美和姜健宇的初吻发生都在这里此外，从原址原封不动迁移来的历史达150年以上的法国古堡，重建的住宅展示馆和可欣赏到圣埃克絮佩里法作品世界一角的纪念馆，都很值得参观。这里距离旅游胜地南怡岛和虎鸣湖不远。<\/span> <\/p>\r\n<p style=\"text-align:center;\"><span><img alt=\"\" src=\"http://img03.haiwaner.com/images/tours/20150212110512_88.jpg\" data_src=\"http://img03.haiwaner.com/images/tours/20150212110512_88.jpg\" /><br />\r\n<\/span><\/p>\r\n<p style=\"text-align:center;\"><br />\r\n<\/p>\r\n<p style=\"text-align:left;\">于2008年7月开放，以童话《小王子》为主题的小法国村，占地11万7357平方公尺，是一个可体验到独特法国文化的主题村庄。山丘上白色的异国风建筑聚集在一起，由16栋法式建筑组成，像极了阿尔卑斯山麓的田园村庄。 小法国村的设计概念为：花和星星及小王子。村内随处可见法国著名作家圣埃克苏佩里的作品童话《小王子》中的人物及动物造型，小王子铜像也矗立在村内。另外村内可听到有200年之久的八音盒中优美的旋律，还有象征法国的鸡、雕刻和图画的艺廊、花草芳香店及各式的纪念品店等。 <\/p>\r\n<p style=\"text-align:center;\"><img title=\"\" alt=\"\" src=\"http://img01.haiwaner.com/images/tours/20150211120826_599.jpg\" width=\"650\" height=\"434\" data_src=\"http://img01.haiwaner.com/images/tours/20150211120826_599.jpg\" /> <\/p>\r\n<p style=\"text-align:center;\"><br />\r\n<\/p>\r\n<h3 style=\"text-align:center;\">南怡岛 <\/h3>\r\n<p style=\"text-align:left;\">南怡岛因韩剧《冬季恋歌》而蜚声全亚洲，剧中男女主人公俊相和有真就曾幸福地在小岛的四处徜徉。樱花盛开的季节，在栽有樱花树的小道上，特别是南怡岛南部、俊相和有真两人一边并肩站着望风景一边用心地谈情说爱来着的江边散步道上，樱花缤纷，有风吹过，花瓣如雨落下，将小岛的浪漫情致催到极致。 <\/p>\r\n<p style=\"text-align:center;\"><img alt=\"\" src=\"http://img02.haiwaner.com/images/tours/20150331135749_449.jpg\" data_src=\"http://img02.haiwaner.com/images/tours/20150331135749_449.jpg\" /> <\/p>\r\n<p style=\"text-align:center;\"><span style=\"font-size:12px;font-weight:normal;line-height:1.5;\"><br />\r\n<\/span><\/p>\r\n<h3 style=\"text-align:center;\">新罗免税店 <\/h3>\r\n<p style=\"text-align:left;\">新罗免税店隶属于韩国三星集团旗下的新罗酒店，自1986年开业以来，以时尚潮流的商品、合理的价格、高雅的购物环境以及热情优质的服务为海内外游客所青睐，是韩国最具代表性的免税店。在此不仅可以购买到引领潮流的各种国际名牌时装，还能惬意享受在大自然中散步的愉悦。当购物累了的时候，游客可以到在三楼的楼顶庭院稍事休息，这里有ARTISEE咖啡厅，您可以点咖啡及甜点和享受免费的无线互联网，一边品尝一边观看首尔的全景。 <\/p>\r\n<p style=\"text-align:center;\"><img title=\"\" alt=\"\" src=\"http://img02.haiwaner.com/images/tours/20150212111056_258.jpg\" width=\"650\" height=\"434\" data_src=\"http://img02.haiwaner.com/images/tours/20150212111056_258.jpg\" /> <\/p>\r\n<p style=\"text-align:center;\">&nbsp;<\/p>\r\n<p style=\"text-align:center;\"><span class=\"title-big\">使用方法<\/span> <\/p>\r\n<div class=\"order-content\">预订成功后，海玩网会给您发送海玩预订确认单。请出行时携带护照并在上车前将海玩预订确认单 (无需打印，电子版即可) 出示给导游，即可参加一日游。<br />\r\n<br />\r\n<strong>【集合信息】<\/strong><br />\r\n本行程有两个集合地点可选。<br />\r\n<br />\r\n<strong>集合地点1：<\/strong><br />\r\n光化门东和免税店前 (请在韩国时间08:00前到达集合地点1)<br />\r\n<br />\r\n交通指南：<br />\r\n1. 地铁5号线光化门站6号出口，东和免税店前。<br />\r\n2. 地铁1号线钟阁站6号出口，步行约10~12分钟可抵达。<br />\r\n<p>3. 地铁1号线、2号线市厅站3号出口，步行约5~8分钟可抵达。 <\/p>\r\n<p><br />\r\n<\/p>\r\n<strong>集合地点2：<\/strong><br />\r\n明洞乐天酒店1楼Star Avenue (星光大道)门口旁 (请在韩国时间08:20前到达集合地点2)<br />\r\n<br />\r\n交通指南：<br />\r\n<p>首尔地铁2号线乙支路入口站8号出口前，即可看到。 <\/p>\r\n<\/div>\r\n","fee_description":"<p class=\"title\">费用包含<\/p>\r\n<p>午餐 (春川辣炒鸡排或其他)<br />\r\n南怡岛船票与门票<br />\r\n小法兰西门票<br />\r\n一日游专门用车 (车型依游客人数弹性安排)<br />\r\n中文导游贴心陪伴 (将依人数派遣司导或导游，乐园内游玩期间司导不陪同入内)<br />\r\n司导费用 <\/p>\r\n","notes":"","share_url":null,"ypoint":143.0419921875,"xpoint":49.468124067332,"buyin_app":0,"is_fx":0}
+     * deal_list : [{"id":"148","distance":0,"ypoint":143.0419921875,"xpoint":49.468124067332,"name":"济州岛Aqua planet水族馆门票","sub_name":"济州岛Aqua planet水族馆门票","brief":"展示500多种奇异海洋物种，观看海洋精灵精彩表演，学习有关海洋及多样生物知识。","buy_count":"3","current_price":0.01,"origin_price":227,"icon":"http://dev.qulian.com/public/attachment/201511/11/15/5642ecbecbe9f_360x0.jpg","end_time_format":"","begin_time_format":"","begin_time":"0","end_time":"0","auto_order":"0","is_lottery":"0","is_refund":"0","deal_score":0,"buyin_app":0,"is_today":0}]
      * page_title : 首页
+     * mobile_btns_download : /index.php?ctl=app_download
      * ctl : index
-     * act : index
+     * act : app
      * status : 1
      * info :
-     * sess_id : 1iqougv557ofeq8d0mqeidfb92
+     * sess_id : nolkn7t3iudc8took6hgkt9kr5
      * ref_uid : null
      */
 
@@ -92,32 +34,95 @@ public class HomeBean extends BaseJson {
     private String city_id;
     private String city_name;
     /**
-     * id : 139
-     * distance : 0
-     * ypoint : 0
-     * xpoint : 0
-     * name : 韩国首尔63大厦天空美术馆门票
-     * sub_name : 韩国首尔63大厦天空美术馆门票
-     * brief : 63大厦是首尔的地标性建筑，视野极佳。大厦交通便利、设施齐备，这里有水族馆、观景台、剧场一应俱全，家长们喜欢带孩子前来游玩，恋人们则喜欢来这里约会。
-     * buy_count : 45
-     * current_price : 64
-     * origin_price : 74
-     * icon : http://dev.qulian.com/public/attachment/201511/11/14/5642e33e75e0d_360x0.jpg
-     * end_time_format :
-     * begin_time_format :
+     * id : 104
+     * name : 韩国首尔南怡岛+小法兰西一日游
+     * sub_name : 韩国首尔南怡岛+小法兰西一日游
+     * brief : 南怡岛美景
+
+     南怡岛的春夏秋冬各有特色，一直是攻略上推荐的必到之处
+
+     * current_price : 180
+     * origin_price : 200
+     * icon : http://dev.qulian.com/public/attachment/201511/09/18/5640740d7c70c_600x0.jpg
      * begin_time : 0
      * end_time : 0
-     * auto_order : 0
-     * is_lottery : 0
-     * is_refund : 0
-     * deal_score : 0
+     * time_status : 1
+     * now_time : 1451257459
+     * buy_count : 23
+     * buy_type : 0
+     * is_shop : 0
+     * deal_attr : null
+     * avg_point : 0
+     * dp_count : 0
+     * supplier_location_count : null
+     * last_time : 0
+     * last_time_format : 0
+     * deal_tags : []
+     * images : []
+     * oimages : []
+     * description : <strong>行程线路 (约7小时)：</strong> <p class="MsoNormal">东和免税店门口集合出发 (08:00) / 明洞乐天酒店1楼Star Avenue 前集合出发 (08:20)→小法兰西村&nbsp;(约90分钟)→午餐 (春川辣炒鸡排)→南怡岛 (约90分钟)→新罗免税店 (约120分钟)→东和免税店门口解散 </p>
+     <p class="MsoNormal" style="text-align:center;"><br />
+     </p>
+     <h3 style="text-align:center;">小法兰西 </h3>
+     <p style="text-align:left;"><span>小法兰西 (Petite France)是从圣埃克苏佩里创作的给人以梦想和希望的小王子身上获得灵感而建的，是韩剧《贝多芬病毒》的主要拍摄地。指挥者的工作室、斗鲁美和姜健宇的初吻发生都在这里此外，从原址原封不动迁移来的历史达150年以上的法国古堡，重建的住宅展示馆和可欣赏到圣埃克絮佩里法作品世界一角的纪念馆，都很值得参观。这里距离旅游胜地南怡岛和虎鸣湖不远。</span> </p>
+     <p style="text-align:center;"><span><img alt="" src="http://img03.haiwaner.com/images/tours/20150212110512_88.jpg" data_src="http://img03.haiwaner.com/images/tours/20150212110512_88.jpg" /><br />
+     </span></p>
+     <p style="text-align:center;"><br />
+     </p>
+     <p style="text-align:left;">于2008年7月开放，以童话《小王子》为主题的小法国村，占地11万7357平方公尺，是一个可体验到独特法国文化的主题村庄。山丘上白色的异国风建筑聚集在一起，由16栋法式建筑组成，像极了阿尔卑斯山麓的田园村庄。 小法国村的设计概念为：花和星星及小王子。村内随处可见法国著名作家圣埃克苏佩里的作品童话《小王子》中的人物及动物造型，小王子铜像也矗立在村内。另外村内可听到有200年之久的八音盒中优美的旋律，还有象征法国的鸡、雕刻和图画的艺廊、花草芳香店及各式的纪念品店等。 </p>
+     <p style="text-align:center;"><img title="" alt="" src="http://img01.haiwaner.com/images/tours/20150211120826_599.jpg" width="650" height="434" data_src="http://img01.haiwaner.com/images/tours/20150211120826_599.jpg" /> </p>
+     <p style="text-align:center;"><br />
+     </p>
+     <h3 style="text-align:center;">南怡岛 </h3>
+     <p style="text-align:left;">南怡岛因韩剧《冬季恋歌》而蜚声全亚洲，剧中男女主人公俊相和有真就曾幸福地在小岛的四处徜徉。樱花盛开的季节，在栽有樱花树的小道上，特别是南怡岛南部、俊相和有真两人一边并肩站着望风景一边用心地谈情说爱来着的江边散步道上，樱花缤纷，有风吹过，花瓣如雨落下，将小岛的浪漫情致催到极致。 </p>
+     <p style="text-align:center;"><img alt="" src="http://img02.haiwaner.com/images/tours/20150331135749_449.jpg" data_src="http://img02.haiwaner.com/images/tours/20150331135749_449.jpg" /> </p>
+     <p style="text-align:center;"><span style="font-size:12px;font-weight:normal;line-height:1.5;"><br />
+     </span></p>
+     <h3 style="text-align:center;">新罗免税店 </h3>
+     <p style="text-align:left;">新罗免税店隶属于韩国三星集团旗下的新罗酒店，自1986年开业以来，以时尚潮流的商品、合理的价格、高雅的购物环境以及热情优质的服务为海内外游客所青睐，是韩国最具代表性的免税店。在此不仅可以购买到引领潮流的各种国际名牌时装，还能惬意享受在大自然中散步的愉悦。当购物累了的时候，游客可以到在三楼的楼顶庭院稍事休息，这里有ARTISEE咖啡厅，您可以点咖啡及甜点和享受免费的无线互联网，一边品尝一边观看首尔的全景。 </p>
+     <p style="text-align:center;"><img title="" alt="" src="http://img02.haiwaner.com/images/tours/20150212111056_258.jpg" width="650" height="434" data_src="http://img02.haiwaner.com/images/tours/20150212111056_258.jpg" /> </p>
+     <p style="text-align:center;">&nbsp;</p>
+     <p style="text-align:center;"><span class="title-big">使用方法</span> </p>
+     <div class="order-content">预订成功后，海玩网会给您发送海玩预订确认单。请出行时携带护照并在上车前将海玩预订确认单 (无需打印，电子版即可) 出示给导游，即可参加一日游。<br />
+     <br />
+     <strong>【集合信息】</strong><br />
+     本行程有两个集合地点可选。<br />
+     <br />
+     <strong>集合地点1：</strong><br />
+     光化门东和免税店前 (请在韩国时间08:00前到达集合地点1)<br />
+     <br />
+     交通指南：<br />
+     1. 地铁5号线光化门站6号出口，东和免税店前。<br />
+     2. 地铁1号线钟阁站6号出口，步行约10~12分钟可抵达。<br />
+     <p>3. 地铁1号线、2号线市厅站3号出口，步行约5~8分钟可抵达。 </p>
+     <p><br />
+     </p>
+     <strong>集合地点2：</strong><br />
+     明洞乐天酒店1楼Star Avenue (星光大道)门口旁 (请在韩国时间08:20前到达集合地点2)<br />
+     <br />
+     交通指南：<br />
+     <p>首尔地铁2号线乙支路入口站8号出口前，即可看到。 </p>
+     </div>
+
+     * fee_description : <p class="title">费用包含</p>
+     <p>午餐 (春川辣炒鸡排或其他)<br />
+     南怡岛船票与门票<br />
+     小法兰西门票<br />
+     一日游专门用车 (车型依游客人数弹性安排)<br />
+     中文导游贴心陪伴 (将依人数派遣司导或导游，乐园内游玩期间司导不陪同入内)<br />
+     司导费用 </p>
+
+     * notes :
+     * share_url : null
+     * ypoint : 143.0419921875
+     * xpoint : 49.468124067332
      * buyin_app : 0
-     * is_today : 0
+     * is_fx : 0
      */
 
     private QualityGoodsEntity quality_goods;
-    private String zt_html;
     private String page_title;
+    private String mobile_btns_download;
     private String ctl;
     private String act;
     private int status;
@@ -125,39 +130,27 @@ public class HomeBean extends BaseJson {
     private String sess_id;
     private Object ref_uid;
     /**
-     * id : 12
-     * name : 方维o2o
-     * img : http://dev.qulian.com/public/attachment/sjmapi/4f2ce3d1827e4.jpg
-     * type : 0
-     * data : {"url":"http://www.fanwe.com"}
-     * ctl : url
-     */
-
-    private List<AdvsEntity> advs;
-    /**
-     * id : 72
-     * name : 餐饮美食
-     * img : http://dev.qulian.com/public/attachment/sjmapi/546c651d83c20.png
+     * id : 87
+     * name : 特色餐厅
      * icon_name :
      * color :
-     * data : {"cate_id":"8"}
-     * ctl : tuan
-     * type : 11
+     * data : {"url":"http://www.quliantrip.com/wap/index.php?ctl=sale&cate_id=17"}
+     * ctl : url
      */
 
     private List<IndexsEntity> indexs;
     /**
-     * id : 138
+     * id : 148
      * distance : 0
-     * ypoint : 0
-     * xpoint : 0
-     * name : 首尔明洞3D夜光美术馆门票
-     * sub_name : 首尔明洞3D夜光美术馆门票
-     * brief : 位于明洞的3D夜光美术馆 (3D BLACK ART)比普通的3D美术馆更加有趣。日光灯下和关灯以后，画作呈现两种不同的魅力，超级好玩！
-     * buy_count : 25
-     * current_price : 50
-     * origin_price : 88
-     * icon : http://dev.qulian.com/public/attachment/201511/11/14/5642e2a33182a_360x0.jpg
+     * ypoint : 143.0419921875
+     * xpoint : 49.468124067332
+     * name : 济州岛Aqua planet水族馆门票
+     * sub_name : 济州岛Aqua planet水族馆门票
+     * brief : 展示500多种奇异海洋物种，观看海洋精灵精彩表演，学习有关海洋及多样生物知识。
+     * buy_count : 3
+     * current_price : 0.01
+     * origin_price : 227
+     * icon : http://dev.qulian.com/public/attachment/201511/11/15/5642ecbecbe9f_360x0.jpg
      * end_time_format :
      * begin_time_format :
      * begin_time : 0
@@ -171,7 +164,6 @@ public class HomeBean extends BaseJson {
      */
 
     private List<DealListEntity> deal_list;
-    private List<?> supplier_deal_list;
 
     public void setReturnX(int returnX) {
         this.returnX = returnX;
@@ -189,12 +181,12 @@ public class HomeBean extends BaseJson {
         this.quality_goods = quality_goods;
     }
 
-    public void setZt_html(String zt_html) {
-        this.zt_html = zt_html;
-    }
-
     public void setPage_title(String page_title) {
         this.page_title = page_title;
+    }
+
+    public void setMobile_btns_download(String mobile_btns_download) {
+        this.mobile_btns_download = mobile_btns_download;
     }
 
     public void setCtl(String ctl) {
@@ -221,20 +213,12 @@ public class HomeBean extends BaseJson {
         this.ref_uid = ref_uid;
     }
 
-    public void setAdvs(List<AdvsEntity> advs) {
-        this.advs = advs;
-    }
-
     public void setIndexs(List<IndexsEntity> indexs) {
         this.indexs = indexs;
     }
 
     public void setDeal_list(List<DealListEntity> deal_list) {
         this.deal_list = deal_list;
-    }
-
-    public void setSupplier_deal_list(List<?> supplier_deal_list) {
-        this.supplier_deal_list = supplier_deal_list;
     }
 
     public int getReturnX() {
@@ -253,12 +237,12 @@ public class HomeBean extends BaseJson {
         return quality_goods;
     }
 
-    public String getZt_html() {
-        return zt_html;
-    }
-
     public String getPage_title() {
         return page_title;
+    }
+
+    public String getMobile_btns_download() {
+        return mobile_btns_download;
     }
 
     public String getCtl() {
@@ -285,10 +269,6 @@ public class HomeBean extends BaseJson {
         return ref_uid;
     }
 
-    public List<AdvsEntity> getAdvs() {
-        return advs;
-    }
-
     public List<IndexsEntity> getIndexs() {
         return indexs;
     }
@@ -297,37 +277,41 @@ public class HomeBean extends BaseJson {
         return deal_list;
     }
 
-    public List<?> getSupplier_deal_list() {
-        return supplier_deal_list;
-    }
-
     public static class QualityGoodsEntity {
         private String id;
-        private int distance;
         private String name;
         private String sub_name;
         private String brief;
-        private String buy_count;
         private int current_price;
         private int origin_price;
         private String icon;
-        private String end_time_format;
-        private String begin_time_format;
         private String begin_time;
         private String end_time;
-        private String auto_order;
-        private String is_lottery;
-        private String is_refund;
-        private int deal_score;
+        private String time_status;
+        private int now_time;
+        private String buy_count;
+        private String buy_type;
+        private String is_shop;
+        private Object deal_attr;
+        private int avg_point;
+        private String dp_count;
+        private Object supplier_location_count;
+        private int last_time;
+        private int last_time_format;
+        private String description;
+        private String fee_description;
+        private String notes;
+        private Object share_url;
+        private double ypoint;
+        private double xpoint;
         private int buyin_app;
-        private int is_today;
+        private int is_fx;
+        private List<?> deal_tags;
+        private List<?> images;
+        private List<?> oimages;
 
         public void setId(String id) {
             this.id = id;
-        }
-
-        public void setDistance(int distance) {
-            this.distance = distance;
         }
 
         public void setName(String name) {
@@ -342,10 +326,6 @@ public class HomeBean extends BaseJson {
             this.brief = brief;
         }
 
-        public void setBuy_count(String buy_count) {
-            this.buy_count = buy_count;
-        }
-
         public void setCurrent_price(int current_price) {
             this.current_price = current_price;
         }
@@ -358,14 +338,6 @@ public class HomeBean extends BaseJson {
             this.icon = icon;
         }
 
-        public void setEnd_time_format(String end_time_format) {
-            this.end_time_format = end_time_format;
-        }
-
-        public void setBegin_time_format(String begin_time_format) {
-            this.begin_time_format = begin_time_format;
-        }
-
         public void setBegin_time(String begin_time) {
             this.begin_time = begin_time;
         }
@@ -374,36 +346,96 @@ public class HomeBean extends BaseJson {
             this.end_time = end_time;
         }
 
-        public void setAuto_order(String auto_order) {
-            this.auto_order = auto_order;
+        public void setTime_status(String time_status) {
+            this.time_status = time_status;
         }
 
-        public void setIs_lottery(String is_lottery) {
-            this.is_lottery = is_lottery;
+        public void setNow_time(int now_time) {
+            this.now_time = now_time;
         }
 
-        public void setIs_refund(String is_refund) {
-            this.is_refund = is_refund;
+        public void setBuy_count(String buy_count) {
+            this.buy_count = buy_count;
         }
 
-        public void setDeal_score(int deal_score) {
-            this.deal_score = deal_score;
+        public void setBuy_type(String buy_type) {
+            this.buy_type = buy_type;
+        }
+
+        public void setIs_shop(String is_shop) {
+            this.is_shop = is_shop;
+        }
+
+        public void setDeal_attr(Object deal_attr) {
+            this.deal_attr = deal_attr;
+        }
+
+        public void setAvg_point(int avg_point) {
+            this.avg_point = avg_point;
+        }
+
+        public void setDp_count(String dp_count) {
+            this.dp_count = dp_count;
+        }
+
+        public void setSupplier_location_count(Object supplier_location_count) {
+            this.supplier_location_count = supplier_location_count;
+        }
+
+        public void setLast_time(int last_time) {
+            this.last_time = last_time;
+        }
+
+        public void setLast_time_format(int last_time_format) {
+            this.last_time_format = last_time_format;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public void setFee_description(String fee_description) {
+            this.fee_description = fee_description;
+        }
+
+        public void setNotes(String notes) {
+            this.notes = notes;
+        }
+
+        public void setShare_url(Object share_url) {
+            this.share_url = share_url;
+        }
+
+        public void setYpoint(double ypoint) {
+            this.ypoint = ypoint;
+        }
+
+        public void setXpoint(double xpoint) {
+            this.xpoint = xpoint;
         }
 
         public void setBuyin_app(int buyin_app) {
             this.buyin_app = buyin_app;
         }
 
-        public void setIs_today(int is_today) {
-            this.is_today = is_today;
+        public void setIs_fx(int is_fx) {
+            this.is_fx = is_fx;
+        }
+
+        public void setDeal_tags(List<?> deal_tags) {
+            this.deal_tags = deal_tags;
+        }
+
+        public void setImages(List<?> images) {
+            this.images = images;
+        }
+
+        public void setOimages(List<?> oimages) {
+            this.oimages = oimages;
         }
 
         public String getId() {
             return id;
-        }
-
-        public int getDistance() {
-            return distance;
         }
 
         public String getName() {
@@ -418,10 +450,6 @@ public class HomeBean extends BaseJson {
             return brief;
         }
 
-        public String getBuy_count() {
-            return buy_count;
-        }
-
         public int getCurrent_price() {
             return current_price;
         }
@@ -434,14 +462,6 @@ public class HomeBean extends BaseJson {
             return icon;
         }
 
-        public String getEnd_time_format() {
-            return end_time_format;
-        }
-
-        public String getBegin_time_format() {
-            return begin_time_format;
-        }
-
         public String getBegin_time() {
             return begin_time;
         }
@@ -450,38 +470,102 @@ public class HomeBean extends BaseJson {
             return end_time;
         }
 
-        public String getAuto_order() {
-            return auto_order;
+        public String getTime_status() {
+            return time_status;
         }
 
-        public String getIs_lottery() {
-            return is_lottery;
+        public int getNow_time() {
+            return now_time;
         }
 
-        public String getIs_refund() {
-            return is_refund;
+        public String getBuy_count() {
+            return buy_count;
         }
 
-        public int getDeal_score() {
-            return deal_score;
+        public String getBuy_type() {
+            return buy_type;
+        }
+
+        public String getIs_shop() {
+            return is_shop;
+        }
+
+        public Object getDeal_attr() {
+            return deal_attr;
+        }
+
+        public int getAvg_point() {
+            return avg_point;
+        }
+
+        public String getDp_count() {
+            return dp_count;
+        }
+
+        public Object getSupplier_location_count() {
+            return supplier_location_count;
+        }
+
+        public int getLast_time() {
+            return last_time;
+        }
+
+        public int getLast_time_format() {
+            return last_time_format;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public String getFee_description() {
+            return fee_description;
+        }
+
+        public String getNotes() {
+            return notes;
+        }
+
+        public Object getShare_url() {
+            return share_url;
+        }
+
+        public double getYpoint() {
+            return ypoint;
+        }
+
+        public double getXpoint() {
+            return xpoint;
         }
 
         public int getBuyin_app() {
             return buyin_app;
         }
 
-        public int getIs_today() {
-            return is_today;
+        public int getIs_fx() {
+            return is_fx;
+        }
+
+        public List<?> getDeal_tags() {
+            return deal_tags;
+        }
+
+        public List<?> getImages() {
+            return images;
+        }
+
+        public List<?> getOimages() {
+            return oimages;
         }
     }
 
-    public static class AdvsEntity {
+    public static class IndexsEntity {
         private String id;
         private String name;
-        private String img;
-        private String type;
+        private String icon_name;
+        private String color;
         /**
-         * url : http://www.fanwe.com
+         * url : http://www.quliantrip.com/wap/index.php?ctl=sale&cate_id=17
          */
 
         private DataEntity data;
@@ -495,12 +579,12 @@ public class HomeBean extends BaseJson {
             this.name = name;
         }
 
-        public void setImg(String img) {
-            this.img = img;
+        public void setIcon_name(String icon_name) {
+            this.icon_name = icon_name;
         }
 
-        public void setType(String type) {
-            this.type = type;
+        public void setColor(String color) {
+            this.color = color;
         }
 
         public void setData(DataEntity data) {
@@ -519,12 +603,12 @@ public class HomeBean extends BaseJson {
             return name;
         }
 
-        public String getImg() {
-            return img;
+        public String getIcon_name() {
+            return icon_name;
         }
 
-        public String getType() {
-            return type;
+        public String getColor() {
+            return color;
         }
 
         public DataEntity getData() {
@@ -548,105 +632,16 @@ public class HomeBean extends BaseJson {
         }
     }
 
-    public static class IndexsEntity {
-        private String id;
-        private String name;
-        private String img;
-        private String icon_name;
-        private String color;
-        /**
-         * cate_id : 8
-         */
-
-        private DataEntity data;
-        private String ctl;
-        private String type;
-
-        public void setId(String id) {
-            this.id = id;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public void setImg(String img) {
-            this.img = img;
-        }
-
-        public void setIcon_name(String icon_name) {
-            this.icon_name = icon_name;
-        }
-
-        public void setColor(String color) {
-            this.color = color;
-        }
-
-        public void setData(DataEntity data) {
-            this.data = data;
-        }
-
-        public void setCtl(String ctl) {
-            this.ctl = ctl;
-        }
-
-        public void setType(String type) {
-            this.type = type;
-        }
-
-        public String getId() {
-            return id;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public String getImg() {
-            return img;
-        }
-
-        public String getIcon_name() {
-            return icon_name;
-        }
-
-        public String getColor() {
-            return color;
-        }
-
-        public DataEntity getData() {
-            return data;
-        }
-
-        public String getCtl() {
-            return ctl;
-        }
-
-        public String getType() {
-            return type;
-        }
-
-        public static class DataEntity {
-            private String cate_id;
-
-            public void setCate_id(String cate_id) {
-                this.cate_id = cate_id;
-            }
-
-            public String getCate_id() {
-                return cate_id;
-            }
-        }
-    }
-
     public static class DealListEntity {
         private String id;
         private int distance;
+        private double ypoint;
+        private double xpoint;
         private String name;
         private String sub_name;
         private String brief;
         private String buy_count;
-        private int current_price;
+        private double current_price;
         private int origin_price;
         private String icon;
         private String end_time_format;
@@ -668,6 +663,14 @@ public class HomeBean extends BaseJson {
             this.distance = distance;
         }
 
+        public void setYpoint(double ypoint) {
+            this.ypoint = ypoint;
+        }
+
+        public void setXpoint(double xpoint) {
+            this.xpoint = xpoint;
+        }
+
         public void setName(String name) {
             this.name = name;
         }
@@ -684,7 +687,7 @@ public class HomeBean extends BaseJson {
             this.buy_count = buy_count;
         }
 
-        public void setCurrent_price(int current_price) {
+        public void setCurrent_price(double current_price) {
             this.current_price = current_price;
         }
 
@@ -744,6 +747,14 @@ public class HomeBean extends BaseJson {
             return distance;
         }
 
+        public double getYpoint() {
+            return ypoint;
+        }
+
+        public double getXpoint() {
+            return xpoint;
+        }
+
         public String getName() {
             return name;
         }
@@ -760,7 +771,7 @@ public class HomeBean extends BaseJson {
             return buy_count;
         }
 
-        public int getCurrent_price() {
+        public double getCurrent_price() {
             return current_price;
         }
 

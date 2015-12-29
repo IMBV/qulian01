@@ -88,38 +88,45 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         modelContainer.addView(homeFunctionMode.getModelView());
         homeChoicenessMode = new HomeChoicenessMode();
         homeChoicenessMode.setContext(mContext);
-        modelContainer.addView(homeChoicenessMode.getModelView());
+
     }
 
     @Override
     protected QuestBean requestData() {
         Map<String, String> map = new HashMap<String, String>();
         map.put("ctl", "index");
-        map.put("act", "index");
+        map.put("act", "app");
         map.put("r_type", "1");
-        return new QuestBean(map, new HomeBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST);
+        return new QuestBean(map, new HomeBean().setTag(getClass().getName()), HttpConstants.HOST_ADDR_ROOT_NET);
     }
 
     @Override
     public void onEventMainThread(BaseJson bean) {
-        if (bean != null && this.getClass().getName().equals(bean.getTag())) {
+        System.out.println(bean.getTag());
+        if (bean != null && HomeFragment.this.getClass().getName().equals(bean.getTag())) {
             //想mode添加数据
-            homeSlideImageMode.setData(((HomeBean) bean).getAdvs());
-            homeChoicenessMode.setData(((HomeBean) bean).getQuality_goods());
+            homeSlideImageMode.setData(null);
+            //有时有if必须有else的数据的显示
+            if (((HomeBean) bean).getQuality_goods() != null) {
+                modelContainer.addView(homeChoicenessMode.getModelView());
+                homeChoicenessMode.setData(((HomeBean) bean).getQuality_goods());
+            }else{
+                modelContainer.removeView(homeChoicenessMode.getModelView());
+            }
             homeFunctionMode.setData(((HomeBean) bean).getIndexs());
             homeTitle.setText(((HomeBean) bean).getCity_name());
             initListIView(((HomeBean) bean).getDeal_list());
         }
         if (bean != null && (this.getClass().getName()+"changeCity").equals(bean.getTag())) {
-
             ChangeCityBean beanCity = (ChangeCityBean)bean;
             Map<String, String> map = new HashMap<String, String>();
             map.put("ctl", "index");
-            map.put("act", "index");
+            map.put("act", "app");
             map.put("sess_id", beanCity.getSess_id());
             map.put("r_type", "1");
-            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST, new HomeBean().setTag(HomeFragment.this.getClass().getName()), map, null);
+            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new HomeBean().setTag(HomeFragment.this.getClass().getName()), map, null);
         }
+        bean = null;
     }
 
     private void initListIView(List<HomeBean.DealListEntity> dealList) {
@@ -163,7 +170,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
             map.put("act", "city_change");
             map.put("area_id", data.getStringExtra("cityId"));
             map.put("r_type", "1");
-            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_LOCAL_TEST, new ChangeCityBean().setTag(HomeFragment.this.getClass().getName()+"changeCity"), map, null);
+            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new ChangeCityBean().setTag(HomeFragment.this.getClass().getName()+"changeCity"), map, null);
         }
     }
 

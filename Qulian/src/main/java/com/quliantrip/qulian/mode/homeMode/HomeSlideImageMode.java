@@ -29,7 +29,7 @@ import butterknife.ButterKnife;
 /**
  * 首页的图片的滑动模块
  */
-public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>>{
+public class HomeSlideImageMode extends BaseMode<List<String>>{
 
     private View view;
     private RollViewPage rollViewPage;
@@ -54,11 +54,11 @@ public class HomeSlideImageMode extends BaseMode<List<HomeBean.AdvsEntity>>{
 
     //在这里进行数据的添加,o表示传如的类，进行空间的加载布局
     @Override
-    public void setData(List<HomeBean.AdvsEntity> advs) {
-        initRollView(advs);
+    public void setData(List<String> advs) {
+        initRollView();
     }
 
-    private void initRollView(List<HomeBean.AdvsEntity> advs) {
+    private void initRollView() {
 
         imageList.clear();
         dotList.clear();
