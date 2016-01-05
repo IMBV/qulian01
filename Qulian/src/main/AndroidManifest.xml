@@ -37,22 +37,24 @@
 
         <activity
             android:name=".ui.activity.mainAcivity.MainActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
 
         <activity
             android:name=".ui.activity.mainAcivity.GuideActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.activity.mainAcivity.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:noHistory="true"
             android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <!--
-        <activity
-            android:name=".ui.activity.mainAcivity.SplashActivity"
-            android:screenOrientation="portrait"></activity>-->
 
         <!--扫码和实现网络连接-->
         <activity

@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
  * Created by Yuly on 2015/12/4.
  * www.quliantrip.com
  */
-public class HomeFunctionMode extends BaseMode<List<HomeBean.IndexsEntity>> {
+public class HomeFunctionMode extends BaseMode<List<String>> {
 
     @Bind(R.id.id_horizontalScrollView)
     MyHorizontalScrollView mHorizontalScrollView;
@@ -47,7 +47,7 @@ public class HomeFunctionMode extends BaseMode<List<HomeBean.IndexsEntity>> {
     }
 
     @Override
-    public void setData(final List<HomeBean.IndexsEntity> list) {
+    public void setData(final List<String> list) {
         final ArrayList<ImageBean> list2 = new ArrayList<ImageBean>();
         list2.add(new ImageBean("17", "特色餐厅", "http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_01.png"));
         list2.add(new ImageBean("16", "门票", "http://www.quliantrip.com/wap/Tpl/main/fanwe/images/wap_bk_02.png"));

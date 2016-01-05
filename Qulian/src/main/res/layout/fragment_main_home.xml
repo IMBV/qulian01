@@ -71,7 +71,7 @@
             android:id="@+id/iv_home_title_back"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ff0000" />
+            android:background="@color/app_main_collor" />
 
         <ImageView
             android:id="@+id/iv_home_title_wifi"

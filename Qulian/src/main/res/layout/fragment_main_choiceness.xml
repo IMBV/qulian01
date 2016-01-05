@@ -92,7 +92,7 @@
         android:layout_height="fill_parent"
         android:visibility="visible">
 
-        <ListView
+        <com.quliantrip.qulian.view.MyListMoreView
             android:id="@+id/lv_consime_listview"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"

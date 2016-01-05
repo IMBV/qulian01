@@ -86,6 +86,7 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
         modelContainer.addView(homeSlideImageMode.getModelView());
         homeFunctionMode = new HomeFunctionMode(activity);
         modelContainer.addView(homeFunctionMode.getModelView());
+        homeFunctionMode.setData(null);
         homeChoicenessMode = new HomeChoicenessMode();
         homeChoicenessMode.setContext(mContext);
 
@@ -102,18 +103,17 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
 
     @Override
     public void onEventMainThread(BaseJson bean) {
-        System.out.println(bean.getTag());
         if (bean != null && HomeFragment.this.getClass().getName().equals(bean.getTag())) {
             //想mode添加数据
             homeSlideImageMode.setData(null);
             //有时有if必须有else的数据的显示
             if (((HomeBean) bean).getQuality_goods() != null) {
+                modelContainer.removeView(homeChoicenessMode.getModelView());
                 modelContainer.addView(homeChoicenessMode.getModelView());
                 homeChoicenessMode.setData(((HomeBean) bean).getQuality_goods());
             }else{
                 modelContainer.removeView(homeChoicenessMode.getModelView());
             }
-            homeFunctionMode.setData(((HomeBean) bean).getIndexs());
             homeTitle.setText(((HomeBean) bean).getCity_name());
             initListIView(((HomeBean) bean).getDeal_list());
         }
@@ -124,13 +124,19 @@ public class HomeFragment extends BasePageCheckFragment implements ScrollViewLis
             map.put("act", "app");
             map.put("sess_id", beanCity.getSess_id());
             map.put("r_type", "1");
+            System.out.println("asdf");
             new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new HomeBean().setTag(HomeFragment.this.getClass().getName()), map, null);
         }
         bean = null;
     }
-
+    private HomeRecommendAdapter homeRecommendAdapter;
     private void initListIView(List<HomeBean.DealListEntity> dealList) {
-        HomeRecommendAdapter homeRecommendAdapter = new HomeRecommendAdapter((ArrayList<HomeBean.DealListEntity>) dealList);
+        if(homeRecommendAdapter == null){
+            homeRecommendAdapter = new HomeRecommendAdapter((ArrayList<HomeBean.DealListEntity>) dealList);
+        }else{
+            homeRecommendAdapter.upDataItem((ArrayList<HomeBean.DealListEntity>) dealList);
+        }
+
         listView.setAdapter(homeRecommendAdapter);
         //条目数据适配
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

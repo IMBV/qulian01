@@ -32,6 +32,7 @@ import com.quliantrip.qulian.net.volleyManage.PacketStringReQuest;
 import com.quliantrip.qulian.net.volleyManage.QuestBean;
 import com.quliantrip.qulian.ui.activity.GoodDetailActivity;
 import com.quliantrip.qulian.util.ToastUtil;
+import com.quliantrip.qulian.view.MyListMoreView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -49,7 +50,7 @@ import butterknife.OnClick;
 public class ChoicenessFragment extends BasePageCheckFragment implements
         SwipeRefreshLayout.OnRefreshListener,
         AdapterView.OnItemClickListener,
-        AbsListView.OnScrollListener {
+        MyListMoreView.OnloadMoreListener {
     private PopupWindow sortPopupWindow;
     private PopupWindow cityPopupWindow;
     private View view;
@@ -80,7 +81,7 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
     @Bind(R.id.swiperefreshlayout)
     SwipeRefreshLayout mSwipeRefreshLayout;
     @Bind(R.id.lv_consime_listview)
-    ListView listView;
+    MyListMoreView listView;
 
     List<TuanBean.ItemEntity> item;
     QuanItemAdapter quanItemAdapter;
@@ -101,7 +102,8 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
                 R.color.swiperefresh_color1, R.color.swiperefresh_color2,
                 R.color.swiperefresh_color3, R.color.swiperefresh_color4);
         listView.setOnItemClickListener(this);
-        listView.setOnScrollListener(this);
+        listView.setOnloadMoreListener(this);
+
         return view;
     }
 
@@ -145,9 +147,8 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
             quanItemAdapter = new QuanItemAdapter((ArrayList<TuanBean.ItemEntity>) item);
             listView.setAdapter(quanItemAdapter);
         }
-
-
         setSwipeRefreshLoadedState();
+        listView.LoadMoreFinish();
     }
 
     @OnClick(R.id.ll_consume_list_sort)
@@ -409,6 +410,8 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         ;
     };
 
+
+
     class MyItemClick implements AdapterView.OnItemClickListener {
 
         @Override
@@ -482,34 +485,22 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         checkLogin();
     }
 
-
     @Override
-    public void onScrollStateChanged(AbsListView view, int scrollState) {
-        if (quanItemAdapter == null || quanItemAdapter.getCount() == 0) {
-            return;
-        }
-
-        if (quanItemAdapter.getCount() - 1 == view.getLastVisiblePosition()) {
-            page = page + 1;
-            Map<String, String> map = new HashMap<String, String>();
-            map.put("ctl", "tuan");
-            if (cate_id != null)
-                map.put("cate_id", cate_id);
-            if (tid != null)
-                map.put("tid", tid);
-            map.put("r_type", "1");
-            if (qid != null)
-                map.put("qid", qid);
-            if (order_type != null)
-                map.put("order_type", order_type);
-            map.put("page", page + "");
-            new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
-        }
-    }
-
-    @Override
-    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-
+    public void loadMore() {
+        page = page + 1;
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("ctl", "tuan");
+        if (cate_id != null)
+            map.put("cate_id", cate_id);
+        if (tid != null)
+            map.put("tid", tid);
+        map.put("r_type", "1");
+        if (qid != null)
+            map.put("qid", qid);
+        if (order_type != null)
+            map.put("order_type", order_type);
+        map.put("page", page + "");
+        new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
     }
 
     /**
