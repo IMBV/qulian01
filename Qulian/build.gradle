@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        applicationId "com.quliantrip.qulian"
+        minSdkVersion 14
+        versionCode 1
+        versionName "1.0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/zxing.jar')
+    //动画加载的兼容包
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    //数据请求和数据的传递
+    //下拉刷新
+    compile project(':library')
+    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+    //添加注解类的方法
+    compile 'com.jakewharton:butterknife:7.0.1'
+    /*QQ登录*/
+    compile files('libs/open_sdk_r5509_lite.jar')
+    /*微信登录*/
+    compile files('libs/libammsdk.jar')
+    //okhttp是以后版本升级的选着，和图片文件的上传的选着
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
+}
+
+
