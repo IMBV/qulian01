@@ -544,7 +544,6 @@ public class ChoicenessFragment extends BasePageCheckFragment implements
         map.put("cate_id", id);
         map.put("r_type", "1");
         new PacketStringReQuest(HttpConstants.HOST_ADDR_ROOT_NET, new TuanBean().setTag(ChoicenessFragment.this.getClass().getName()), map, null);
-
     }
 
 }
