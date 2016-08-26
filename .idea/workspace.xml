@@ -10,91 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4e766bb-6c8f-4f8a-85b2-6055056f5c51" name="Default" comment="初始化&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/Qulian-release.apk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-hdpi/ic_error_page.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xhdpi/splash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/mipmap-xxhdpi/splash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-hdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-hdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-hdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-mdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-mdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-mdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-hdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-hdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-hdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-mdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-mdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-mdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-xhdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-xhdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/bundles/release/res/drawable-xhdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-hdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-hdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-hdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-mdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-mdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-mdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-xhdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-xhdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/debug/drawable-xhdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-hdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-hdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-hdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-mdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-mdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-mdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-xhdpi-v4/default_ptr_flip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-xhdpi-v4/default_ptr_rotate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/res/merged/release/drawable-xhdpi-v4/indicator_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/Qulian.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/proguard-project.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/BasicAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/SortChildAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/adapter/popAdapter/SortGroupAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BasePageCheckFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/BasePullAndRefreshFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/base/ContentPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/domain/BaseJson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/mainAcivity/GuideActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/mainAcivity/MainActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/ui/activity/mainAcivity/SplashActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/java/com/quliantrip/qulian/view/MyListMoreView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/drawable/myrefresh.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/fragment_login.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/view_list_footer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/view_page_error.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/view_page_loading.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Qulian/src/main/res/layout/view_pulltorefresh_listview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradlew.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import-summary.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental-safeguard/debug/tag.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental-safeguard/release/tag.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/build/intermediates/incremental/mergeReleaseShaders/merger.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proguard-project.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Qulian/Qulian.iml" afterPath="$PROJECT_DIR$/Qulian/Qulian.iml" />
     </list>
     <ignored path="qulianAndroid0.1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2600,10 +2518,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="-7" />
     <option name="width" value="1932" />
-    <option name="height" value="1048" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2630,8 +2547,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qulianAndroid0.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2680,41 +2618,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qulianAndroid0.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qulian" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2722,6 +2625,22 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="device.picker.selection" value="0898a7a6" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="250" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="262" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="261" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1056" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="255" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="260" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="259" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1055" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RunManager" selected="Android Application.Qulian">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -3003,11 +2922,17 @@
       <option name="project" value="LOCAL" />
       <updated>1470551315424</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始化&#10;">
+      <created>1470551410954</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1470551410954</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
+    <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3017,14 +2942,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16880342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3038,6 +2963,14 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -3055,7 +2988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16383494">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
